@@ -21,7 +21,13 @@ Route::middleware(['auth',])->group(function () {
 ##################  Administación del sistema   #############################################
 #############################################################################################
    Route::get('/', 'HomeController@index')->name('home');
+
+
    Route::get('widget-chart', function(){
     return view('admin.widgets.index');
+  });
+
+    Route::get('widget-data', function(){
+    return view('admin.widgets.data');
   });
 });

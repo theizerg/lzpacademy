@@ -27,6 +27,12 @@ mix.styles([
     'node_modules/otika/assets/bundles/bootstrap-tagsinput/dist/bootstrap-tagsinput.css',
     'node_modules/otika/assets/bundles/select2/dist/css/select2.min.css',
     'node_modules/otika/assets/bundles/lightgallery/dist/css/lightgallery.css',
+    'node_modules/otika/assets/bundles/bootstrap-social/bootstrap-social.css',
+    'node_modules/otika/assets/bundles/owlcarousel2/dist/assets/owl.carousel.min.css',
+    'node_modules/otika/assets/bundles/owlcarousel2/dist/assets/owl.theme.default.min.css',
+    'node_modules/otika/assets/bundles/summernote/summernote-bs4.css',
+
+
     'node_modules/otika/assets/css/style.css',
     'node_modules/otika/assets/css/components.css',
     ], 'public/css/app.css');
@@ -35,7 +41,8 @@ mix.styles([
 mix.scripts([
     'node_modules/otika/assets/js/app.min.js',
 
-    
+    'node_modules/otika/assets/bundles/summernote/summernote-bs4.js',
+    'node_modules/otika/assets/bundles/owlcarousel2/dist/owl.carousel.min.js',
     'node_modules/otika/assets/bundles/datatables/datatables.min.js',
     'node_modules/otika/assets/bundles/datatables/DataTables-1.10.16/js/dataTables.bootstrap4.min.js',
     'node_modules/otika/assets/bundles/datatables/export-tables/dataTables.buttons.min.js',

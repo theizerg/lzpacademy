@@ -22,7 +22,7 @@
                                          <i class="fas fa-user"></i>
                                     </span>
                                 </div>
-                                <input class="form-control {{ $errors->has('username') ? ' is-invalid' : '' }}" name="username" type="text" placeholder="Usuario" value="{{ old('username') }}" id="username"  autofocus autocomplete="off">
+                                <input class="form-control {{ $errors->has('username') ? ' is-invalid' : '' }}" name="username" type="text" placeholder="Usuario" id="username" value="tgonzalez"  autofocus autocomplete="off">
                                <span class="invalid-feedback" id="username_alert" role="alert" style="font-size: 100%;"></span>
                             </div>
                             <div class="input-group mb-4">
@@ -31,7 +31,7 @@
                                        <i class="mdi mdi-lock"></i>
                                     </span>
                                 </div>
-                                <input type="password" id="password" class="form-control {{ $errors->has('password') ? ' is-invalid' : '' }}" name="password"  autocomplete="off" placeholder="Ingresa la contraseña">
+                                <input type="password" id="password" class="form-control {{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" value="admin123"  autocomplete="off" placeholder="Ingresa la contraseña">
                                  <span class="invalid-feedback" id="password_alert" role="alert" style="font-size: 100%;"></span>
                             </div>
                             <div class="row">
