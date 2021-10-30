@@ -13,7 +13,7 @@
     @stack('styles')
   </head>
 
-<body>
+<body class="vertical-layout vertical-menu-modern  navbar-floating footer-static  " data-open="click" data-menu="vertical-menu-modern" data-col="">
   <div id="app">
     <div class="main-wrapper main-wrapper-1">
       <div class="navbar-bg"></div>
@@ -22,15 +22,34 @@
 
    
     <!--Page Content Here -->
-    <div class="main-content">
-      <section class="section">
-           @yield('content')
-      </section>
-    </div>
+    <div class="app-content content ">
+           <!-- BEGIN: Header-->
+            <div class="content-overlay"></div>
+             <div class="header-navbar-shadow"></div>
+               <div class="content-wrapper container-xxl p-0">
+                 <div class="content-body">
+            
+                 <!-- Dashboard Ecommerce Starts -->
+                 <section id="dashboard-ecommerce">
+                    @yield('content')
+                </section>
+              </div>
+           </div>
+         </div>
+       </div>
     </div>
     <!-- REQUIRED JS SCRIPTS -->
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/some.js') }}"></script>
+    <script >
+    $(window).on('load', function() {
+      if (feather) {
+        feather.replace({
+          width: 14, height: 14
+        });
+      }
+    })
+  </script>
     @stack('scripts')
 
    </div>

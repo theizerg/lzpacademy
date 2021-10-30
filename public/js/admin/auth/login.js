@@ -33,7 +33,6 @@ $(document).ready(function(){
     	        data: data,
               success: function (response) {
                  if(response === 'authenticated.true'){
-                  console.log(response);
                    $('#ajax-icon').removeClass('fa fa-spin fa-refresh').addClass('fa fa-sign-in');
                    toastr.success('Usuario logueado exitosamente');
                    $(location).attr('href', $('#main-form #_redirect').val());

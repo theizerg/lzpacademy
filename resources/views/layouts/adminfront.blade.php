@@ -13,19 +13,26 @@
     @stack('styles')
   </head>
 
-  <body class="gray darken-4 min-vh-100 d-flex flex-row align-items-center">
-    <div id="app">
-    <!--Page Content Here -->
-    <section class="section">
+  <body class="vertical-layout vertical-menu-modern blank-page navbar-floating footer-static  " data-open="click" data-menu="vertical-menu-modern" data-col="blank-page">
+   
+        @yield('content')
+
     
-    @yield('content')
-    </section>
     <!-- REQUIRED JS SCRIPTS -->
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/some.js') }}"></script>
+    <script type="text/javascript">
+    $(window).on('load', function() {
+      if (feather) {
+        feather.replace({
+          width: 14, height: 14
+        });
+      }
+    })
+  </script>
     @stack('scripts')
 
-   </div>
+   
   </body>
 
 </html>
