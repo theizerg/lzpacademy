@@ -10,31 +10,31 @@
     <title>fox Landing Page | HTML Theme</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="{{ asset('assets/img/favicon.png') }}">
+    <link rel="icon" href="assets/img/favicon.png">
     <!-- Bootstrap CSS -->
-    <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Slick Slider -->
-    <link href="{{ asset('assets/css/slick.css') }}" rel="stylesheet">
-    <link href="{{ asset('assets/css/slick-theme.css') }}" rel="stylesheet">
+    <link href="assets/css/slick.css" rel="stylesheet">
+    <link href="assets/css/slick-theme.css') }}" rel="stylesheet">
 
     <!-- AOS CSS -->
-    <link href="{{ asset('assets/css/aos.css') }}" rel="stylesheet">
+    <link href="assets/css/aos.css" rel="stylesheet">
 
     <!-- Lity CSS -->
-    <link href="{{ asset('assets/css/lity.min.css') }}" rel="stylesheet">
+    <link href="assets/css/lity.min.css" rel="stylesheet">
 
     <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="{{ asset('assets/css/fontawesome-all.min.css') }}">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
 
     <!-- linearicons CSS -->
-    <link rel="stylesheet" href="{{ asset('assets/css/linearicons.css') }}">
+    <link rel="stylesheet" href="assets/css/linearicons.css">
 
     <!-- Our Min CSS -->
-    <link href="{{ asset ('assets/css/main.css') }}" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
 
     <!-- Themes * You can select your color from color-1 , color-2 , color-3 , color-4 , ..etc * -->
-    <link id="themes_colors" href="{{ asset ('assets/css/color-1.css') }}" rel="stylesheet">
+    <link id="themes_colors" href=" assets/css/color-1.css" rel="stylesheet">
     <!-- <link href="assets/css/color-1.css" rel="stylesheet"> -->
     <!-- <link href="assets/css/color-2.css" rel="stylesheet"> -->
     <!-- <link href="assets/css/color-3.css" rel="stylesheet"> -->
@@ -63,8 +63,8 @@
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
 
-     <link rel="stylesheet" href="{{ asset('css/system.css') }}">
-     <link rel="stylesheet" href="{{asset('css/some.css')}}">
+     <link rel="stylesheet" href="css/system.css">
+     <link rel="stylesheet" href="css/some.css">
 </head>
 
 <body data-spy="scroll" data-target="#main_menu" data-offset="70">
