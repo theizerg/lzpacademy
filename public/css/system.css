@@ -26,6 +26,10 @@
   background:linear-gradient(to right,#2B89D2,#0C59A7,#085E90);
 }
 
+.gray-gradient-dark{
+  background:linear-gradient(to right,#2B89D2,#0C59A7,#085E90);
+}
+
 .red-gradient-dark{
   background:linear-gradient(to right,#f31919,#b90606,#6b0101);
 }

@@ -1,13 +1,13 @@
 @extends('layouts.admin')
-
+@section('title','HOME')
 @section('content')
 <div class="row match-height">
     <!-- Medal Card -->
     <div class="col-xl-4 col-md-6 col-12">
       <div class="card card-congratulation-medal">
         <div class="card-body">
-          <h6>Bienvenid@ 🎉 {{ \Auth::user()->display_name }}</h6>
-          <p class="card-text font-small-3">Gracias por preferirnos</p>
+          <h4>Bienvenido 🎉 {{ \Auth::user()->name }}</h4>
+          <p class="card-text font-small-3">¡Gracias por preferirnos!</p>
           <h3 class="mb-75 mt-2 pt-50">
             <a href="#">{{ App\User::count() }}</a>
           </h3>
@@ -83,6 +83,7 @@
         </div>
       </div>
     </div>
+    
 </div>
 
 @endsection

@@ -3,7 +3,7 @@
 @section('content')
 <div class="container-fluid p-0">
      <div class="row no-gutters justify-content-center">
-        <div class="col-sm-8   align-self-center order-2 order-sm-1">
+        <div class="col-sm-6 align-self-center order-2 order-sm-1">
                 <form id="main-form" class="">
                 <input type="hidden" id="_url" value="{{ url('login') }}">
                 <input type="hidden" id="_redirect" value="{{ url('/') }}">
@@ -19,19 +19,19 @@
                             <div class="input-group mb-1">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text">
-                                         <i class="fas fa-user"></i>
+                                         <i class="mdi mdi-face"></i>
                                     </span>
                                 </div>
                                 <input class="form-control {{ $errors->has('username') ? ' is-invalid' : '' }}" name="username" type="text" placeholder="Usuario" id="username"   autofocus autocomplete="off">
                                <span class="invalid-feedback" id="username_alert" role="alert" style="font-size: 100%;"></span>
                             </div>
-                            <div class="input-group input-group-merge form-password-toggle ">
+                            <div class="input-group input-group-merge form-password-toggle">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text">
                                        <i class="mdi mdi-lock"></i>
                                     </span>
                                 </div>
-                                <input type="password" id="password" class="form-control {{ $errors->has('password') ? ' is-invalid' : '' }}" name="password"  autocomplete="off" placeholder="Ingresa la contraseña">
+                                <input type="password" id="password" class="form-control {{ $errors->has('password') ? ' is-invalid' : '' }}" name="password"  autocomplete="off" placeholder="Contraseña">
                                   <span class="input-group-text cursor-pointer"><i data-feather="eye"></i></span>
                             </div><br>
                             <div class="row">
