@@ -6,7 +6,7 @@
         <div class="col-sm-6 align-self-center order-2 order-sm-1">
                 <form id="main-form" class="">
                 <input type="hidden" id="_url" value="{{ url('login') }}">
-                <input type="hidden" id="_redirect" value="{{ url('/') }}">
+                <input type="hidden" id="_redirect" value="{{ url('/home') }}">
                 <input type="hidden" id="_token" value="{{ csrf_token() }}">   <br><br> <br><br>
                   <div class="card-group">
                     <div class="card card-primary p-4">
