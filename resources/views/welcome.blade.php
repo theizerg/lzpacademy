@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('title','HOME')
 @section('content')
-
+ 
        <!-- Start Boxes -->
     <section id="boxes" class="boxes padding-100">
         <div class="container">
@@ -42,59 +42,7 @@
             </div>
         </div>
     </section>
-    <!-- End Boxes -->
- 	
- 	@include('partials.nosotros')
-    @include('partials.servicios')
-    <!-- Start Screenshots -->
-    <section id="screenshots" class="screenshots padding-100 background-fullwidth background-fixed"
-        style="background-image: url({{ asset('assets/img/gray-bg.jpg') }});">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="text-center col-12 section-title" data-aos="fade-zoom-in">
-                    <h3>Asombrosas
-                        <span  style="color:#f57f17;"> Imágenes</span>
-                    </h3>
-                    <div class="space-25"></div>
-                    <p>Cada experiencia, cada estudiante funge una parte importante para nuestro proyecto,<b>¡Avancemos!</b></p>
-                    <div class="space-50"></div>
-                </div>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-12">
-                    <div class="screenshots-slider" data-aos="fade-up">
 
-
-                        <div class="item text-center">
-                            <img src="{{ asset('assets/img/mobile-5.png') }}" class="img-fluid d-block mx-auto" alt="">
-                        </div>
-                        <div class="item text-center">
-                            <img src="{{ asset('assets/img/mobile-5.png') }}" class="img-fluid d-block mx-auto" alt="">
-                        </div>
-                        <div class="item text-center">
-                            <img src="{{ asset('assets/img/mobile-5.png') }}" class="img-fluid d-block mx-auto" alt="">
-                        </div>
-                        <div class="item text-center">
-                            <img src="{{ asset('assets/img/mobile-5.png') }}" class="img-fluid d-block mx-auto" alt="">
-                        </div>
-                        <div class="item text-center">
-                            <img src="{{ asset('assets/img/mobile-5.png') }}" class="img-fluid d-block mx-auto" alt="">
-                        </div>
-                        <div class="item text-center">
-                            <img src="{{ asset('assets/img/mobile-5.png') }}" class="img-fluid d-block mx-auto" alt="">
-                        </div>
-                        <div class="item text-center">
-                            <img src="{{ asset('assets/img/mobile-5.png') }}" class="img-fluid d-block mx-auto" alt="">
-                        </div>
-                        <div class="item text-center">
-                            <img src="{{ asset('assets/img/mobile-5.png') }}" class="img-fluid d-block mx-auto" alt="">
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <!-- End Screenshots -->
      <!-- Start Clients Testimonial -->
     <section id="testimonial" class="clients-testimonial padding-100">
@@ -111,7 +59,7 @@
                 <div class="col-12">
                     <div class="testimonial-slider" data-aos="fade-up">
                         <div class="item">
-                            <div class="client-testimonial">
+                            <div class="client-testimonial orange darken-4 ">
                                 <p>
                                    Complacido totalmente, excelentes clases, excelentes maestros, excelente servicio de clases musicales.
                                 </p>
@@ -121,13 +69,13 @@
                                     <img src="{{ asset('assets/img/client.jpg') }}" class="img-fluid" alt="">
                                 </figure>
                                 <div>
-                                    <h3>Theizer Gonzalez</h3>
+                                    <h3 style="color:#e65100">Theizer Gonzalez</h3>
                                     <h6>Programador</h6>
                                 </div>
                             </div>
                         </div>
                         <div class="item">
-                            <div class="client-testimonial">
+                            <div class="client-testimonial orange darken-4">
                                 <p>
                                     Gracias a Dios por esta maravilloso emprendimiento, he adquirido el conocimiento pleno a nivel musical, gracias por el esfuerzo amados hermanos.
                                 </p>
@@ -137,13 +85,13 @@
                                     <img src="{{ asset('assets/img/client.jpg') }}" class="img-fluid" alt="">
                                 </figure>
                                 <div>
-                                    <h3>Carlos Gonzalez</h3>
+                                    <h3 style="color:#e65100">Carlos Gonzalez</h3>
                                     <h6>Estudiante de ingeniería</h6>
                                 </div>
                             </div>
                         </div>
                         <div class="item">
-                            <div class="client-testimonial">
+                            <div class="client-testimonial orange darken-4">
                                 <p>
                                    En el aprendizaje musical ha sido de manera maravillosa para mí y para mi familia, con cada uno de los profesores de esta maravillosa academia el conocimiento ha sido pleno y completo.
                                 </p>
@@ -153,13 +101,13 @@
                                     <img src="{{ asset('assets/img/client.jpg') }}" class="img-fluid" alt="">
                                 </figure>
                                 <div>
-                                    <h3>Marcos Pérez</h3>
+                                    <h3 style="color:#e65100">Marcos Pérez</h3>
                                     <h6>Locutor</h6>
                                 </div>
                             </div>
                         </div>
                         <div class="item">
-                            <div class="client-testimonial">
+                            <div class="client-testimonial orange darken-4">
                                 <p>
                                     A Dios gracias y de igual manera para nuestros hermanos por tan grande iniciativa por todo este maraviloso proyecto, sigan adelante, dando lo mejor para la gloria del Señor.
                                 </p>
@@ -169,13 +117,13 @@
                                     <img src="{{ asset('assets/img/client.jpg') }}" class="img-fluid" alt="">
                                 </figure>
                                 <div>
-                                    <h3>Marcos Placencia</h3>
+                                    <h3 style="color:#e65100">Marcos Placencia</h3>
                                     <h6>Ingeniero civil</h6>
                                 </div>
                             </div>
                         </div>
                         <div class="item">
-                            <div class="client-testimonial">
+                            <div class="client-testimonial orange darken-4">
                                 <p>
                                    Cada clase es un esfuerzo que sin duda alguna nuestros hermanos han depositado en cada uno de nosotros, deseamos seguir adelante y seguir aprendiendo.
                                 </p>
@@ -185,13 +133,13 @@
                                     <img src="{{ asset('assets/img/client.jpg') }}" class="img-fluid" alt="">
                                 </figure>
                                 <div>
-                                    <h3>Martha Gonzalez</h3>
+                                    <h3 style="color:#e65100">Martha Gonzalez</h3>
                                     <h6>Asistente de medicina general</h6>
                                 </div>
                             </div>
                         </div>
                         <div class="item">
-                            <div class="client-testimonial">
+                            <div class="client-testimonial orange darken-4">
                                 <p>
                                     Excelente experiencia, excelente servicio de clases, excelente coordinación para cada una de las clases, a Dios gracias y para nuestros hermanos de igual manera deseamos las bendiciones del Altísimo para este maravilloso proyecto.
                                 </p>
@@ -201,7 +149,7 @@
                                     <img src="{{ asset('assets/img/client.jpg') }}" class="img-fluid" alt="">
                                 </figure>
                                 <div>
-                                    <h3>Mohamed Kamel</h3>
+                                    <h3 style="color:#e65100">Mohamed Kamel</h3>
                                     <h6>CEO - Company Name</h6>
                                 </div>
                             </div>
@@ -213,12 +161,12 @@
         </div>
     </section>
     <!-- End Clients Testimonial  -->
- 	 <!-- Start Fun Facts -->
-    <section id="facts" class="fun-facts padding-100 background-withcolor yellow darken-4">
+     <!-- Start Fun Facts -->
+    <section id="facts" class="fun-facts padding-100 background-withcolor 43">
         <div class="container">
             <div class="row">
                 <div class="text-center col-12 section-title" data-aos="fade-zoom-in">
-                    <h3>Estadística de 
+                    <h3 class="white-text">Estadística de 
                         <span class="white-text"> Uso</span>
                     </h3>
                     <div class="space-25"></div>
@@ -261,12 +209,12 @@
     <!-- End Fun Facts  -->
 
  <!-- Start App Price -->
-    <section id="prices" class="prices padding-100">
+    <section id="nuestros_cursos" class="prices padding-100">
         <div class="container">
             <div class="row">
                 <div class="text-center col-12 section-title" data-aos="fade-zoom-in">
                     <h3>Nuestros
-                        <span style="color: #F97400"> Precios</span>
+                        <span style="color: #F97400"> Cursos</span>
                     </h3>
                     <div class="space-25"></div>
                     <p >Pensamos en la comodidad de tu aprendizaje, es por ello que ajustamos nuestras clases para que puedas aprender de manera fácil, rápida, sencilla y económica.</p>
@@ -274,75 +222,82 @@
                 </div>
                 <div class="col-lg-4 col-md-4 col-12">
                     <div class="price-table text-center" data-aos="fade-right" data-aos-delay="400">
-                        <div class="top background-fullwidth" style="background-image: url(assets/img/gray-bg.jpg);">
-                            <h4 style="color: #F97400">CUR</h4>
+                        <div class="top background-fullwidth" style="background-image: url({{ asset('assets/img/gray-bg.jpg') }});">
+                            <h4 style="color: #F97400">Canto</h4>
                             <h3 style="color: #F97400">
-                                <span>$</span>30
+                                <i class="mdi mdi-microphone"></i>
                             </h3>
-                            <h5 style="color: #F97400">Per year</h5>
+                            
                         </div>
-                        <div class="bottom" style="background: #F97400">
-                            <ul>
-                                <li>100 MB Disk Space</li>
-                                <li>2 Subdomains</li>
-                                <li>5 Email Accounts</li>
-                                <li>Webmail Support</li>
-                                <li>Customer Support 24/7</li>
-                            </ul>
-                           
-                        </div>
+                       
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-12">
-                    <div class="price-table text-center" data-aos="fade-up" data-aos-delay="800">
-                        <div class="top background-fullwidth" style="background-image: url(assets/img/gray-bg.jpg);">
-                            <span class="offer">Promoción</span>
-                            <h4 style="color: #F97400">Business</h4>
+                    <div class="price-table text-center" data-aos="fade-right" data-aos-delay="800">
+                        <div class="top background-fullwidth" style="background-image: url({{ asset('assets/img/gray-bg.jpg') }});">
+                            <h4 style="color: #F97400">Trompeta</h4>
                             <h3 style="color: #F97400">
-                                <span>$</span>50
+                               <i class="mdi mdi-trumpet"></i>
                             </h3>
-                            <h5 style="color: #F97400">Per year</h5>
+                            
                         </div>
-                        <div class="bottom" style="background: #F97400">
-                            <ul>
-                                <li>100 MB Disk Space</li>
-                                <li>2 Subdomains</li>
-                                <li>5 Email Accounts</li>
-                                <li>Webmail Support</li>
-                                <li>Customer Support 24/7</li>
-                            </ul>
-                           
-                        </div>
+                       
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-12">
-                    <div class="price-table text-center" data-aos="fade-left" data-aos-delay="1200">
-                        <div class="top background-fullwidth" style="background-image: url(assets/img/gray-bg.jpg);">
-                            <h4 style="color: #F97400">Enterprise</h4>
+                    <div class="price-table text-center" data-aos="fade-right" data-aos-delay="1200">
+                        <div class="top background-fullwidth" style="background-image: url({{ asset('assets/img/gray-bg.jpg') }});">
+                            <h4 style="color: #F97400">Bajo</h4>
                             <h3 style="color: #F97400">
-                                <span>$</span>80
+                                <i class="mdi mdi-guitar-electric"></i>
                             </h3>
-                            <h5 style="color: #F97400">Per year</h5>
-                        </div>
-                        <div class="bottom" style="background: #F97400">
-                            <ul>
-                                <li>100 MB Disk Space</li>
-                                <li>2 Subdomains</li>
-                                <li>5 Email Accounts</li>
-                                <li>Webmail Support</li>
-                                <li>Customer Support 24/7</li>
-                            </ul>
                            
                         </div>
+                       
                     </div>
                 </div>
+                 <div class="col-lg-4 col-md-4 col-12">
+                    <div class="price-table text-center" data-aos="fade-right" data-aos-delay="1600">
+                        <div class="top background-fullwidth" style="background-image: url({{ asset('assets/img/gray-bg.jpg') }});">
+                            <h4 style="color: #F97400">Batería</h4>
+                            <h3 style="color: #F97400">
+                               <img src="{{ asset('images/icon/icons8-drum-set-96.png') }}" width="120" alt="">
+                            </h3>
+                           
+                        </div>
+                       
+                    </div>
+                </div>
+                 <div class="col-lg-4 col-md-4 col-12">
+                    <div class="price-table text-center" data-aos="fade-left" data-aos-delay="2000">
+                        <div class="top background-fullwidth" style="background-image: url({{ asset('assets/img/gray-bg.jpg') }});">
+                            <h4 style="color: #F97400">Violonchelo</h4>
+                            <h3 style="color: #F97400">
+                                 <img src="{{ asset('images/icon/icons8-violonchelo-96.png') }}" width="120" alt="">
+                            </h3>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="price-table text-center" data-aos="fade-left" data-aos-delay="2400">
+                        <div class="top background-fullwidth" style="background-image: url({{ asset('assets/img/gray-bg.jpg') }});">
+                            <h4 style="color: #F97400">Teclado</h4>
+                            <h3 style="color: #000000">
+                              <i class="mdi mdi-piano" style="font-size: 100px;"></i>
+                            </h3>
+                        </div>
+                        
+                    </div>
+                </div>
+                
             </div>
         </div>
     </section>
     <!-- End App Price  -->
 <!-- Start Our Team -->
     <section id="team" class="our-team padding-100 background-fullwidth background-fixed"
-        style="background-image: url(assets/img/gray-bg.jpg);">
+        style="background-image: url({{ asset('assets/img/gray-bg.jpg') }});">
         <div class="container">
             <div class="row">
                 <div class="text-center col-12 section-title" data-aos="fade-zoom-in">
@@ -559,12 +514,12 @@
     </section>
     <!-- End Our Team -->
      <!-- Start FAQ -->
-    <section id="faq" class="faq padding-100">
+    <section id="preguntas_frecuentes" class="faq padding-100">
         <div class="container">
             <div class="row">
                 <div class="text-center col-12 section-title" data-aos="fade-zoom-in">
-                    <h3>Common
-                        <span> FAQ</span>
+                    <h3>Preguntas
+                        <span  style="color:#f57f17;"> Frecuentes</span>
                     </h3>
                     <div class="space-25"></div>
                     <p>Lorem ipsum madolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor coli
@@ -659,37 +614,7 @@
     <!-- End FAQ  -->
 
 
-
-    <!-- Start Download App -->
-    <section id="download_app" class="download-app padding-100 pb-0 background-fullwidth background-fixed"
-        style="background-image: url(assets/img/gray-bg.jpg);">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 col-12" data-aos="fade-right">
-                    <h2>Download our free trial App</h2>
-                    <p>Lorem ipsum madolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor coli
-                        incidit
-                        labore
-                        lorem
-                    </p>
-                    <a href="#" class="btn btn-primary shadow btn-colord btn-theme" tabindex="0">
-                        <i class="fab fa-apple"></i>
-                        <span>Git it on
-                            <br>APP STORE</span>
-                    </a>
-                    <a href="#" class="btn btn-primary shadow  btn-colord btn-theme" tabindex="0">
-                        <i class="fab fa-google-play"></i>
-                        <span>Git it on
-                            <br>GOOGLE PLAY</span>
-                    </a>
-                </div>
-                <div class="col-lg-6 col-12" data-aos="fade-left" data-aos-delay="400">
-                    <img src="assets/img/mobile-6.png" class="img-fluid d-block mx-auto" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Download App -->
+    
 
     <!-- Start  Git in touch -->
     <section id="git_in_touch" class="git-in-touch padding-100">

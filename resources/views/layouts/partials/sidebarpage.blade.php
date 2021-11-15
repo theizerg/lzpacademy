@@ -16,20 +16,19 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link anchor" href="#about">¿Quiénes somos?</a>
+                            <a class="nav-link anchor" href="#nuestros_cursos">Nuestros cursos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link anchor" href="#main_features">Nuestro servicio</a>
+                            <a class="nav-link anchor" href="#team">Nuestro equipo</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link anchor" href="#screenshots">Screenshots</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link anchor" href="#team">Team</a>
+                            <a class="nav-link anchor" href="#preguntas_frecuentes">Preguntas Frecuentes</a>
                         </li>
                         
+                        
+                        
                         <li class="nav-item">
-                            <a class="nav-link anchor" href="#git_in_touch">Contact</a>
+                            <a class="nav-link anchor" href="#git_in_touch">Contáctanos</a>
                         </li>
                     </ul>
                 </div>

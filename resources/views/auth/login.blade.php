@@ -1,17 +1,18 @@
 @extends('layouts.adminfront')
-@section('title','LOGIN')
+
 @section('content')
-<div class="container-fluid p-0">
-     <div class="row no-gutters justify-content-center">
-        <div class="col-sm-6 align-self-center order-2 order-sm-1">
-                <form id="main-form" class="">
-                <input type="hidden" id="_url" value="{{ url('login') }}">
-                <input type="hidden" id="_redirect" value="{{ url('/home') }}">
-                <input type="hidden" id="_token" value="{{ csrf_token() }}">   <br><br> <br><br>
-                  <div class="card-group">
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">{{ __('Login') }}</div>
+
+                <div class="card-group">
                     <div class="card card-primary p-4">
                         
                         <div class="card-body">
+                             <form method="POST" action="{{ route('login') }}">
+                        @csrf
                              <h1 class="black-text">Iniciar Sesión</h1><!-- <p class="text-muted">ADMIN<br>
                             Email : admin@macbrame.com<br> Pass : macbrame</p> -->
                         <p class="text-muted">Ingresa tu usuario y contraseña</p>
@@ -22,8 +23,12 @@
                                          <i class="mdi mdi-face"></i>
                                     </span>
                                 </div>
-                                <input class="form-control {{ $errors->has('username') ? ' is-invalid' : '' }}" name="username" type="text" placeholder="Usuario" id="username"   autofocus autocomplete="off">
-                               <span class="invalid-feedback" id="username_alert" role="alert" style="font-size: 100%;"></span>
+                                <input class="form-control {{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" type="text" placeholder="Usuario" id="email"   autofocus autocomplete="off">
+                                @error('email')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
                             </div>
                             <div class="input-group input-group-merge form-password-toggle">
                                 <div class="input-group-prepend">
@@ -43,7 +48,7 @@
                               
                             </div>
                         </div>
-                    </div>
+                    </form>                    </div>
                     <div class="card card card-primary p-4 text-white py-5 d-md-down-none" style="width:44%;background:#FFFFFF !important">
                         <div class="card-body text-center">
                             <div><br>
@@ -53,11 +58,8 @@
                         </div>
                     </div>
                 </div>
-            </form>
+            </div>
         </div>
     </div>
 </div>
 @endsection
-@push('scripts')
-    <script src="{{ asset('js/admin/auth/login.js') }}"></script>
-@endpush

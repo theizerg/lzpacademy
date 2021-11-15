@@ -19,13 +19,4 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::middleware(['auth',])->group(function () {
-
-#############################################################################################
-##################  Administación del sistema   #############################################
-#############################################################################################
-   Route::get('/home', 'HomeController@index')->name('home');
-
-
-
-});
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

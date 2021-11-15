@@ -4,38 +4,37 @@
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
     <meta charset="utf-8">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>fox Landing Page | HTML Theme</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="assets/img/favicon.png">
+    <link rel="icon" href="{{ asset('assets/img/favicon.png') }}">
     <!-- Bootstrap CSS -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
 
     <!-- Slick Slider -->
-    <link href="assets/css/slick.css" rel="stylesheet">
-    <link href="assets/css/slick-theme.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/slick.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/slick-theme.css') }}" rel="stylesheet">
 
     <!-- AOS CSS -->
-    <link href="assets/css/aos.css" rel="stylesheet">
+    <link href="{{ asset('assets/css/aos.css') }}" rel="stylesheet">
 
     <!-- Lity CSS -->
-    <link href="assets/css/lity.min.css" rel="stylesheet">
+    <link href="{{ asset('assets/css/lity.min.css') }}" rel="stylesheet">
 
     <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="{{ asset('assets/css/fontawesome-all.min.css') }}">
 
     <!-- linearicons CSS -->
-    <link rel="stylesheet" href="assets/css/linearicons.css">
+    <link rel="stylesheet" href="{{ asset('assets/css/linearicons.css') }}">
 
     <!-- Our Min CSS -->
-    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="{{ asset('assets/css/main.css') }}" rel="stylesheet">
 
     <!-- Themes * You can select your color from color-1 , color-2 , color-3 , color-4 , ..etc * -->
-    <link id="themes_colors" href=" assets/css/color-1.css" rel="stylesheet">
+    <link id="themes_colors" href="{{ asset('assets/css/color-1.css') }}" rel="stylesheet">
     <!-- <link href="assets/css/color-1.css" rel="stylesheet"> -->
     <!-- <link href="assets/css/color-2.css" rel="stylesheet"> -->
     <!-- <link href="assets/css/color-3.css" rel="stylesheet"> -->
@@ -64,8 +63,8 @@
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
 
-     <link rel="stylesheet" href="css/system.css">
-     <link rel="stylesheet" href="css/some.css">
+     <link rel="stylesheet" href="{{ asset('css/system.css') }}">
+     <link rel="stylesheet" href="{{asset('css/some.css')}}">
 </head>
 
 <body data-spy="scroll" data-target="#main_menu" data-offset="70">
@@ -217,30 +216,30 @@
    
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="{{ asset('assets/js/jquery-3.3.1.min.js') }}"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <!-- Bootstrap JS -->
-    <script src="assets/js/popper.min.js"></script>
+    <script src="{{ asset('assets/js/popper.min.js') }}"></script>
     <script src="assets/js/bootstrap.min.js"></script>
 
     <!-- svg -->
-    <script src="../cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+    <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
 
     <!-- Slick Slider JS -->
-    <script src="assets/js/slick.min.js"></script>
+    <script src="{{ asset('assets/js/slick.min.js') }}"></script>
 
     <!-- Counterup JS -->
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/jquery.counterup.js"></script>
+    <script src="{{ asset('assets/js/waypoints.min.js') }}"></script>
+    <script src="{{ asset('assets/js/jquery.counterup.js') }}"></script>
 
     <!-- AOS JS -->
-    <script src="assets/js/aos.js"></script>
+    <script src="{{ asset('assets/js/aos.js') }}"></script>
 
     <!-- lity JS -->
-    <script src="assets/js/lity.min.js"></script>
+    <script src="{{ asset('assets/js/lity.min.js') }}"></script>
 
     <!-- Our Main JS -->
-    <script src="assets/js/main.js"></script>
+    <script src="{{ asset('assets/js/main.js') }}"></script>
 
     @stack('scripts')
 
