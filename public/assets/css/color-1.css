@@ -51,7 +51,7 @@ aside.sidebar .tags ul li a,
 .faq .accordion .card .card-header h5 .btn.collapsed,
 nav .pagination .page-item.active .page-link,
 aside.sidebar .gray-panel h3:after {
-    background: #00cdcd;
+    background: #e65100;
 }
 
 @media (max-width: 992px) {
@@ -93,7 +93,7 @@ aside.sidebar .search .form-group .form-control,
 }
 
 .clients-testimonial .testimonial-slider .item .client-testimonial:after {
-    border-top-color: #00cdcd;
+    border-top-color: #e65100;
 }
 
 .features-circle svg circle {
