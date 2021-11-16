@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/inicio', function () {
+Route::get('/', function () {
     return view('welcome');
 });
 
@@ -24,7 +24,7 @@ Route::middleware(['auth',])->group(function () {
 #############################################################################################
 ##################  Administación del sistema   #############################################
 #############################################################################################
-Route::get('/', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('home');
 
 #############################################################################################
 ##################  Administación de Usuarios   #############################################
