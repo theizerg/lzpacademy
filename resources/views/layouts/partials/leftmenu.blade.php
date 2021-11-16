@@ -3,7 +3,7 @@
         <div class="header-navbar navbar-expand-sm navbar navbar-horizontal floating-nav navbar-light navbar-shadow menu-border container-xxl" role="navigation" data-menu="menu-wrapper" data-menu-type="floating-nav">
             <div class="navbar-header">
                 <ul class="nav navbar-nav flex-row">
-                    <li class="nav-item mr-auto"><a class="navbar-brand" href="{{ url('/') }}"><span class="brand-logo">
+                    <li class="nav-item mr-auto"><a class="navbar-brand" href="{{ url('/home') }}"><span class="brand-logo">
                                 <svg viewbox="0 0 139 95" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="24">
                                     <defs>
                                         <lineargradient id="linearGradient-1" x1="100%" y1="10.5120544%" x2="50%" y2="89.4879456%">
@@ -37,7 +37,7 @@
             <div class="navbar-container main-menu-content" data-menu="menu-container">
                 <!-- include ../../../includes/mixins-->
                 <ul class="nav navbar-nav" id="main-menu-navigation" data-menu="menu-navigation">
-                    <li class="dropdown nav-item" data-menu="dropdown"><a class="dropdown-toggle nav-link d-flex align-items-center" href="{{ url('/') }}" data-toggle="dropdown"><i data-feather="lock"></i><span data-i18n="Dashboards">Seguridad</span></a>
+                    <li class="dropdown nav-item" data-menu="dropdown"><a class="dropdown-toggle nav-link d-flex align-items-center" href="{{ url('//home') }}" data-toggle="dropdown"><i data-feather="lock"></i><span data-i18n="Dashboards">Seguridad</span></a>
                         <ul class="dropdown-menu">
                             <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="{{ url('/usuario') }}" data-toggle="dropdown" data-i18n="Analytics"><i data-feather="user"></i><span data-i18n="Analytics">Usuarios</span></a>
                             </li>
@@ -49,9 +49,9 @@
                     </li>
                     <li class="dropdown nav-item" data-menu="dropdown"><a class="dropdown-toggle nav-link d-flex align-items-center" href="#" data-toggle="dropdown"><i data-feather="package"></i><span data-i18n="Administración">Administración</span></a>
                         <ul class="dropdown-menu">
-                            <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="{{ url('/academia') }}" data-toggle="dropdown" data-i18n="Academia"><i data-feather="mail"></i><span data-i18n="Academia">Academia</span></a>
+                            <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="{{ url('/academia') }}" data-toggle="dropdown" data-i18n="Academia"><i class="fas fa-building"></i><span data-i18n="Academia">Academia</span></a>
                             </li>
-                            <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="app-chat.html" data-toggle="dropdown" data-i18n="Chat"><i data-feather="message-square"></i><span data-i18n="Chat">Chat</span></a>
+                            <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="{{ ('formasdepago') }}" data-toggle="dropdown" data-i18n="Chat"><i class="fas fa-dollar-sign"></i><span data-i18n="Chat">Métodos de pago</span></a>
                             </li>
                             <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="app-todo.html" data-toggle="dropdown" data-i18n="Todo"><i data-feather="check-square"></i><span data-i18n="Todo">Todo</span></a>
                             </li>

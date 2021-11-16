@@ -58,5 +58,13 @@ Route::resource('permission',   'PermissionController');
 Route::resource('academia',   'AcademiaController');
 
 
+#############################################################################################
+##################  Administación de Formas de pago  ########################################
+#############################################################################################
+
+Route::resource('formasdepago',   'FormaDePagoController');
+
+
+
 
 });

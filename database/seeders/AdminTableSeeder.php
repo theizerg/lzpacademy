@@ -5,6 +5,8 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use App\Models\User;
 use App\Models\Academia;
+use App\Models\FormaDePago;
+
 
 class AdminTableSeeder extends Seeder
 {
@@ -38,6 +40,24 @@ class AdminTableSeeder extends Seeder
         $academia->email      = 'correo@mail.com';
         $academia->logo       = 'logo-principal.png';
         $academia->save();
+
+        $pago =new FormaDePago();
+        $pago->name       = 'Efectivo (USD)';
+        $pago->status     = 1;
+        $pago->save();
+
+
+        $pago =new FormaDePago();
+        $pago->name       = 'Paypal (USD)';
+        $pago->status     = 1;
+        $pago->save();
+
+
+
+
+
+
+
 
         //$academia->assignRole('Super Administrador');
     }
