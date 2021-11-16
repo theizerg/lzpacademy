@@ -70,6 +70,12 @@ Route::resource('formasdepago',   'FormaDePagoController');
 
 Route::resource('curso',   'CursoController');
 
+#############################################################################################
+##################  Administación de Nacionalidades #########################################
+#############################################################################################
+
+Route::resource('nacionalidades',   'NacionalidadController');
+
 
 
 

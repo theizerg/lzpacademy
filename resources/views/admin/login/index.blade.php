@@ -15,7 +15,7 @@
        <!-- /.card-header -->
           <div class="card-body table-responsive">
              <br>
-          <table id="example" class="table table-striped " style="width:100%">
+          <table id="tableExport" class="table table-striped " style="width:100%">
               <thead>
               <tr>
               <th>#</th>

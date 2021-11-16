@@ -4,20 +4,20 @@
 @section('content')
 <main class="content">
   <button type="button" class="btn blue darken-4 text-white btn-primary float-left btn-md"  data-toggle="modal" data-target="#CrearUsuario"><i class="fas fa-plus-square"  data-bs-toggle="tooltip" data-bs-placement="top" title="Crear nuevo Usuario" data-container="body" data-animation="true"></i>
-        Nuevo curso
+        Nueva nacionalidad
   </button><br><br><br>
   <div class="row">
     <div class="col-lg-12">
       <div class="card card-line-primary">
             <div class="card-header">
-              <h4 class="card-title">Listado de los cursos a realizar</h4>
+              <h4 class="card-title">Listado de las nacionalidades permitidas en el curso</h4>
             </div>
             <div class="card-body">
               <div class="table-responsive">
                 <table id="tableExport" class="display table table-striped table-hover" >
                   <thead>
                     <tr>
-                     
+                     <th>#</th>
                       <th>Nombre</th>
                       <th>Estado</th>
                       <th>Creado</th>
@@ -27,6 +27,7 @@
                   <tbody>
                     @foreach ($academias as $element)
                       <tr>
+                        <td>{{ $element->id }}</td>
                         <td>{{ $element->name }}</td>
                         @if ($element->status == 1)
                           <td>
@@ -48,7 +49,7 @@
                       </td>
                        
                       </tr>
-                       @include('admin.curso.partials.modal.edit')
+                       @include('admin.nacionalidad.partials.modal.edit')
                     @endforeach
                   </tbody>
                 </table>
@@ -57,7 +58,7 @@
         </div>
       </div>
   </div>
-  @include('admin.curso.partials.modal.create')
+  @include('admin.nacionalidad.partials.modal.create')
 
 </main>
 @endsection

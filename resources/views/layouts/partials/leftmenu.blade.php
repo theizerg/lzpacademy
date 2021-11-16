@@ -55,7 +55,7 @@
                             </li>
                             <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="{{ url('curso') }}" data-toggle="dropdown" data-i18n="Cursos"><i class="fas fa-graduation-cap"></i><span data-i18n="Cursos"> Cursos</span></a>
                             </li>
-                            <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="app-calendar.html" data-toggle="dropdown" data-i18n="Calendar"><i data-feather="calendar"></i><span data-i18n="Calendar">Calendar</span></a>
+                            <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="{{ url('nacionalidades') }}" data-toggle="dropdown" data-i18n="Calendar"><i data-feather="calendar"></i><span data-i18n="Calendar">Nacionalidades</span></a>
                             </li>
                             <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="app-kanban.html" data-toggle="dropdown" data-i18n="Kanban"><i data-feather="grid"></i><span data-i18n="Kanban">Kanban</span></a>
                             </li>

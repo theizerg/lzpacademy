@@ -42,6 +42,7 @@
     <!-- REQUIRED JS SCRIPTS -->
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/some.js') }}"></script>
+    <script src="{{ asset('js/system.js') }}"></script>
     <script >
     $(window).on('load', function() {
       if (feather) {
