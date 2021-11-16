@@ -64,6 +64,12 @@ Route::resource('academia',   'AcademiaController');
 
 Route::resource('formasdepago',   'FormaDePagoController');
 
+#############################################################################################
+##################  Administación de Cursos #################################################
+#############################################################################################
+
+Route::resource('curso',   'CursoController');
+
 
 
 

@@ -53,7 +53,7 @@
                             </li>
                             <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="{{ ('formasdepago') }}" data-toggle="dropdown" data-i18n="Chat"><i class="fas fa-dollar-sign"></i><span data-i18n="Chat">Métodos de pago</span></a>
                             </li>
-                            <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="app-todo.html" data-toggle="dropdown" data-i18n="Todo"><i data-feather="check-square"></i><span data-i18n="Todo">Todo</span></a>
+                            <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="{{ url('curso') }}" data-toggle="dropdown" data-i18n="Cursos"><i class="fas fa-graduation-cap"></i><span data-i18n="Cursos"> Cursos</span></a>
                             </li>
                             <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="app-calendar.html" data-toggle="dropdown" data-i18n="Calendar"><i data-feather="calendar"></i><span data-i18n="Calendar">Calendar</span></a>
                             </li>

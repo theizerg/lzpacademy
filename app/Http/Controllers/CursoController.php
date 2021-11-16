@@ -14,7 +14,8 @@ class CursoController extends Controller
      */
     public function index()
     {
-        //
+        $academias = Curso::get();
+        return view('admin.curso.index',compact('academias'));
     }
 
     /**
@@ -35,7 +36,12 @@ class CursoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $pago =new Curso();
+        $pago->name = $request->name;
+        $pago->status = $request->status;
+        $pago->save();
+
+        return \Redirect::back();
     }
 
     /**
@@ -67,9 +73,14 @@ class CursoController extends Controller
      * @param  \App\Models\Curso  $curso
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Curso $curso)
+    public function update(Request $request,$curso)
     {
-        //
+        $pago = curso::find($curso);
+        $pago->name = $request->name;
+        $pago->status = $request->status;
+        $pago->save();
+
+        return \Redirect::back();
     }
 
     /**
