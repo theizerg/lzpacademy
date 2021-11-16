@@ -6,7 +6,7 @@ use Illuminate\Database\Seeder;
 use App\Models\User;
 use App\Models\Academia;
 use App\Models\FormaDePago;
-
+use App\Models\Curso;
 
 class AdminTableSeeder extends Seeder
 {
@@ -51,6 +51,45 @@ class AdminTableSeeder extends Seeder
         $pago->name       = 'Paypal (USD)';
         $pago->status     = 1;
         $pago->save();
+
+
+
+        $curso =new Curso();
+        $curso->name       = 'Guitarra';
+        $curso->status     = 1;
+        $curso->save();
+
+
+        $curso =new Curso();
+        $curso->name       = 'Teclado';
+        $curso->status     = 1;
+        $curso->save();
+
+        $curso =new Curso();
+        $curso->name       = 'Violonchello';
+        $curso->status     = 1;
+        $curso->save();
+
+        $curso =new Curso();
+        $curso->name       = 'Canto';
+        $curso->status     = 1;
+        $curso->save();
+
+        $curso =new Curso();
+        $curso->name       = 'Trompeta';
+        $curso->status     = 1;
+        $curso->save();
+
+        $curso =new Curso();
+        $curso->name       = 'Bajo';
+        $curso->status     = 1;
+        $curso->save();
+
+
+        $curso =new Curso();
+        $curso->name       = 'Batería';
+        $curso->status     = 1;
+        $curso->save();
 
 
 
