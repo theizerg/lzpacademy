@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Routing\UrlGenerator;
 
 class AppServiceProvider extends ServiceProvider
 { 
@@ -17,6 +18,10 @@ class AppServiceProvider extends ServiceProvider
     {
         \Schema::defaultStringLength(350);
         \Carbon\Carbon::setToStringFormat('d-m-Y h:i A');
+
+        if (env('REDIRECT_HTTPS')) {
+             $this->app['request']->server->set('HTTPS', true);
+         }
     }
 
    
@@ -28,6 +33,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        if (env('REDIRECT_HTTPS')) {
+           $url->formatScheme('https://');
+       }
     }
 }
