@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use App\Models\User;
+use App\Models\Academia;
 
 class AdminTableSeeder extends Seeder
 {
@@ -25,5 +26,19 @@ class AdminTableSeeder extends Seeder
         $user->save();
 
         $user->assignRole('Super Administrador');
+
+
+
+
+
+        $academia =new Academia();
+        $academia->name       = 'Lzpacademy';
+        $academia->direccion  = 'Caracas - Venezuela';
+        $academia->telefono   = '+58 000-0000000';
+        $academia->email      = 'correo@mail.com';
+        $academia->logo       = 'logo-principal.png';
+        $academia->save();
+
+        //$academia->assignRole('Super Administrador');
     }
 }

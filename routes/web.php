@@ -51,6 +51,12 @@ Route::resource('logins',   'LoginController');
 
 Route::resource('permission',   'PermissionController');
 
+#############################################################################################
+##################  Administación de Academia  ##############################################
+#############################################################################################
+
+Route::resource('academia',   'AcademiaController');
+
 
 
 });

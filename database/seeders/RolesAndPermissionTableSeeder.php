@@ -49,7 +49,13 @@ class RolesAndPermissionTableSeeder extends Seeder
                                 'RegistrarRole',
                                 'EditarRole',
                                 'EliminarRole',
- 
+    
+
+                                /* Institutos */
+                                'VerInstituto',
+                                'RegistrarInstituto',
+                                'EditarInstituto',
+                                'EliminarInstituto',
 
 
                               ];
