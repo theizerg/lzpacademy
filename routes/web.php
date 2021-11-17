@@ -76,6 +76,12 @@ Route::resource('curso',   'CursoController');
 
 Route::resource('nacionalidades',   'NacionalidadController');
 
+#############################################################################################
+##################  Administación de Tipo de Sangre #########################################
+#############################################################################################
+
+Route::resource('tipodesangre',   'TipoDeSangreController');
+
 
 
 

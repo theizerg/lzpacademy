@@ -8,6 +8,7 @@ use App\Models\Academia;
 use App\Models\FormaDePago;
 use App\Models\Curso;
 use App\Models\Nacionalidades;
+use App\Models\TipoDeSangre;
 
 class AdminTableSeeder extends Seeder
 {
@@ -100,6 +101,11 @@ class AdminTableSeeder extends Seeder
 
         foreach ($nationals as $n) {
             Nacionalidades::create(['name' => $n]);
+        }
+
+         $bgs = ['Sin recordar','O-', 'O+', 'A+', 'A-', 'B+', 'B-', 'AB+', 'AB-'];
+        foreach($bgs as  $bg){
+            TipoDeSangre::create(['name' => $bg,'status' => 1]);
         }
 
         

@@ -57,7 +57,7 @@
                             </li>
                             <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="{{ url('nacionalidades') }}" data-toggle="dropdown" data-i18n="Calendar"><i data-feather="calendar"></i><span data-i18n="Calendar">Nacionalidades</span></a>
                             </li>
-                            <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="app-kanban.html" data-toggle="dropdown" data-i18n="Kanban"><i data-feather="grid"></i><span data-i18n="Kanban">Kanban</span></a>
+                             <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="{{ url('tipodesangre') }}" data-toggle="dropdown" data-i18n="Calendar"><i class="fas fa-hospital"></i><span data-i18n="Calendar">Tipo de sangre</span></a>
                             </li>
                             <li class="dropdown dropdown-submenu" data-menu="dropdown-submenu"><a class="dropdown-item d-flex align-items-center dropdown-toggle" href="#" data-toggle="dropdown" data-i18n="Invoice"><i data-feather="file-text"></i><span data-i18n="Invoice">Invoice</span></a>
                                 <ul class="dropdown-menu">
