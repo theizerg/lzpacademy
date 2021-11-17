@@ -59,6 +59,8 @@
                             </li>
                              <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="{{ url('tipodesangre') }}" data-toggle="dropdown" data-i18n="Calendar"><i class="fas fa-hospital"></i><span data-i18n="Calendar">Tipo de sangre</span></a>
                             </li>
+                              <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="{{ url('genero') }}" data-toggle="dropdown" data-i18n="Calendar"><i data-feather="user"></i><span data-i18n="Calendar">Géneros</span></a>
+                            </li>
                             <li class="dropdown dropdown-submenu" data-menu="dropdown-submenu"><a class="dropdown-item d-flex align-items-center dropdown-toggle" href="#" data-toggle="dropdown" data-i18n="Invoice"><i data-feather="file-text"></i><span data-i18n="Invoice">Invoice</span></a>
                                 <ul class="dropdown-menu">
                                     <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="app-invoice-list.html" data-toggle="dropdown" data-i18n="List"><i data-feather="circle"></i><span data-i18n="List">List</span></a>

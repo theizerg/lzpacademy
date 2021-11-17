@@ -9,6 +9,8 @@ use App\Models\FormaDePago;
 use App\Models\Curso;
 use App\Models\Nacionalidades;
 use App\Models\TipoDeSangre;
+use App\Models\Genero;
+
 
 class AdminTableSeeder extends Seeder
 {
@@ -108,6 +110,15 @@ class AdminTableSeeder extends Seeder
             TipoDeSangre::create(['name' => $bg,'status' => 1]);
         }
 
+        $genero =new Genero();
+        $genero->name       = 'Maculino';
+        $genero->status     = 1;
+        $genero->save();
+
+        $genero =new Genero();
+        $genero->name       = 'Femenino';
+        $genero->status     = 1;
+        $genero->save();
         
 
 
