@@ -11,6 +11,7 @@ use App\Models\Nacionalidades;
 use App\Models\TipoDeSangre;
 use App\Models\Genero;
 use App\Models\Pais;
+use App\Models\Estado;
 
 class AdminTableSeeder extends Seeder
 {
@@ -1281,6 +1282,127 @@ class AdminTableSeeder extends Seeder
         $pais->name = 'Zimbabue';
         $pais->status = 1;
         $pais->save();
+
+
+        $estado = new Estado();
+        $estado->name = 'Amazonas';
+        $estado->status = 1;
+        $estado->save();
+
+        $estado = new Estado();
+        $estado->name = 'Anzoátegui';
+        $estado->status = 1;
+        $estado->save();
+
+        $estado = new Estado();
+        $estado->name = 'Apure';
+        $estado->status = 1;
+        $estado->save();
+
+        $estado = new Estado();
+        $estado->name = 'Aragua';
+        $estado->status = 1;
+        $estado->save();
+
+        $estado = new Estado();
+        $estado->name = 'Barinas';
+        $estado->status = 1;
+        $estado->save();
+
+        $estado = new Estado();
+        $estado->name = 'Bolívar';
+        $estado->status = 1;
+        $estado->save();
+
+        $estado = new Estado();
+        $estado->name = 'Carabobo';
+        $estado->status = 1;
+        $estado->save();
+
+        $estado = new Estado();
+        $estado->name = 'Cojedes';
+        $estado->status = 1;
+        $estado->save();
+
+        $estado = new Estado();
+        $estado->name = 'Delta Amacuro';
+        $estado->status = 1;
+        $estado->save();
+
+        $estado = new Estado();
+        $estado->name = 'Distrito Capital';
+        $estado->status = 1;
+        $estado->save();
+
+        $estado = new Estado();
+        $estado->name = 'Falcón';
+        $estado->status = 1;
+        $estado->save();
+
+        $estado = new Estado();
+        $estado->name = 'Guárico';
+        $estado->status = 1;
+        $estado->save();
+
+        $estado = new Estado();
+        $estado->name = 'Lara';
+        $estado->status = 1;
+        $estado->save();
+
+        $estado = new Estado();
+        $estado->name = 'Mérida';
+        $estado->status = 1;
+        $estado->save();
+
+        $estado = new Estado();
+        $estado->name = 'Miranda';
+        $estado->status = 1;
+        $estado->save();
+
+        $estado = new Estado();
+        $estado->name = 'Monagas';
+        $estado->status = 1;
+        $estado->save();
+
+        $estado = new Estado();
+        $estado->name = 'Nueva Esparta';
+        $estado->status = 1;
+        $estado->save();
+
+        $estado = new Estado();
+        $estado->name = 'Portuguesa';
+        $estado->status = 1;
+        $estado->save();
+
+        $estado = new Estado();
+        $estado->name = 'Sucre';
+        $estado->status = 1;
+        $estado->save();
+
+        $estado = new Estado();
+        $estado->name = 'Táchira';
+        $estado->status = 1;
+        $estado->save();
+
+        $estado = new Estado();
+        $estado->name = 'Trujillo';
+        $estado->status = 1;
+        $estado->save();
+
+        $estado = new Estado();
+        $estado->name = 'Vargas';
+        $estado->status = 1;
+        $estado->save();
+
+        $estado = new Estado();
+        $estado->name = 'Yaracuy';
+        $estado->status = 1;
+        $estado->save();
+
+        $estado = new Estado();
+        $estado->name = 'Zulia';
+        $estado->status = 1;
+        $estado->save();
 
         
 
