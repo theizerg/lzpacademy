@@ -10,7 +10,7 @@ use App\Models\Curso;
 use App\Models\Nacionalidades;
 use App\Models\TipoDeSangre;
 use App\Models\Genero;
-
+use App\Models\Pais;
 
 class AdminTableSeeder extends Seeder
 {
@@ -119,6 +119,1169 @@ class AdminTableSeeder extends Seeder
         $genero->name       = 'Femenino';
         $genero->status     = 1;
         $genero->save();
+
+         $pais= new Pais();
+        $pais->name ='Afganistán';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Albania';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Alemania';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Andorra';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Angola';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Antigua y Barbuda';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Arabia Saudita';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Argelia';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Argentina';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Armenia';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Australia';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Austria';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Azerbaiyán';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Bahamas';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Bangladés';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Barbados';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Baréin';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Bélgica';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Belice';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Benín';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Bielorrusia';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Birmania';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Bolivia';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Bosnia y Herzegovina';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Botsuana';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Brasil';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Brunéi';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Bulgaria';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Burkina Faso';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Burundi';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Bután';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Cabo Verde';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Camboya';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Camerún';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Canadá';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Catar';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Chad';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Chile';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'China';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Chipre';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Ciudad del Vaticano';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Colombia';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Comoras';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Corea del Norte';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Corea del Sur';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Costa de Marfil';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Costa Rica';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Croacia';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Cuba';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Dinamarca';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Dominica';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Ecuador';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Egipto';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'El Salvador';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Emiratos Árabes Unidos';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Eritrea';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Eslovaquia';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Eslovenia';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'España';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Estados Unidos';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Estonia';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Etiopía';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Filipinas';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Finlandia';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Fiyi';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Francia';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Gabón';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Gambia';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Georgia';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Ghana';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Granada';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Grecia';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Guatemala';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Guyana';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Guinea';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Guinea-Bisáu';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Guinea Ecuatorial';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Haití';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Honduras';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Hungría';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'India';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Indonesia';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Irak';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Irán';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Irlanda';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Islandia';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Islas Marshall';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Islas Salomón';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Israel';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Italia';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Jamaica';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Japón';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Jordania';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Kazajistán';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Kenia';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Kirguistán';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Kiribati';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Kuwait';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Laos';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Lesoto';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Letonia';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Líbano';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Liberia';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Libia';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Liechtenstein';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Lituania';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Luxemburgo';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Macedonia del Norte';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Madagascar';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Malasia';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Malaui';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Maldivas';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Malí';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Malta';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Marruecos';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Mauricio';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Mauritania';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'México';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Micronesia';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Moldavia';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Mónaco';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Mongolia';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Montenegro';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Mozambique';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Namibia';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Nauru';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Nepal';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Nicaragua';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Níger';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Nigeria';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Noruega';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Nueva Zelanda';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Omán';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Países Bajos';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Pakistán';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Palaos';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Panamá';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Papúa Nueva Guinea';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Paraguay';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Perú';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Polonia';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Portugal';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Reino Unido de Gran Bretaña e Irlanda del Norte';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'República Centroafricana';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'República Checa';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'República del Congo';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'República Democrática del Congo';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'República Dominicana';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'República Sudafricana';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Ruanda';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Rumanía';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Rusia';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Samoa';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'San Cristóbal y Nieves';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'San Marino';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'San Vicente y las Granadinas';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Santa Lucía';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Santo Tomé y Príncipe';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Senegal';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Serbia';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Seychelles';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Sierra Leona';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Singapur';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Siria';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Somalia';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Sri Lanka';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Suazilandia';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Sudán';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Sudán del Sur';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Suecia';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Suiza';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Surinam';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Tailandia';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Tanzania';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Tayikistán';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Timor Oriental';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Togo';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Tonga';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Trinidad y Tobago';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Túnez';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Turkmenistán';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Turquía';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Tuvalu';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Ucrania';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Uganda';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Uruguay';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Uzbekistán';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Vanuatu';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Venezuela';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Vietnam';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Yemen';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Yibuti';
+        $pais->status = 1;
+        $pais->save();
+
+
+        $pais= new Pais();
+        $pais->name = 'Zambia';
+        $pais->status = 1;
+        $pais->save();
+
+        $pais= new Pais();
+        $pais->name = 'Zimbabue';
+        $pais->status = 1;
+        $pais->save();
+
         
 
 

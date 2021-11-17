@@ -47,7 +47,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="dropdown nav-item" data-menu="dropdown"><a class="dropdown-toggle nav-link d-flex align-items-center" href="#" data-toggle="dropdown"><i data-feather="package"></i><span data-i18n="Administración">Administración</span></a>
+                    <li class="dropdown nav-item" data-menu="dropdown"><a class="dropdown-toggle nav-link d-flex align-items-center" href="#" data-toggle="dropdown"><i data-feather="package"></i><span data-i18n="Administración">Datos generales</span></a>
                         <ul class="dropdown-menu">
                             <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="{{ url('/academia') }}" data-toggle="dropdown" data-i18n="Academia"><i class="fas fa-building"></i><span data-i18n="Academia">Academia</span></a>
                             </li>
@@ -61,41 +61,7 @@
                             </li>
                               <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="{{ url('genero') }}" data-toggle="dropdown" data-i18n="Calendar"><i data-feather="user"></i><span data-i18n="Calendar">Géneros</span></a>
                             </li>
-                            <li class="dropdown dropdown-submenu" data-menu="dropdown-submenu"><a class="dropdown-item d-flex align-items-center dropdown-toggle" href="#" data-toggle="dropdown" data-i18n="Invoice"><i data-feather="file-text"></i><span data-i18n="Invoice">Invoice</span></a>
-                                <ul class="dropdown-menu">
-                                    <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="app-invoice-list.html" data-toggle="dropdown" data-i18n="List"><i data-feather="circle"></i><span data-i18n="List">List</span></a>
-                                    </li>
-                                    <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="app-invoice-preview.html" data-toggle="dropdown" data-i18n="Preview"><i data-feather="circle"></i><span data-i18n="Preview">Preview</span></a>
-                                    </li>
-                                    <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="app-invoice-edit.html" data-toggle="dropdown" data-i18n="Edit"><i data-feather="circle"></i><span data-i18n="Edit">Edit</span></a>
-                                    </li>
-                                    <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="app-invoice-add.html" data-toggle="dropdown" data-i18n="Add"><i data-feather="circle"></i><span data-i18n="Add">Add</span></a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="app-file-manager.html" data-toggle="dropdown" data-i18n="File Manager"><i data-feather="save"></i><span data-i18n="File Manager">File Manager</span></a>
-                            </li>
-                            <li class="dropdown dropdown-submenu" data-menu="dropdown-submenu"><a class="dropdown-item d-flex align-items-center dropdown-toggle" href="#" data-toggle="dropdown" data-i18n="eCommerce"><i data-feather="shopping-cart"></i><span data-i18n="eCommerce">eCommerce</span></a>
-                                <ul class="dropdown-menu">
-                                    <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="app-ecommerce-shop.html" data-toggle="dropdown" data-i18n="Shop"><i data-feather="circle"></i><span data-i18n="Shop">Shop</span></a>
-                                    </li>
-                                    <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="app-ecommerce-details.html" data-toggle="dropdown" data-i18n="Details"><i data-feather="circle"></i><span data-i18n="Details">Details</span></a>
-                                    </li>
-                                    <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="app-ecommerce-wishlist.html" data-toggle="dropdown" data-i18n="Wishlist"><i data-feather="circle"></i><span data-i18n="Wishlist">Wishlist</span></a>
-                                    </li>
-                                    <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="app-ecommerce-checkout.html" data-toggle="dropdown" data-i18n="Checkout"><i data-feather="circle"></i><span data-i18n="Checkout">Checkout</span></a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown dropdown-submenu" data-menu="dropdown-submenu"><a class="dropdown-item d-flex align-items-center dropdown-toggle" href="#" data-toggle="dropdown" data-i18n="User"><i data-feather="user"></i><span data-i18n="User">User</span></a>
-                                <ul class="dropdown-menu">
-                                    <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="app-user-list.html" data-toggle="dropdown" data-i18n="List"><i data-feather="circle"></i><span data-i18n="List">List</span></a>
-                                    </li>
-                                    <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="app-user-view.html" data-toggle="dropdown" data-i18n="View"><i data-feather="circle"></i><span data-i18n="View">View</span></a>
-                                    </li>
-                                    <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="app-user-edit.html" data-toggle="dropdown" data-i18n="Edit"><i data-feather="circle"></i><span data-i18n="Edit">Edit</span></a>
-                                    </li>
-                                </ul>
+                            <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="{{ url('paises') }}" data-toggle="dropdown" data-i18n="Calendar"><i data-feather="map"></i><span data-i18n="Calendar">Países</span></a>
                             </li>
                         </ul>
                     </li>

@@ -2,20 +2,20 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Genero;
+use App\Models\Pais;
 use Illuminate\Http\Request;
 
-class GeneroController extends Controller
+class PaisController extends Controller
 {
     /**
      * Display a listing of the resource.
-     * 
+     *
      * @return \Illuminate\Http\Response
      */
     public function index()
     {
-         $academias = Genero::get();
-        return view('admin.genero.index',compact('academias'));
+        $academias = Pais::get();
+        return view('admin.pais.index',compact('academias'));
     }
 
     /**
@@ -25,7 +25,12 @@ class GeneroController extends Controller
      */
     public function create()
     {
-        //
+        $pais =new Pais();
+        $pais->name = $request->name;
+        $pais->status = $request->status;
+        $pais->save();
+
+        return \Redirect::back();
     }
 
     /**
@@ -36,10 +41,10 @@ class GeneroController extends Controller
      */
     public function store(Request $request)
     {
-        $genero =new Genero();
-        $genero->name = $request->name;
-        $genero->status = $request->status;
-        $genero->save();
+        $pais =new Pais();
+        $pais->name = $request->name;
+        $pais->status = $request->status;
+        $pais->save();
 
         return \Redirect::back();
     }
@@ -47,10 +52,10 @@ class GeneroController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Genero  $genero
+     * @param  \App\Models\Pais  $pais
      * @return \Illuminate\Http\Response
      */
-    public function show(Genero $genero)
+    public function show(Pais $pais)
     {
         //
     }
@@ -58,10 +63,10 @@ class GeneroController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Genero  $genero
+     * @param  \App\Models\Pais  $pais
      * @return \Illuminate\Http\Response
      */
-    public function edit(Genero $genero)
+    public function edit(Pais $pais)
     {
         //
     }
@@ -70,15 +75,15 @@ class GeneroController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Genero  $genero
+     * @param  \App\Models\Pais  $pais
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request,  $genero)
+    public function update(Request $request,  $pais)
     {
-        $genero =Genero::find($genero);
-        $genero->name = $request->name;
-        $genero->status = $request->status;
-        $genero->save();
+        $pais = Pais::find($pais);
+        $pais->name = $request->name;
+        $pais->status = $request->status;
+        $pais->save();
 
         return \Redirect::back();
     }
@@ -86,10 +91,10 @@ class GeneroController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Genero  $genero
+     * @param  \App\Models\Pais  $pais
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Genero $genero)
+    public function destroy(Pais $pais)
     {
         //
     }

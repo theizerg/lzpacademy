@@ -89,6 +89,13 @@ Route::resource('tipodesangre',   'TipoDeSangreController');
 
 Route::resource('genero',   'GeneroController');
 
+#############################################################################################
+##################  Administación de Países #################################################
+#############################################################################################
+
+Route::resource('paises',   'PaisController');
+
+
 
 
 
