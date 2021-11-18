@@ -14,6 +14,7 @@ use App\Models\Pais;
 use App\Models\Estado;
 use App\Models\Nivel;
 use App\Models\EstadoCivil;
+use App\Models\GradoInstruccion;
 
 class AdminTableSeeder extends Seeder
 {
@@ -1445,6 +1446,33 @@ class AdminTableSeeder extends Seeder
         $estado->status = 1;
         $estado->save();
 
+        $grado = new GradoInstruccion();
+        $grado->name = 'Primaria';
+        $grado->status = 1;
+        $grado->save();
+
+        $grado = new GradoInstruccion();
+        $grado->name = 'Bachillerato';
+        $grado->status = 1;
+        $grado->save();
+
+        $grado = new GradoInstruccion();
+        $grado->name = 'TSU';
+        $grado->status = 1;
+        $grado->save();
+
+
+        $grado = new GradoInstruccion();
+        $grado->name = 'Ingeniería';
+        $grado->status = 1;
+        $grado->save();
+
+        $grado = new GradoInstruccion();
+        $grado->name = 'Doctorado';
+        $grado->status = 1;
+        $grado->save();
+
+        
 
 
 

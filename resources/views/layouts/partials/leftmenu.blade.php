@@ -67,6 +67,8 @@
                             </li>
                              <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="{{ url('estadocivil') }}" data-toggle="dropdown" data-i18n="Calendar"><i class="fas fa-user-tie"></i><span data-i18n="Calendar">Estado Civil</span></a>
                             </li>
+                             <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="{{ url('gradoinstruccion') }}" data-toggle="dropdown" data-i18n="Calendar"><i class="fas fa-user"></i><span data-i18n="Calendar">Grado de instrucción</span></a>
+                            </li>
                         </ul>
                     </li>
                     <li class="dropdown nav-item" data-menu="dropdown"><a class="dropdown-toggle nav-link d-flex align-items-center" href="#" data-toggle="dropdown"><i data-feather="layers"></i><span data-i18n="User Interface">User Interface</span></a>

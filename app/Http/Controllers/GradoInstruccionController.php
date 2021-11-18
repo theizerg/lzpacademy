@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\EstadoCivil;
+use App\Models\GradoInstruccion;
 use Illuminate\Http\Request;
 
-class EstadoCivilController extends Controller
+class GradoInstruccionController extends Controller
 {
      /**
      * Display a listing of the resource.
@@ -14,8 +14,8 @@ class EstadoCivilController extends Controller
      */
     public function index()
     {
-        $academias = EstadoCivil::get();
-        return view('admin.estadocivil.index',compact('academias'));
+        $academias = GradoInstruccion::get();
+        return view('admin.gradoinstruccion.index',compact('academias'));
     }
 
     /**
@@ -36,7 +36,7 @@ class EstadoCivilController extends Controller
      */
     public function store(Request $request)
     {
-        $pais =new EstadoCivil();
+        $pais =new GradoInstruccion();
         $pais->name = $request->name;
         $pais->status = $request->status;
         $pais->save();
@@ -75,7 +75,7 @@ class EstadoCivilController extends Controller
      */
     public function update(Request $request,  $estadocivil)
     {   //dd($request);
-        $pais = EstadoCivil::find($estadocivil);
+        $pais = GradoInstruccion::find($estadocivil);
         $pais->name = $request->name;
         $pais->status = $request->status;
         $pais->save();
