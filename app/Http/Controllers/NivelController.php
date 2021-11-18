@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Pais;
+use App\Models\Nivel;
 use Illuminate\Http\Request;
 
-class PaisController extends Controller
-{
+class NivelController extends Controller
+{ 
     /**
      * Display a listing of the resource.
      *
@@ -14,8 +14,8 @@ class PaisController extends Controller
      */
     public function index()
     {
-        $academias = Pais::get();
-        return view('admin.pais.index',compact('academias'));
+        $academias = Nivel::get();
+        return view('admin.niveles.index',compact('academias'));
     }
 
     /**
@@ -25,7 +25,7 @@ class PaisController extends Controller
      */
     public function create()
     {
-        
+        //
     }
 
     /**
@@ -36,10 +36,10 @@ class PaisController extends Controller
      */
     public function store(Request $request)
     {
-        $pais =new Pais();
-        $pais->name = $request->name;
-        $pais->status = $request->status;
-        $pais->save();
+        $nivel =new Nivel();
+        $nivel->name = $request->name;
+        $nivel->status = $request->status;
+        $nivel->save();
 
         return \Redirect::back();
     }
@@ -47,10 +47,10 @@ class PaisController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Pais  $pais
+     * @param  \App\Models\Nivel  $nivel
      * @return \Illuminate\Http\Response
      */
-    public function show(Pais $pais)
+    public function show(Nivel $nivel)
     {
         //
     }
@@ -58,10 +58,10 @@ class PaisController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Pais  $pais
+     * @param  \App\Models\Nivel  $nivel
      * @return \Illuminate\Http\Response
      */
-    public function edit(Pais $pais)
+    public function edit(Nivel $nivel)
     {
         //
     }
@@ -70,15 +70,15 @@ class PaisController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Pais  $pais
+     * @param  \App\Models\Nivel  $nivel
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request,  $pais)
+    public function update(Request $request, $nivel)
     {
-        $pais = Pais::find($pais);
-        $pais->name = $request->name;
-        $pais->status = $request->status;
-        $pais->save();
+        $nivel = Nivel::find($nivel);
+        $nivel->name = $request->name;
+        $nivel->status = $request->status;
+        $nivel->save();
 
         return \Redirect::back();
     }
@@ -86,10 +86,10 @@ class PaisController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Pais  $pais
+     * @param  \App\Models\Nivel  $nivel
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Pais $pais)
+    public function destroy(Nivel $nivel)
     {
         //
     }

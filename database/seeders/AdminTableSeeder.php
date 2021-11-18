@@ -12,6 +12,7 @@ use App\Models\TipoDeSangre;
 use App\Models\Genero;
 use App\Models\Pais;
 use App\Models\Estado;
+use App\Models\Nivel;
 
 class AdminTableSeeder extends Seeder
 {
@@ -1404,6 +1405,21 @@ class AdminTableSeeder extends Seeder
         $estado->status = 1;
         $estado->save();
 
+        $nivel = new Nivel();
+        $nivel->name = 'Básico';
+        $nivel->status = 1;
+        $nivel->save();
+
+        $nivel = new Nivel();
+        $nivel->name = 'Intermedio';
+        $nivel->status = 1;
+        $nivel->save();
+
+
+        $nivel = new Nivel();
+        $nivel->name = 'Avanzado';
+        $nivel->status = 1;
+        $nivel->save();
         
 
 

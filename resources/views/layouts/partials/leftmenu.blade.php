@@ -63,6 +63,8 @@
                             </li>
                             <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="{{ url('paises') }}" data-toggle="dropdown" data-i18n="Calendar"><i data-feather="map"></i><span data-i18n="Calendar">Países</span></a>
                             </li>
+                             <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="{{ url('niveles') }}" data-toggle="dropdown" data-i18n="Calendar"><i class="fas fa-level-up-alt"></i><span data-i18n="Calendar">Niveles</span></a>
+                            </li>
                         </ul>
                     </li>
                     <li class="dropdown nav-item" data-menu="dropdown"><a class="dropdown-toggle nav-link d-flex align-items-center" href="#" data-toggle="dropdown"><i data-feather="layers"></i><span data-i18n="User Interface">User Interface</span></a>
