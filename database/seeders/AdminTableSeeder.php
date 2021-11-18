@@ -13,6 +13,7 @@ use App\Models\Genero;
 use App\Models\Pais;
 use App\Models\Estado;
 use App\Models\Nivel;
+use App\Models\EstadoCivil;
 
 class AdminTableSeeder extends Seeder
 {
@@ -1420,7 +1421,29 @@ class AdminTableSeeder extends Seeder
         $nivel->name = 'Avanzado';
         $nivel->status = 1;
         $nivel->save();
-        
+
+        $estado = new EstadoCivil();
+        $estado->name = 'Soltero(a)';
+        $estado->status = 1;
+        $estado->save();
+
+
+        $estado = new EstadoCivil();
+        $estado->name = 'Casado(a)';
+        $estado->status = 1;
+        $estado->save();
+
+
+        $estado = new EstadoCivil();
+        $estado->name = 'Vuido(a)';
+        $estado->status = 1;
+        $estado->save();
+
+
+        $estado = new EstadoCivil();
+        $estado->name = 'Divorciado(a)';
+        $estado->status = 1;
+        $estado->save();
 
 
 

@@ -2,14 +2,14 @@
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="CrearUsuario">Ingresar nueva forma de pago</h5>
+        <h5 class="modal-title" id="CrearUsuario">Ingresar nuevo estado civil</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-       {!! Form::open(['route' => ['curso.store'],'method' => 'POST']) !!}
-        @include('admin.curso.partials.input.form')
+       {!! Form::open(['route' => ['estadocivil.store'],'method' => 'POST']) !!}
+        @include('admin.estadocivil.partials.input.form')
 
         <br><br>
         <button type="submit" class="btn blue darken-4 text-white form-control">Guardar cambios</button>
