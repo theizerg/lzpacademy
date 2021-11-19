@@ -4,7 +4,7 @@
       <div class="modal-header">
         <h5 class="modal-title" id="CrearUsuario">Ingresar nuevo usuario</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+          <span aria-h idden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">

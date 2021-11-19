@@ -2,7 +2,7 @@
     <nav class="navbar navbar-expand-md navbar-dark default">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="assets/images/logo.svg" alt="logo">
+                <img src="{{ asset('images/logo/logo-3.png') }}" width="100" class="mr-2" alt="logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -10,25 +10,21 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#home">Home</a>
+                        <a class="nav-link active" href="#home">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#features">Features</a>
+                        <a class="nav-link" href="#features">Nuestros cursos</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonial">Opiniones</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#layouts">Layouts</a>
+                        <a class="nav-link" href="#pricing">Nuestros precios</a>
                     </li>
+                   
                     <li class="nav-item">
-                        <a class="nav-link" href="#testimonial">Testimonial</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#pricing">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#faq">Faq</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact Us</a>
+                        <a class="nav-link" href="#contact">Contáctanos</a>
                     </li>
                 </ul>
                
@@ -43,7 +39,7 @@
             <div class="container">
             <div class="row align-items-center">
                 <div class="col-sm-5">
-                   <div class="card black wow fadeInLeft" data-wow-delay="0.1s">
+                   <div class="card black wow fadeInLeft" data-wow-delay="0.1s" >
                         <div class="card-body">
                             <h5 class="mt-3 text-white-50 wow fadeInLeft" data-wow-delay="0.5s">LZPACADEMY</h5>
                     <h2 class="mt-sm-3 mb-sm-4 text-white wow fadeInLeft" data-wow-delay="0.7s">¡Despierta tu talento!</h2>
@@ -56,7 +52,7 @@
                    </div>
                 </div>
                 <div class="col-sm-7">
-                    <img src="{{ ('images/logo/logo-principal.png') }}" alt="Nextro Admin Template elevation-1" class="img-fluid  wow fadeInRight" data-wow-delay="0.2s">
+                    <img src="{{ ('images/logo/logo-principal.png') }}" alt="Nextro Admin Template elevation-1" class="img-fluid  wow fadeInRight" data-wow-delay="0.2s" >
                 </div>
             </div>
         </div>

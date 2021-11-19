@@ -293,59 +293,64 @@
             <div class="row justify-content-center">
                 <div class="col-xl-6 col-md-9 title">
                     <i class="material-icons-two-tone">map</i>
-                    <h2>Contáctate con<span> nosotros</span></h2>
+                    <h2>Contáctanos</h2>
                     <p class="m-0">Si estás interesado(a) en obtener más información toma nuestros puntos de contacto y con todo gusto te haremos llegar la información.</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-4">
-                    <div class="h4 mt-3 mb-4"><i class="material-icons-two-tone text-primary">message</i> Say Hello</div>
-                    <form class="">
+                    <div class="h4 mt-3 mb-4"><i class="material-icons-two-tone text-primary">message</i> Deja tu comentario.</div>
+                     {!! Form::open(['route' => ['comentario.store'],'method' => 'POST']) !!}
                         <div class="row">
-                            <div class="col-sm-6">
+                            <div class="col-sm-12">
                                 <div class="form-group">
-                                    <label class="form-label">Enter Your Name</label>
-                                    <input type="text" name="first_name" class="form-control">
+                                    <label class="form-label">Ingresa tu nombre</label>
+                                    <input type="text" name="name" class="form-control">
                                 </div>
                             </div>
-                            <div class="col-sm-6">
+                             <div class="col-sm-12">
                                 <div class="form-group">
-                                    <label class="form-label">Enter Your Email</label>
-                                    <input type="email" name="contact_email" class="form-control">
+                                    <label class="form-label">Ingresa tu apellido</label>
+                                    <input type="text" name="last" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <label class="form-label">Ingresa tu correo electrónico</label>
+                                    <input type="email" name="email" class="form-control">
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="form-group">
-                                    <label class="form-label">Emter Message</label>
-                                    <textarea name="contact_message" class="form-control" rows="5"></textarea>
+                                    <label class="form-label">Déjanos tu mensaje</label>
+                                    <textarea name="message" class="form-control" rows="5"></textarea>
                                 </div>
                                 <div class="text-end">
-                                    <button class="btn btn-primary"><i data-feather="mail"></i> Send</button>
+                                    <button class="btn btn-primary form-control"><i data-feather="mail"></i> Enviar</button>
                                 </div>
                             </div>
                         </div>
-                    </form>
+                     {!! Form::close()!!}
                 </div>
                 <div class="col-sm-3">
-                    <div class="h4 mt-3 mb-2"><i class="material-icons-two-tone text-primary">phone_iphone</i> Phone</div>
+                    <div class="h4 mt-3 mb-2"><i class="material-icons-two-tone yellow darken-1">phone_iphone</i> Teléfono</div>
                     <ul class="list-unstyled p-l-30">
-                        <li class="my-1">+91 0123456789</li>
-                        <li class="my-1">+91 0123456789</li>
+                        <li class="my-1"><i class="fab fa-whatsapp"></i> +58 4142686016</li>
+                        <li class="my-1"><i class="fab fa-whatsapp"></i> +58 4169823528</li>
                     </ul>
-                    <div class="h4 mt-3 mb-2"><i class="material-icons-two-tone text-primary">pin_drop</i> Address</div>
+                    <div class="h4 mt-3 mb-2"><i class="material-icons-two-tone yellow darken-1">pin_drop</i> Dirección</div>
                     <address class="p-l-30">
-                        638 Gateway Road,<br>
-                        Portland,<br>
-                        97217
+                        Caracas - Venezuela<br>
+                        
                     </address>
-                    <div class="h4 mt-3 mb-2"><i class="material-icons-two-tone text-primary">email</i> Email</div>
-                    <a class="link-secondary p-l-30" href="mailto:dummy@mail.com">dummy@mail.com</a>
+                    <div class="h4 mt-3 mb-2"><i class="material-icons-two-tone yellow darken-1">email</i> Correo</div>
+                    <a class="link-secondary p-l-30" >lzpacademy@gmail.com</a>
                 </div>
                 <div class="col-sm-5">
-                    <iframe style="height:300px;width:100%;"
-                        src="https://www.google.com/maps/d/embed?mid=1UhLSNspeqycniAUDOvL64pXzsog" width="640" height="480"
+                    <iframe style="height:400px;width:100%;"
+                        src="https://www.google.com/maps/d/embed?mid=1UhLSNspeqycniAUDOvL64pXzsog" width="740" height="480"
                         frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
             </div>

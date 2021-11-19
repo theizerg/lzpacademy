@@ -17,6 +17,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::resource('comentario',   'ComentarioController');
+
 Auth::routes();
 
 Route::middleware(['auth',])->group(function () {
@@ -41,6 +43,7 @@ Route::middleware(['auth',])->group(function () {
 /**/  Route::resource('niveles',   'NivelController');
 /**/  Route::resource('estadocivil',   'EstadoCivilController');
 /**/  Route::resource('gradoinstruccion',   'GradoInstruccionController');
+/**/  Route::get('comentario/enviarcorreo/{estudiante}',   'ComentarioController@enviarcorreo');
 
 #############################################################################################
 #############################################################################################

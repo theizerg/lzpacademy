@@ -86,6 +86,32 @@
                 </div>
               </div>
             </div>
+            <div class="col-xl-3 col-sm-6 col-12 mb-2 mb-sm-0">
+              <div class="d-flex flex-row">
+                <div class="avatar blue darken-4 me-2 mt-2">
+                  <div class="avatar-content">
+                    <i class=" avatar-icon far fa-envelope fa-2x"></i>
+                  </div>
+                </div>
+                <div class="my-auto">
+                  <h4 class="fw-bolder mb-0 ml-1  mt-2">{{ App\Models\Comentario::where('status',0)->count() }}</h4>
+                  <p class="card-text font-small-3 mb-0 ml-1">Comentarios sin leer</p>
+                </div>
+              </div>
+            </div>
+             <div class="col-xl-3 col-sm-6 col-12 mb-2 mb-sm-0">
+              <div class="d-flex flex-row">
+                <div class="avatar green darken-4 me-2 mt-2">
+                  <div class="avatar-content">
+                    <i class=" avatar-icon fas fa-envelope-open-text fa-2x"></i>
+                  </div>
+                </div>
+                <div class="my-auto">
+                  <h4 class="fw-bolder mb-0 ml-1  mt-2">{{ App\Models\Comentario::where('status',1)->count() }}</h4>
+                  <p class="card-text font-small-3 mb-0 ml-1">Comentarios leídos</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -102,18 +128,40 @@
         </div>
       </div>
     </div>
-   <div class=" col-sm-6">
-      <div class="card card-line-primary">
-          <div class="card-header">
-            <h5 class="h3 mb-0">Calendario</h5>
-         </div>
-          <div class="card-body">
-                <br><br><br>
-              <div id="calendar" style="width: 100%;" ></div>
-         
+  <div class="col-lg-6 col-12">
+        <div class="card card-user-timeline card-line-primary">
+            <div class="card-header">
+                <div class="d-flex align-items-center">
+                    <i data-feather="list" class="user-timeline-title-icon"></i>
+                    <h4 class="card-title">Comentarios sin leer</h4>
+                </div>
+            </div>
+            @php
+                $comentarios = App\Models\Comentario::get();
+            @endphp
+            <div class="card-body">
+                <ul class="timeline ml-50">
+                    @foreach ($comentarios->where('status',0) as $element)
+                        <li class="timeline-item">
+                         <button type="button" class="timeline-point timeline-point-indicator" data-toggle="tooltip" data-placement="top" title="Ver">             
+                          </button>
+                        <div class="timeline-event">
+                            <h6>{{ $element->name }} {{ $element->lastname }}</h6>
+                            <p>{{ $element->email }}</p>
+                            <p>Enviado {{ $element->created_at->diffForHumans();  }}</p>
+                            <div class="media align-items-center">
+                                <p class="media-body mb-0">{{ $element->descripcion }}</p>
+                            </div>
+
+                        </div><br>
+                       <a href="{{ url('comentario/enviarcorreo',$element->id) }}" class="btn btn-outline-primary btn-sm" data-toggle="tooltip" data-placement="top" title="Cambiar estado el comentario"> Responder mensaje           
+                          </a>
+                    </li>
+                    @endforeach
+                </ul>
+            </div>
         </div>
-      </div>
-    </dv>
+    </div>
 </div>
 
 @endsection
