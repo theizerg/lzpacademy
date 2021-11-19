@@ -15,7 +15,7 @@ const mix = require('laravel-mix');
  */
  
   
-mix.styles([
+/*mix.styles([
     'node_modules/vuexy/app-assets/css/bootstrap.css',
     'node_modules/vuexy/app-assets/css/bootstrap-extended.css',
     'node_modules/vuexy/app-assets/css/colors.css',
@@ -88,3 +88,29 @@ mix.scripts([
 
 
 ], 'public/js/app.js');
+*/
+
+
+mix.styles([
+
+    'node_modules/dashboardkit/bootstrap/default/assets/css/plugins/animate.min.css',
+    'node_modules/dashboardkit/bootstrap/default/assets/fonts/feather.css',
+    'node_modules/dashboardkit/bootstrap/default/assets/fonts/fontawesome.css',
+    'node_modules/dashboardkit/bootstrap/default/assets/fonts/material.css',
+    'node_modules/dashboardkit/bootstrap/default/assets/css/style.css',
+    'node_modules/dashboardkit/bootstrap/default/assets/css/customizer.css',
+    'node_modules/dashboardkit/bootstrap/default/assets/css/landing.css',
+
+
+], 'public/css/page.css');
+
+
+mix.scripts([
+    'node_modules/dashboardkit/bootstrap/default/assets/js/vendor-all.min.js',
+    'node_modules/dashboardkit/bootstrap/default/assets/js/plugins/bootstrap.min.js',
+    'node_modules/dashboardkit/bootstrap/default/assets/js/plugins/feather.min.js',
+    'node_modules/dashboardkit/bootstrap/default/assets/js/pcoded.min.js',
+    'node_modules/dashboardkit/bootstrap/default/assets/front/wow.min.js',
+    'node_modules/dashboardkit/bootstrap/default/assets/css/plugins/animate.min.css',
+
+], 'public/js/page.js');

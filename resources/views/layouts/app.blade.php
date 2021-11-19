@@ -9,237 +9,257 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>fox Landing Page | HTML Theme</title>
 
-    <!-- Favicon -->
-    <link rel="icon" href="{{ asset('assets/img/favicon.png') }}">
-    <!-- Bootstrap CSS -->
-    <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
+       <!-- Favicon icon -->
+    <link rel="icon" href="{{ asset('assets/images/favicon.svg') }}" type="image/x-icon">
 
-    <!-- Slick Slider -->
-    <link href="{{ asset('assets/css/slick.css') }}" rel="stylesheet">
-    <link href="{{ asset('assets/css/slick-theme.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('assets/css/plugins/animate.min.css') }}">
+    <!-- font css -->
+    <link rel="stylesheet" href="{{ asset('assets/fonts/feather.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/fonts/fontawesome.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/fonts/material.css') }}">
 
-    <!-- AOS CSS -->
-    <link href="{{ asset('assets/css/aos.css') }}" rel="stylesheet">
+    <!-- vendor css -->
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" id="main-style-link">
+    <link rel="stylesheet" href="{{ asset('assets/css/customizer.css') }}">
+    
 
-    <!-- Lity CSS -->
-    <link href="{{ asset('assets/css/lity.min.css') }}" rel="stylesheet">
-
-    <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="{{ asset('assets/css/fontawesome-all.min.css') }}">
-
-    <!-- linearicons CSS -->
-    <link rel="stylesheet" href="{{ asset('assets/css/linearicons.css') }}">
-
-    <!-- Our Min CSS -->
-    <link href="{{ asset('assets/css/main.css') }}" rel="stylesheet">
-
-    <!-- Themes * You can select your color from color-1 , color-2 , color-3 , color-4 , ..etc * -->
-    <link id="themes_colors" href="{{ asset('assets/css/color-1.css') }}" rel="stylesheet">
-    <!-- <link href="assets/css/color-1.css" rel="stylesheet"> -->
-    <!-- <link href="assets/css/color-2.css" rel="stylesheet"> -->
-    <!-- <link href="assets/css/color-3.css" rel="stylesheet"> -->
-    <!-- <link href="assets/css/color-4.css" rel="stylesheet"> -->
-    <!-- <link href="assets/css/color-5.css" rel="stylesheet"> -->
-    <!-- <link href="assets/css/color-6.css" rel="stylesheet"> -->
-    <!-- <link href="assets/css/color-7.css" rel="stylesheet"> -->
-    <!-- <link href="assets/css/color-8.css" rel="stylesheet"> -->
-    <!-- <link href="assets/css/color-9.css" rel="stylesheet"> -->
-    <!-- <link href="assets/css/color-10.css" rel="stylesheet"> -->
-    <!-- <link href="assets/css/color-11.css" rel="stylesheet"> -->
-    <!-- <link href="assets/css/color-12.css" rel="stylesheet"> -->
-    <!-- <link href="assets/css/color-13.css" rel="stylesheet"> -->
-    <!-- <link href="assets/css/color-14.css" rel="stylesheet"> -->
-    <!-- <link href="assets/css/color-15.css" rel="stylesheet"> -->
-    <!-- <link href="assets/css/color-16.css" rel="stylesheet"> -->
-    <!-- <link href="assets/css/color-17.css" rel="stylesheet"> -->
-    <!-- <link href="assets/css/color-18.css" rel="stylesheet"> -->
-    <!-- <link href="assets/css/color-19.css" rel="stylesheet"> -->
-    <!-- <link href="assets/css/color-20.css" rel="stylesheet"> -->
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
-
+    <link rel="stylesheet" href="assets/css/landing.css">
      <link rel="stylesheet" href="{{ asset('css/system.css') }}">
      <link rel="stylesheet" href="{{asset('css/some.css')}}">
 </head>
 
-<body data-spy="scroll" data-target="#main_menu" data-offset="70">
-    <!-- Start Preloader -->
-    <div class="preloader yellow darken-4">
-        <div class="loader-wrapper">
-            <div class="loader"></div>
-        </div>
-    </div>
+<body >
+  
 
   <div id="app">
     
      @include('layouts.partials.sidebarpage')
-     <!-- Start Header -->
-    <section id="slide" class="slide yellow darken-4">
-        <div class="content-bottom">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-6" data-aos="fade-right">
-                        <p class="mb-0">Somos la mejor alternativa para tu aprendizaje musical. </p>
-                        <h2>Academia</h2>
-                        <p>Crece, aprende y desarrolla tus habilidades musicales junto a nosotros, en poco tiempo, con poca inversión recibirás lo mejor de lo mejor.
-                        </p>
-                        
-                    </div>
-                    <div class="col-md-6 mb-5" data-aos="fade-left" data-aos-delay="200">
-                       <img src="assets/img/mobile-1.png" class="img-fluid d-block mx-auto" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+   
     <!-- End Header -->
     @yield('content')
 
-    <!-- Start  Footer -->
-    <footer class="padding-100 pb-0">
-        <div class="subscribe">
-            <div class="container">
-                <form class="subscribe-form row m-0 align-items-center">
-                    <div class="col-lg-9 col-md-8">
-                        <div class="form-group mb-0">
-                            <input type="text" class="form-control" placeholder="Enter Your Email">
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4">
-                        <a href="#"
-                            class="btn btn-primary shadow d-block btn-colord btn-theme"><span>subscribe</span></a>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <div class="space-50"></div>
-        <div class="footer-widgets">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 col-12">
-                        <div class="widget">
-                            <img src="assets/img/fox-logo.png" class="img-fluid" alt="">
-                            <p>Sed pottitor lects nibh. Viamus magna justo, lacinia eget consectetur sed, convallis
-                                at
-                                tellus.
-                                Curabitur aliquet quam id dui posuere blandit. Lorem ipsum dolor sit amet,
-                                consectetur
-                                adipiscing
-                                elit.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-12">
-                        <div class="widget">
-                            <h6>Quick Links</h6>
-                            <ul>
-                                <li>
-                                    <a href="#">Home</a>
-                                </li>
-                                <li>
-                                    <a href="#">About Us</a>
-                                </li>
-                                <li>
-                                    <a href="#">Services</a>
-                                </li>
-                                <li>
-                                    <a href="#">Products</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-12">
-                        <div class="widget">
-                            <h6>Social Media</h6>
-                            <ul>
-                                <li>
-                                    <a href="#">Facbook</a>
-                                </li>
-                                <li>
-                                    <a href="#">Instagram</a>
-                                </li>
-                                <li>
-                                    <a href="#">LinkedIn</a>
-                                </li>
-                                <li>
-                                    <a href="#">Twitter</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-12">
-                        <div class="widget">
-                            <h6>Quick Contact</h6>
-                            <ul>
-                                <li>
-                                    <span>Phone : </span>+2 012 345 6789
-                                </li>
-                                <li>
-                                    <span>Email : </span>
-                                    <a href="mailto:info@yourcompany.com"></a>info@yourcompany.com</li>
-                                <li>
-                                    <span>Address : </span>8 Green Tower, Street Name New York City, USA</li>
 
-                            </ul>
-                        </div>
-                    </div>
+    <!-- End  Footer  -->
+     <!-- [ contact ] end -->
+    <!-- [ Footer ] Start -->
+    <div class="footer-top"></div>
+    <footer class="bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-4">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#"><img src="assets/images/logo.svg" alt="logo"></a>
+                        </li>
+                        <li class="mt-3 mb-3">
+                            <p>Easy - Flexible - Always updated - makes Nextro a really powerful backend template.</p>
+                        </li>
+                        <li class="mt-3 mb-3 d-flex align-items-center">
+                            <div class="fas fa-headset me-2"></div><a class="d-inline-block" href="http://phoenixcoded.ticksy.com/">Support by Ticksy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <h5>Useful links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mt-2 mb-2"><a href="#" target="_blank">Rate Nextro</a></li>
+                        <li class="mt-2 mb-2"><a href="#" target="_blank">Collection</a></li>
+                        <li class="mt-2 mb-2"><a href="#" target="_blank">Themeforest Profile</a> </li>
+                        <li class="mt-2 mb-2"><a href="#" target="_blank">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <h5>Trending Items</h5>
+                    <ul class="list-unstyled">
+                        <li class="mt-2 mb-2"><a href="#" target="_blank">Able pro
+                                v7.0<span class="bg-danger ms-1">Hot</span></a> </li>
+                        <li class="mt-2 mb-2"><a href="#" target="_blank">Dash Able<span class="bg-primary ms-1">New</span></a> </li>
+                        <li class="mt-2 mb-2"><a href="#" target="_blank">Flat Able</a></li>
+                        <li class="mt-2 mb-2"><a href="#" target="_blank">Mega Able</a> </li>
+                    </ul>
+                    <h5 class="mt-4">Follow Us</h5>
+                    <ul class="list-inline list-unstyled sos-icon">
+                        <li><a href="#" target="_blank" class="btn-facebook"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#" target="_blank" class="btn-twitter"><i class="fab fa-twitter"></i></a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <div class="space-50"></div>
-        <div class="copyright">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-4">
-                        <p>All rights reserved © <a href="#">MK</a>, 2020</p>
-                    </div>
-                    <div class="offset-md-4 col-md-4">
-                        <ul class="nav justify-content-end">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Terms and Conditions</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Privacy Policy</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <div class="container b-footer">
+            <p>© 2020 phoenixcoded. Exclusively on <a href="https://1.envato.market/DM91j" target="_blank">Themeforest</a></p>
+           
         </div>
     </footer>
-    <!-- End  Footer  -->
    
     </div>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="{{ asset('assets/js/jquery-3.3.1.min.js') }}"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <!-- Bootstrap JS -->
-    <script src="{{ asset('assets/js/popper.min.js') }}"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+        <script src="{{ asset('assets/js/vendor-all.min.js') }}"></script>
+        <script src="{{ asset('assets/js/plugins/bootstrap.min.js') }}"></script>
+        <script src="{{ asset('assets/js/plugins/feather.min.js') }}"></script>
+        <script src="{{ asset('assets/js/pcoded.min.js') }}"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script> -->
+        <!-- <script src="assets/js/plugins/clipboard.min.js"></script> -->
+        <!-- <script src="assets/js/uikit.min.js"></script> -->
 
-    <!-- svg -->
-    <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+    <script src="assets/front/wow.min.js"></script>
 
-    <!-- Slick Slider JS -->
-    <script src="{{ asset('assets/js/slick.min.js') }}"></script>
+    <script>
+        // Start [ Menu hide/show on scroll ]
+        var ost = 0;
+        $(window).scroll(function() {
+            var cOst = $(this).scrollTop();
+            if (cOst == 0) {
+                $('.navbar').addClass('top-nav-collapse');
+            } else if (cOst > ost) {
+                $('.navbar').addClass('top-nav-collapse').removeClass('default');
+            } else {
+                $('.navbar').addClass('default').removeClass('top-nav-collapse');
+            }
+            ost = cOst;
+        });
+        // End [ Menu hide/show on scroll ]
+        new WOW().init();
+        var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+            target: '#navbarTogglerDemo01'
+        });
+        $("#navbarTogglerDemo01 a").on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 1500, function() {
+                    window.location.hash = hash;
+                });
+            }
+        });
+    </script>
+   {{--  <div class="pct-customizer">
+        <div class="pct-c-btn">
+            <button class="btn btn-light-danger" id="pct-toggler">
+                <i data-feather="settings"></i>
+            </button>
+            <button class="btn btn-light-primary" data-bs-toggle="tooltip" title="Document" data-placement="left">
+                <i data-feather="book"></i>
+            </button>
+            <button class="btn btn-light-success" data-bs-toggle="tooltip" title="Buy Now" data-placement="left">
+                <i data-feather="shopping-bag"></i>
+            </button>
+            <button class="btn btn-light-info" data-bs-toggle="tooltip" title="Support" data-placement="left">
+                <i data-feather="headphones"></i>
+            </button>
+        </div>
+        <div class="pct-c-content ">
+            <div class="pct-header bg-primary">
+                <h5 class="mb-0 text-white f-w-500">DashboardKit Customizer</h5>
+            </div>
+            <div class="pct-body">
+                <h6 class="mt-2"><i data-feather="credit-card" class="me-2"></i>Header settings</h6>
+                <hr class="my-2">
+                <div class="theme-color header-color">
+                    <a href="#!" class="" data-value="bg-default"><span></span><span></span></a>
+                    <a href="#!" class="" data-value="bg-primary"><span></span><span></span></a>
+                    <a href="#!" class="" data-value="bg-danger"><span></span><span></span></a>
+                    <a href="#!" class="" data-value="bg-warning"><span></span><span></span></a>
+                    <a href="#!" class="" data-value="bg-info"><span></span><span></span></a>
+                    <a href="#!" class="" data-value="bg-success"><span></span><span></span></a>
+                    <a href="#!" class="" data-value="bg-dark"><span></span><span></span></a>
+                </div>
+                <h6 class="mt-4"><i data-feather="layout" class="me-2"></i>Sidebar settings</h6>
+                <hr class="my-2">
+                <div class="form-check form-switch">
+                    <input type="checkbox" class="form-check-input" id="cust-sidebar">
+                    <label class="form-check-label f-w-600 pl-1" for="cust-sidebar">Light Sidebar</label>
+                </div>
+                <div class="form-check form-switch mt-2">
+                    <input type="checkbox" class="form-check-input" id="cust-sidebrand">
+                    <label class="form-check-label f-w-600 pl-1" for="cust-sidebrand">Color Brand</label>
+                </div>
+                <div class="theme-color brand-color d-none">
+                    <a href="#!" class="active" data-value="bg-primary"><span></span><span></span></a>
+                    <a href="#!" class="" data-value="bg-danger"><span></span><span></span></a>
+                    <a href="#!" class="" data-value="bg-warning"><span></span><span></span></a>
+                    <a href="#!" class="" data-value="bg-info"><span></span><span></span></a>
+                    <a href="#!" class="" data-value="bg-success"><span></span><span></span></a>
+                    <a href="#!" class="" data-value="bg-dark"><span></span><span></span></a>
+                </div>
+                <h6 class="mt-4"><i data-feather="sun" class="me-2"></i>Layout settings</h6>
+                <hr class="my-2">
+                <div class="form-check form-switch mt-2">
+                    <input type="checkbox" class="form-check-input" id="cust-darklayout">
+                    <label class="form-check-label f-w-600 pl-1" for="cust-darklayout">Dark Layout</label>
+                </div>
+            </div>
+        </div>
+    </div> --}}
 
-    <!-- Counterup JS -->
-    <script src="{{ asset('assets/js/waypoints.min.js') }}"></script>
-    <script src="{{ asset('assets/js/jquery.counterup.js') }}"></script>
-
-    <!-- AOS JS -->
-    <script src="{{ asset('assets/js/aos.js') }}"></script>
-
-    <!-- lity JS -->
-    <script src="{{ asset('assets/js/lity.min.js') }}"></script>
-
-    <!-- Our Main JS -->
-    <script src="{{ asset('assets/js/main.js') }}"></script>
+    <script>
+        $('#pct-toggler').on('click', function() {
+            $('.pct-customizer').toggleClass('active');
+        });
+        $('#cust-sidebrand').change(function() {
+            if ($(this).is(":checked")) {
+                $('.theme-color.brand-color').removeClass('d-none');
+                $('.m-header').addClass('bg-dark');
+            } else {
+                $('.m-header').removeClassPrefix('bg-');
+                $('.m-header > .b-brand > .logo-lg').attr('src', 'assets/images/logo-dark.svg');
+                $('.theme-color.brand-color').addClass('d-none');
+            }
+        });
+        $('.brand-color > a').on('click', function() {
+            var temp = $(this).attr('data-value');
+            if (temp == "bg-default") {
+                $('.m-header').removeClassPrefix('bg-');
+            } else {
+                $('.m-header').removeClassPrefix('bg-');
+                $('.m-header > .b-brand > .logo-lg').attr('src', 'assets/images/logo.svg');
+                $('.m-header').addClass(temp);
+            }
+        });
+        $('.header-color > a').on('click', function() {
+            var temp = $(this).attr('data-value');
+            if (temp == "bg-default") {
+                $('.pc-header').removeClassPrefix('bg-');
+            } else {
+                $('.pc-header').removeClassPrefix('bg-');
+                $('.pc-header').addClass(temp);
+            }
+        });
+        $('#cust-sidebar').change(function() {
+            if ($(this).is(":checked")) {
+                $('.pc-sidebar').addClass('light-sidebar');
+                $('.pc-horizontal .topbar').addClass('light-sidebar');
+            } else {
+                $('.pc-sidebar').removeClass('light-sidebar');
+                $('.pc-horizontal .topbar').removeClass('light-sidebar');
+            }
+        });
+        $('#cust-darklayout').change(function() {
+            if ($(this).is(":checked")) {
+                $("#main-style-link").attr("href", "assets/css/style-dark.css");
+            } else {
+                $("#main-style-link").attr("href", "assets/css/style.css");
+            }
+        });
+        $.fn.removeClassPrefix = function(prefix) {
+            this.each(function(i, it) {
+                var classes = it.className.split(" ").map(function(item) {
+                    return item.indexOf(prefix) === 0 ? "" : item;
+                });
+                it.className = classes.join(" ");
+            });
+            return this;
+        };
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q8H86P6FK7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-Q8H86P6FK7');
+    </script>
+  
 
     @stack('scripts')
 
