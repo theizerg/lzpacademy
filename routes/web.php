@@ -46,6 +46,8 @@ Route::middleware(['auth',])->group(function () {
 /**/  Route::get('comentario/enviarcorreo/{estudiante}',   'ComentarioController@enviarcorreo');
 /**/  Route::resource('nivelacademico',   'TipoClaseController');
 /**/  Route::resource('tipoacademia',   'TipoAcademiaController');
+/**/  Route::resource('cargo',   'CargoController');
+
 
 
 #############################################################################################

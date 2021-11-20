@@ -6,15 +6,15 @@ use App\Models\Cargo;
 use Illuminate\Http\Request;
 
 class CargoController extends Controller
-{
-    /**
+{/**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        //
+         $academias = Cargo::get();
+        return view('admin.cargo.index',compact('academias'));
     }
 
     /**
@@ -27,7 +27,7 @@ class CargoController extends Controller
         //
     }
 
-    /**
+     /**
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
@@ -35,16 +35,21 @@ class CargoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $clase =new Cargo();
+        $clase->name = $request->name;
+        $clase->status = $request->status;
+        $clase->save();
+
+        return \Redirect::back();
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Cargo  $cargo
+     * @param  \App\Models\Pais  $pais
      * @return \Illuminate\Http\Response
      */
-    public function show(Cargo $cargo)
+    public function show(Pais $pais)
     {
         //
     }
@@ -52,10 +57,10 @@ class CargoController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Cargo  $cargo
+     * @param  \App\Models\Pais  $pais
      * @return \Illuminate\Http\Response
      */
-    public function edit(Cargo $cargo)
+    public function edit(Pais $pais)
     {
         //
     }
@@ -64,21 +69,26 @@ class CargoController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Cargo  $cargo
+     * @param  \App\Models\Pais  $pais
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Cargo $cargo)
-    {
-        //
+    public function update(Request $request,  $estadocivil)
+    {   //dd($request);
+        $clase = Cargo::find($estadocivil);
+        $clase->name = $request->name;
+        $clase->status = $request->status;
+        $clase->save();
+
+        return \Redirect::back();
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Cargo  $cargo
+     * @param  \App\Models\Cargo  $Cargo
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Cargo $cargo)
+    public function destroy(Cargo $Cargo)
     {
         //
     }

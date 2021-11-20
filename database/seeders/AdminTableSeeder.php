@@ -17,6 +17,7 @@ use App\Models\EstadoCivil;
 use App\Models\GradoInstruccion;
 use App\Models\TipoClase;
 use App\Models\TipoAcademia;
+use App\Models\Cargo;
 
 class AdminTableSeeder extends Seeder
 {
@@ -1508,10 +1509,29 @@ class AdminTableSeeder extends Seeder
         $tipoacademia->save();
         
 
-        $tipoacademia = new TipoAcademia();
-        $tipoacademia->name = 'Privada';
-        $tipoacademia->status = 1;
-        $tipoacademia->save();
+        $cargo = new Cargo();
+        $cargo->name = 'Director';
+        $cargo->status = 1;
+        $cargo->save();
+
+        $cargo = new Cargo();
+        $cargo->name = 'Subdirector';
+        $cargo->status = 1;
+        $cargo->save();
+
+
+        $cargo = new Cargo();
+        $cargo->name = 'Secretario';
+        $cargo->status = 1;
+        $cargo->save();
+
+
+        $cargo = new Cargo();
+        $cargo->name = 'Docente';
+        $cargo->status = 1;
+        $cargo->save();
+
+
 
 
 
