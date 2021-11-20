@@ -18,6 +18,7 @@ use App\Models\GradoInstruccion;
 use App\Models\TipoClase;
 use App\Models\TipoAcademia;
 use App\Models\Cargo;
+use App\Models\TipoDirectiva;
 
 class AdminTableSeeder extends Seeder
 {
@@ -1531,7 +1532,27 @@ class AdminTableSeeder extends Seeder
         $cargo->status = 1;
         $cargo->save();
 
+        $tipodirectiva = new TipoDirectiva();
+        $tipodirectiva->name = 'Junta Directiva ';
+        $tipodirectiva->status = 1;
+        $tipodirectiva->save();
 
+        $tipodirectiva = new TipoDirectiva();
+        $tipodirectiva->name = 'Asociacion de Padres';
+        $tipodirectiva->status = 1;
+        $tipodirectiva->save();
+
+
+        $tipodirectiva = new TipoDirectiva();
+        $tipodirectiva->name = 'Administrativo  ';
+        $tipodirectiva->status = 1;
+        $tipodirectiva->save();
+
+
+        $tipodirectiva = new TipoDirectiva();
+        $tipodirectiva->name = 'Otros';
+        $tipodirectiva->status = 1;
+        $tipodirectiva->save();
 
 
 

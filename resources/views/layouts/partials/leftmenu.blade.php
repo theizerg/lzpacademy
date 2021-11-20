@@ -69,17 +69,20 @@
                             </li>
                              <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="{{ url('gradoinstruccion') }}" data-toggle="dropdown" data-i18n="Calendar"><i class="fas fa-user-tie"></i><span data-i18n="Calendar">Grado de instrucción</span></a>
                             </li>
-
-                        </ul>
-                    </li>
-                    <li class="dropdown nav-item" data-menu="dropdown"><a class="dropdown-toggle nav-link d-flex align-items-center" href="#" data-toggle="dropdown"><i data-feather="layers"></i><span data-i18n="User Interface">Control de estudio</span></a>
-                        <ul class="dropdown-menu">
-                             <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="{{ url('nivelacademico') }}" data-toggle="dropdown" data-i18n="Calendar"><i class="fas fa-graduation-cap"></i><span data-i18n="Calendar">Nivel Académico</span></a>
+                              <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="{{ url('nivelacademico') }}" data-toggle="dropdown" data-i18n="Calendar"><i class="fas fa-graduation-cap"></i><span data-i18n="Calendar">Nivel Académico</span></a>
                             </li>
                              <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="{{ url('tipoacademia') }}" data-toggle="dropdown" data-i18n="Calendar"><i class="fas fa-store-alt"></i><span data-i18n="Calendar">Tipo de Academia</span></a>
                             </li>
                             <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="{{ url('cargo') }}" data-toggle="dropdown" data-i18n="Colors"><i data-feather="droplet"></i><span data-i18n="Colors">Cargos</span></a>
                             </li>
+                            <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="{{ url('cargo') }}" data-toggle="dropdown" data-i18n="Colors"><i data-feather="droplet"></i><span data-i18n="Colors">Tipo de directiva</span></a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="dropdown nav-item" data-menu="dropdown"><a class="dropdown-toggle nav-link d-flex align-items-center" href="#" data-toggle="dropdown"><i data-feather="layers"></i><span data-i18n="User Interface">Control de estudio</span></a>
+                        <ul class="dropdown-menu">
+                           
                             <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="ui-feather.html" data-toggle="dropdown" data-i18n="Feather"><i data-feather="eye"></i><span data-i18n="Feather">Feather</span></a>
                             </li>
                             <li class="dropdown dropdown-submenu" data-menu="dropdown-submenu"><a class="dropdown-item d-flex align-items-center dropdown-toggle" href="#" data-toggle="dropdown" data-i18n="Cards"><i data-feather="credit-card"></i><span data-i18n="Cards">Cards</span></a>
