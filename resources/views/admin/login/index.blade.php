@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 
-@section('title', 'Usuarios')
-@section('page_title', 'Usuarios')
+@section('title', 'LOGINS')
+@section('page_title', 'LOGINS')
 
 
 

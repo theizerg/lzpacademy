@@ -1,16 +1,16 @@
 @extends('layouts.admin')
-@section('title','TIPO DE SANGRE')
-@section('breadcrumb','TIPO DE SANGRE')
+@section('title','NIVEL ACADÉMICO')
+@section('breadcrumb','NIVEL ACADÉMICO')
 @section('content')
 <main class="content">
   <button type="button" class="btn blue darken-4 text-white btn-primary float-left btn-md"  data-toggle="modal" data-target="#CrearUsuario"><i class="fas fa-plus-square"  data-bs-toggle="tooltip" data-bs-placement="top" title="Crear nuevo Usuario" data-container="body" data-animation="true"></i>
-        Nuevo tipo de sangre
+        Nuevo nivel academico
   </button><br><br><br>
   <div class="row">
     <div class="col-lg-12">
       <div class="card card-line-primary">
             <div class="card-header">
-              <h4 class="card-title">Listado de tipo de sangre</h4>
+              <h4 class="card-title">Listado de nivel academico</h4>
             </div>
             <div class="card-body">
               <div class="table-responsive">
@@ -49,7 +49,7 @@
                       </td>
                        
                       </tr>
-                       @include('admin.tipodesangre.partials.modal.edit')
+                       @include('admin.nivelacademico.partials.modal.edit')
                     @endforeach
                   </tbody>
                 </table>
@@ -58,7 +58,7 @@
         </div>
       </div>
   </div>
-  @include('admin.tipodesangre.partials.modal.create')
+  @include('admin.nivelacademico.partials.modal.create')
 
 </main>
 @endsection

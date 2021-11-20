@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 
-@section('title', 'Permisos')
-@section('page_title', 'Permisos')
+@section('title', 'PERMISOS')
+@section('page_title', 'PERMISOS')
 
 
 @section('content')

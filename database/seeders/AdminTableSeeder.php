@@ -15,6 +15,7 @@ use App\Models\Estado;
 use App\Models\Nivel;
 use App\Models\EstadoCivil;
 use App\Models\GradoInstruccion;
+use App\Models\TipoClase;
 
 class AdminTableSeeder extends Seeder
 {
@@ -1472,7 +1473,33 @@ class AdminTableSeeder extends Seeder
         $grado->status = 1;
         $grado->save();
 
+        $tipoclase = new TipoClase();
+        $tipoclase->name = 'Pre-escolar';
+        $tipoclase->status = 1;
+        $tipoclase->save();
+
+        $tipoclase = new TipoClase();
+        $tipoclase->name = 'Primaria';
+        $tipoclase->status = 1;
+        $tipoclase->save();
+
+
+        $tipoclase = new TipoClase();
+        $tipoclase->name = 'Bachillerato';
+        $tipoclase->status = 1;
+        $tipoclase->save();
+
+
+        $tipoclase = new TipoClase();
+        $tipoclase->name = 'Cursos';
+        $tipoclase->status = 1;
+        $tipoclase->save();
         
+
+        $tipoclase = new TipoClase();
+        $tipoclase->name = 'Nivel Universitario';
+        $tipoclase->status = 1;
+        $tipoclase->save();
 
 
 

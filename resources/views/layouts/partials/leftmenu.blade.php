@@ -69,11 +69,12 @@
                             </li>
                              <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="{{ url('gradoinstruccion') }}" data-toggle="dropdown" data-i18n="Calendar"><i class="fas fa-user-tie"></i><span data-i18n="Calendar">Grado de instrucción</span></a>
                             </li>
+
                         </ul>
                     </li>
-                    <li class="dropdown nav-item" data-menu="dropdown"><a class="dropdown-toggle nav-link d-flex align-items-center" href="#" data-toggle="dropdown"><i data-feather="layers"></i><span data-i18n="User Interface">User Interface</span></a>
+                    <li class="dropdown nav-item" data-menu="dropdown"><a class="dropdown-toggle nav-link d-flex align-items-center" href="#" data-toggle="dropdown"><i data-feather="layers"></i><span data-i18n="User Interface">Control de estudio</span></a>
                         <ul class="dropdown-menu">
-                            <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="ui-typography.html" data-toggle="dropdown" data-i18n="Typography"><i data-feather="type"></i><span data-i18n="Typography">Typography</span></a>
+                             <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="{{ url('nivelacademico') }}" data-toggle="dropdown" data-i18n="Calendar"><i class="fas fa-graduation-cap"></i><span data-i18n="Calendar">Nivel Académico</span></a>
                             </li>
                             <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="ui-colors.html" data-toggle="dropdown" data-i18n="Colors"><i data-feather="droplet"></i><span data-i18n="Colors">Colors</span></a>
                             </li>

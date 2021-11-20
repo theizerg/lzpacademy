@@ -1,5 +1,5 @@
 @extends('layouts.admin')
-@section('title','Roles')
+@section('title','ROLES')
 @section('page_title', 'Listado de Roles')
 @section('content')
  <main class="content">

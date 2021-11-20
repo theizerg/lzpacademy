@@ -9,7 +9,7 @@ use Spatie\Permission\Models\Permission;
 class RolesAndPermissionTableSeeder extends Seeder
 {
    
-       private $permissions ,$user_permissions ,$lite_permissions, $platinium_permissions, $premium_permissions;
+       private $permissions ,$profesor_permissions ,$lite_permissions, $platinium_permissions, $premium_permissions;
 
  
     public function __construct()
@@ -57,12 +57,87 @@ class RolesAndPermissionTableSeeder extends Seeder
                                 'EditarInstituto',
                                 'EliminarInstituto',
 
+                                /* Forma de pago */
+                                'VerFormaDePago',
+                                'RegistrarFormaDePago',
+                                'EditarFormaDePago',
+                                'EliminarFormaDePago',
+
+                                /* Cursos */
+                                'VerCurso',
+                                'RegistrarCurso',
+                                'EditarCurso',
+                                'EliminarCurso',
+
+                                /* Nacionalidads */
+                                'VerNacionalidad',
+                                'RegistrarNacionalidad',
+                                'EditarNacionalidad',
+                                'EliminarNacionalidad',
+
+                                /* Tipo de Sangre */
+
+                                'VerTipoDeSangre',
+                                'RegistrarTipoDeSangre',
+                                'EditarTipoDeSangre',
+                                'EliminarTipoDeSangre',
+
+                                /* Generos */
+                                'VerGenero',
+                                'RegistrarGenero',
+                                'EditarGenero',
+                                'EliminarGenero',
+
+                                 /* Paiss */
+                                'VerPais',
+                                'RegistrarPais',
+                                'EditarPais',
+                                'EliminarPais',
+
+                                 /* Estadoss */
+                                'VerEstados',
+                                'RegistrarEstados',
+                                'EditarEstados',
+                                'EliminarEstados',
+
+                                 /* Nivels */
+                                'VerNivel',
+                                'RegistrarNivel',
+                                'EditarNivel',
+                                'EliminarNivel',
+
+                                 /* EstadoCivils */
+                                'VerEstadoCivil',
+                                'RegistrarEstadoCivil',
+                                'EditarEstadoCivil',
+                                'EliminarEstadoCivil',
+
+                                 /* Grado de Instruccion */
+                                'VerGradoInstruccion',
+                                'RegistrarGradoInstruccion',
+                                'EditarGradoInstruccion',
+                                'EliminarGradoInstruccion',
+
+                                /* Comentarios*/
+                                'VerComentario',
+                                'RegistrarComentario',
+                                'EditarComentario',
+                                'EliminarComentario',
+
+
+                                /* Nivel Academico*/
+                                'VerNivelAcademico',
+                                'RegistrarNivelAcademico',
+                                'EditarNivelAcademico',
+                                'EliminarNivelAcademico',
+
+
 
                               ];
 
 
 
-        $this->users_permissions = [
+        $this->profesor_permissions = [
                                     
                                    
                                    
@@ -86,8 +161,8 @@ class RolesAndPermissionTableSeeder extends Seeder
         $role->givePermissionTo($this->permissions);
 
         // create the user role and set all user permissions
-        $role = Role::create(['name' => 'Usuario']);
-        $role->givePermissionTo($this->users_permissions);
+        $role = Role::create(['name' => 'Profesor']);
+        $role->givePermissionTo($this->profesor_permissions);
 
     }
 }

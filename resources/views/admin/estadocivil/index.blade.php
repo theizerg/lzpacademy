@@ -1,6 +1,6 @@
 @extends('layouts.admin')
-@section('title','METODOS DE PAGO')
-@section('breadcrumb','METODOS DE PAGO')
+@section('title','PAISES')
+@section('breadcrumb','PAISES')
 @section('content')
 <main class="content">
   <button type="button" class="btn blue darken-4 text-white btn-primary float-left btn-md"  data-toggle="modal" data-target="#CrearUsuario"><i class="fas fa-plus-square"  data-bs-toggle="tooltip" data-bs-placement="top" title="Crear nuevo Usuario" data-container="body" data-animation="true"></i>
