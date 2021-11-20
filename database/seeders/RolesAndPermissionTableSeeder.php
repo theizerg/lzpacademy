@@ -132,6 +132,13 @@ class RolesAndPermissionTableSeeder extends Seeder
                                 'EliminarNivelAcademico',
 
 
+                                 /* Tipo de Academia*/
+                                'VerTipoAcademia',
+                                'RegistrarTipoAcademia',
+                                'EditarTipoAcademia',
+                                'EliminarTipoAcademia',
+
+
 
                               ];
 

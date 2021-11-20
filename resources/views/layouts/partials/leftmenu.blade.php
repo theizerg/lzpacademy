@@ -76,7 +76,9 @@
                         <ul class="dropdown-menu">
                              <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="{{ url('nivelacademico') }}" data-toggle="dropdown" data-i18n="Calendar"><i class="fas fa-graduation-cap"></i><span data-i18n="Calendar">Nivel Académico</span></a>
                             </li>
-                            <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="ui-colors.html" data-toggle="dropdown" data-i18n="Colors"><i data-feather="droplet"></i><span data-i18n="Colors">Colors</span></a>
+                             <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="{{ url('tipoacademia') }}" data-toggle="dropdown" data-i18n="Calendar"><i class="fas fa-store-alt"></i><span data-i18n="Calendar">Tipo de Academia</span></a>
+                            </li>
+                            <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="{{ url('cargo') }}" data-toggle="dropdown" data-i18n="Colors"><i data-feather="droplet"></i><span data-i18n="Colors">Cargos</span></a>
                             </li>
                             <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="ui-feather.html" data-toggle="dropdown" data-i18n="Feather"><i data-feather="eye"></i><span data-i18n="Feather">Feather</span></a>
                             </li>
