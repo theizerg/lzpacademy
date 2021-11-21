@@ -5,7 +5,7 @@
 @endpush
 <div class="row match-height">
     <!-- Greetings Card starts -->
-    <div class="col-xl-4 col-md-6 col-12">
+    <div class="col-xl-6 col-md-6 col-12">
         <div class="card card-congratulations">
             <div class="card-body text-center">
                 <img src="{{ asset('images/elements/decore-left.png') }}" class="congratulations-img-left" alt="card-img-left" />
@@ -24,7 +24,7 @@
             </div>
         </div>
     </div>
-    <div class="col-xl-8 col-md-6 col-12">
+    <div class="col-xl-6 col-md-6 col-12">
       <div class="card card-statistics">
         <div class="card-header">
           <h4 class="card-title">Estadísticas</h4>
@@ -86,32 +86,8 @@
                 </div>
               </div>
             </div>
-            <div class="col-xl-3 col-sm-6 col-12 mb-2 mb-sm-0">
-              <div class="d-flex flex-row">
-                <div class="avatar blue darken-4 me-2 mt-2">
-                  <div class="avatar-content">
-                    <i class=" avatar-icon far fa-envelope fa-2x"></i>
-                  </div>
-                </div>
-                <div class="my-auto">
-                  <h4 class="fw-bolder mb-0 ml-1  mt-2">{{ App\Models\Comentario::where('status',0)->count() }}</h4>
-                  <p class="card-text font-small-3 mb-0 ml-1">Comentarios sin leer</p>
-                </div>
-              </div>
-            </div>
-             <div class="col-xl-3 col-sm-6 col-12 mb-2 mb-sm-0">
-              <div class="d-flex flex-row">
-                <div class="avatar green darken-4 me-2 mt-2">
-                  <div class="avatar-content">
-                    <i class=" avatar-icon fas fa-envelope-open-text fa-2x"></i>
-                  </div>
-                </div>
-                <div class="my-auto">
-                  <h4 class="fw-bolder mb-0 ml-1  mt-2">{{ App\Models\Comentario::where('status',1)->count() }}</h4>
-                  <p class="card-text font-small-3 mb-0 ml-1">Comentarios leídos</p>
-                </div>
-              </div>
-            </div>
+           
+            
           </div>
         </div>
       </div>

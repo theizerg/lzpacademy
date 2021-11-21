@@ -2,7 +2,6 @@
 @section('title','NACIONALIDADES')
 @section('breadcrumb','NACIONALIDADES')
 @section('content')
-<main class="content">
   <button type="button" class="btn blue darken-4 text-white btn-primary float-left btn-md"  data-toggle="modal" data-target="#CrearUsuario"><i class="fas fa-plus-square"  data-bs-toggle="tooltip" data-bs-placement="top" title="Crear nuevo Usuario" data-container="body" data-animation="true"></i>
         Nueva nacionalidad
   </button><br><br><br>
@@ -59,8 +58,6 @@
       </div>
   </div>
   @include('admin.nacionalidad.partials.modal.create')
-
-</main>
 @endsection
 
  

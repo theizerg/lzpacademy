@@ -13,7 +13,7 @@
     @stack('styles')
   </head>
 
-<body class="horizontal-layout horizontal-menu  navbar-floating footer-static  " data-open="hover" data-menu="horizontal-menu" data-col="">
+<body class="vertical-layout vertical-menu-modern  navbar-floating footer-static  " data-open="click" data-menu="vertical-menu-modern" data-col="">
   <div id="app">
     <div class="main-wrapper main-wrapper-1">
       <div class="navbar-bg"></div>
@@ -23,16 +23,19 @@
 
    
     <!--Page Content Here -->
-    <div class="app-content content ">
-           <!-- BEGIN: Header-->
-            <div class="content-overlay"></div>
-             <div class="header-navbar-shadow"></div>
-               <div class="content-wrapper container-xxl p-0">
-                 <div class="content-body">
+   <div class="app-content content ">
+        <div class="content-overlay"></div>
+        <div class="header-navbar-shadow"></div>
+        <div class="content-wrapper container-xxl p-0">
+            <div class="content-header row">
+            </div>
+            <div class="content-body">
             
                  <!-- Dashboard Ecommerce Starts -->
                  <section id="dashboard-ecommerce">
+                  <main class="container">
                     @yield('content')
+                  </main>
                 </section>
               </div>
            </div>

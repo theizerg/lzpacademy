@@ -2,9 +2,6 @@
 
 @section('title', 'LOGINS')
 @section('page_title', 'LOGINS')
-
-
-
 @section('content')
   <div class="col-md-12">
     <div class="card card-line-primary">

@@ -5,8 +5,6 @@
 
 
 @section('content')
-
-   <section class="content">
       <div class="row">
         <div class="col-md-12">
             <div class="card card-line-primary">
@@ -157,7 +155,6 @@
             </div>
           </div>
       </div>
-    </section>
 
 
 

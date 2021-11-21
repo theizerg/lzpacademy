@@ -2,7 +2,7 @@
 @section('title','ACADEMIA')
 @section('breadcrumb','ACADEMIA')
 @section('content')
-<main class="content">
+
           <div class="row">
               <div class="col-lg-12">
                     <div class="card card-line-primary">
@@ -59,7 +59,6 @@
                 </div>
         @include('admin.academia.partials.modal.create')
 
-</main>
 @endsection
 
  

@@ -15,7 +15,10 @@ const mix = require('laravel-mix');
  */
  
   
-/*mix.styles([
+mix.styles([
+    'node_modules/vuexy/app-assets/vendors/css/vendors.min.css',
+    'node_modules/vuexy/app-assets/vendors/css/charts/apexcharts.css',
+    'node_modules/vuexy/app-assets/vendors/css/extensions/toastr.min.css',
     'node_modules/vuexy/app-assets/css/bootstrap.css',
     'node_modules/vuexy/app-assets/css/bootstrap-extended.css',
     'node_modules/vuexy/app-assets/css/colors.css',
@@ -23,7 +26,15 @@ const mix = require('laravel-mix');
     'node_modules/vuexy/app-assets/css/themes/dark-layout.css',
     'node_modules/vuexy/app-assets/css/themes/bordered-layout.css',
     'node_modules/vuexy/app-assets/css/themes/semi-dark-layout.css',
-    'node_modules/vuexy/app-assets/css/core/menu/menu-types/horizontal-menu.css',
+    'node_modules/vuexy/app-assets/css/core/menu/menu-types/vertical-menu.css',
+    'node_modules/vuexy/app-assets/css/pages/dashboard-ecommerce.css',
+    'node_modules/vuexy/app-assets/css/plugins/charts/chart-apex.css',
+    'node_modules/vuexy/app-assets/css/plugins/extensions/ext-component-toastr.css',
+
+
+
+
+ 
     //'node_modules/@mdi/font/css/materialdesignicons.css',
     'node_modules/otika/assets/bundles/datatables/datatables.min.css',
     'node_modules/otika/assets/bundles/datatables/DataTables-1.10.16/css/dataTables.bootstrap4.min.css',
@@ -41,7 +52,7 @@ const mix = require('laravel-mix');
     'node_modules/vuexy/app-assets/css/plugins/forms/form-validation.css',
     'node_modules/admin-lte/plugins/daterangepicker/daterangepicker.css',
 
-    'node_modules/vuexy/assets/css/style.css',
+     'node_modules/vuexy/assets/css/style.css',
 
     
     ], 'public/css/app.css');
@@ -50,7 +61,6 @@ const mix = require('laravel-mix');
 mix.scripts([
 
     'node_modules/vuexy/app-assets/vendors/js/vendors.min.js',
-    'node_modules/vuexy/app-assets/vendors/js/ui/jquery.sticky.js',
     'node_modules/vuexy/app-assets/js/core/app-menu.js',
     'node_modules/otika/assets/bundles/apexcharts/apexcharts.min.js',
     'node_modules/otika/assets/bundles/datatables/datatables.min.js',
@@ -88,7 +98,6 @@ mix.scripts([
 
 
 ], 'public/js/app.js');
-*/
 
 
 mix.styles([
@@ -114,3 +123,8 @@ mix.scripts([
     'node_modules/dashboardkit/bootstrap/default/assets/css/plugins/animate.min.css',
 
 ], 'public/js/page.js');
+
+
+
+
+
