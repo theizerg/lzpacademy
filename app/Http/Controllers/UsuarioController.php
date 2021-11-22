@@ -53,7 +53,7 @@ class UsuarioController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request);
+       // dd($request);
 
          $user =new User();
 
@@ -108,7 +108,7 @@ class UsuarioController extends Controller
      */
     public function update(Request $request, $id)
     {
-        dd($request);
+       // dd($request);
 
          $user = User::find(($id));
          $user->lastname = $request->lastname;

@@ -1,9 +1,12 @@
 <div class="row">
   <div class="col-12">
-    <label>Nombres: </label>
-     <div class="form-group">
-     {!! Form::text('name',null,['class'=>'form-control', 'required' => 'required','autocomplete' =>'off','placeholder' =>'Nombres']) !!}
-     </div>
+    <label>Descripción: </label>
+      <div class="input-group input-group-merge mb-2">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon-search2"><i class="fas fa-user"></i></span>
+        </div>
+       {!! Form::text('name',null,['class'=>'form-control', 'required' => 'required','autocomplete' =>'off','placeholder' =>'Descripción']) !!}
+    </div>
   </div>
  <div class="col-12 text-center">
     <label class="font-weight-bolder" for="status">Estado del curso</label>

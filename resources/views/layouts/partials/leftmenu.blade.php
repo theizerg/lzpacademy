@@ -37,50 +37,51 @@
             <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
                 <li class=" nav-item"><a class="d-flex align-items-center" href="index.html"><i data-feather="lock"></i><span class="menu-title text-truncate" data-i18n="Dashboards">Seguridad</span><span class="badge badge-light-warning badge-pill ml-auto mr-1">3</span></a>
                     <ul class="menu-content">
-                            <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="{{ url('/usuario') }}" data-toggle="dropdown" data-i18n="Analytics"><i data-feather="user"></i><span data-i18n="Analytics">Usuarios</span></a>
+                            <li class="{{ Active::check('usuario') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('/usuario') }}" data-toggle="dropdown" data-i18n="Analytics"><i data-feather="user"></i><span data-i18n="Analytics">Usuarios</span></a>
                             </li>
-                             <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="{{ url('roles') }}" data-toggle="dropdown" data-i18n="Analytics"><i data-feather="lock"></i><span data-i18n="Analytics">Roles</span></a>
+                             <li class="{{ Active::check('roles') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('roles') }}" data-toggle="dropdown" data-i18n="Analytics"><i data-feather="lock"></i><span data-i18n="Analytics">Roles</span></a>
                             </li>
-                             <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="{{ url('logins') }}" data-toggle="dropdown" data-i18n="Analytics"><i class="fas fa-history"></i><span data-i18n="Analytics">Historial de sesión</span></a>
+                              <li class="{{ Active::check('logins') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('logins') }}" data-toggle="dropdown" data-i18n="Analytics"><i class="fas fa-history"></i><span data-i18n="Analytics">Historial de sesión</span></a>
                             </li>
                         </ul>
                 </li>
                 <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">Configuración</span><i data-feather="more-horizontal"></i>
                 </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="file-text"></i><span class="menu-title text-truncate" data-i18n="Invoice">Invoice</span></a>
+                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="file-text"></i><span class="menu-title text-truncate" data-i18n="Invoice">Administración</span></a>
                     <ul class="menu-content">
-                         <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="{{ url('/academia') }}" data-toggle="dropdown" data-i18n="Academia"><i class="fas fa-building"></i><span data-i18n="Academia">Academia</span></a>
+                         <li class="{{ Active::check('academia') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('/academia') }}" data-toggle="dropdown" data-i18n="Academia"><i class="fas fa-building"></i><span data-i18n="Academia">Academia</span></a>
                             </li>
-                            <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="{{ ('formasdepago') }}" data-toggle="dropdown" data-i18n="Chat"><i class="fas fa-dollar-sign"></i><span data-i18n="Chat">Métodos de pago</span></a>
+                            <li class="{{ Active::check('formasdepago') }} "><a class="dropdown-item d-flex align-items-center" href="{{ ('formasdepago') }}" data-toggle="dropdown" data-i18n="Chat"><i class="fas fa-dollar-sign"></i><span data-i18n="Chat">Métodos de pago</span></a>
                             </li>
-                            <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="{{ url('curso') }}" data-toggle="dropdown" data-i18n="Cursos"><i class="fas fa-graduation-cap"></i><span data-i18n="Cursos"> Cursos</span></a>
+                            <li class="{{ Active::check('curso') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('curso') }}" data-toggle="dropdown" data-i18n="Cursos"><i class="fas fa-graduation-cap"></i><span data-i18n="Cursos"> Cursos</span></a>
                             </li>
-                            <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="{{ url('nacionalidades') }}" data-toggle="dropdown" data-i18n="Calendar"><i data-feather="calendar"></i><span data-i18n="Calendar">Nacionalidades</span></a>
+                            <li class="{{ Active::check('nacionalidades') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('nacionalidades') }}" data-toggle="dropdown" data-i18n="Calendar"><i data-feather="calendar"></i><span data-i18n="Calendar">Nacionalidades</span></a>
                             </li>
-                             <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="{{ url('tipodesangre') }}" data-toggle="dropdown" data-i18n="Calendar"><i class="fas fa-hospital"></i><span data-i18n="Calendar">Tipo de sangre</span></a>
+                             <li class="{{ Active::check('tipodesangre') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('tipodesangre') }}" data-toggle="dropdown" data-i18n="Calendar"><i class="fas fa-hospital"></i><span data-i18n="Calendar">Tipo de sangre</span></a>
                             </li>
-                              <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="{{ url('genero') }}" data-toggle="dropdown" data-i18n="Calendar"><i data-feather="user"></i><span data-i18n="Calendar">Géneros</span></a>
+                              <li class="{{ Active::check('genero') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('genero') }}" data-toggle="dropdown" data-i18n="Calendar"><i data-feather="user"></i><span data-i18n="Calendar">Géneros</span></a>
                             </li>
-                            <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="{{ url('paises') }}" data-toggle="dropdown" data-i18n="Calendar"><i data-feather="map"></i><span data-i18n="Calendar">Países</span></a>
+                            <li class="{{ Active::check('paises') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('paises') }}" data-toggle="dropdown" data-i18n="Calendar"><i data-feather="map"></i><span data-i18n="Calendar">Países</span></a>
                             </li>
-                             <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="{{ url('niveles') }}" data-toggle="dropdown" data-i18n="Calendar"><i class="fas fa-level-up-alt"></i><span data-i18n="Calendar">Niveles</span></a>
+                             <li class="{{ Active::check('niveles') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('niveles') }}" data-toggle="dropdown" data-i18n="Calendar"><i class="fas fa-level-up-alt"></i><span data-i18n="Calendar">Niveles</span></a>
                             </li>
-                             <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="{{ url('estadocivil') }}" data-toggle="dropdown" data-i18n="Calendar"><i class="fas fa-user-tie"></i><span data-i18n="Calendar">Estado Civil</span></a>
+                             <li class="{{ Active::check('estadocivil') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('estadocivil') }}" data-toggle="dropdown" data-i18n="Calendar"><i class="fas fa-user-tie"></i><span data-i18n="Calendar">Estado Civil</span></a>
                             </li>
-                             <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="{{ url('gradoinstruccion') }}" data-toggle="dropdown" data-i18n="Calendar"><i class="fas fa-user-tie"></i><span data-i18n="Calendar">Grado de instrucción</span></a>
+                             <li class="{{ Active::check('gradoinstruccion') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('gradoinstruccion') }}" data-toggle="dropdown" data-i18n="Calendar"><i class="fas fa-user-tie"></i><span data-i18n="Calendar">Grado de instrucción</span></a>
                             </li>
-                              <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="{{ url('nivelacademico') }}" data-toggle="dropdown" data-i18n="Calendar"><i class="fas fa-graduation-cap"></i><span data-i18n="Calendar">Nivel Académico</span></a>
+                              <li class="{{ Active::check('nivelacademico') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('nivelacademico') }}" data-toggle="dropdown" data-i18n="Calendar"><i class="fas fa-graduation-cap"></i><span data-i18n="Calendar">Nivel Académico</span></a>
                             </li>
-                             <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="{{ url('tipoacademia') }}" data-toggle="dropdown" data-i18n="Calendar"><i class="fas fa-store-alt"></i><span data-i18n="Calendar">Tipo de Academia</span></a>
+                             <li class="{{ Active::check('tipoacademia') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('tipoacademia') }}" data-toggle="dropdown" data-i18n="Calendar"><i class="fas fa-store-alt"></i><span data-i18n="Calendar">Tipo de Academia</span></a>
                             </li>
-                            <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="{{ url('cargo') }}" data-toggle="dropdown" data-i18n="Colors"><i data-feather="droplet"></i><span data-i18n="Colors">Cargos</span></a>
+                            <li class="{{ Active::check('cargo') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('cargo') }}" data-toggle="dropdown" data-i18n="Colors"><i data-feather="droplet"></i><span data-i18n="Colors">Cargos</span></a>
                             </li>
-                            <li data-menu=""><a class="dropdown-item d-flex align-items-center" href="{{ url('cargo') }}" data-toggle="dropdown" data-i18n="Colors"><i data-feather="droplet"></i><span data-i18n="Colors">Tipo de directiva</span></a>
+                            <li class="{{ Active::check('tipodirectiva') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('tipodirectiva') }}" data-toggle="dropdown" data-i18n="Colors"><i data-feather="droplet"></i><span data-i18n="Colors">Tipo de directiva</span></a>
+                            </li>
+                             <li class="{{ Active::check('directiva') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('directiva') }}" data-toggle="dropdown" data-i18n="Colors"><i data-feather="droplet"></i><span data-i18n="Colors">Directiva</span></a>
                             </li>
                     </ul>
                 </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="app-file-manager.html"><i data-feather="save"></i><span class="menu-title text-truncate" data-i18n="File Manager">File Manager</span></a>
-                </li>
+              
                 <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="shopping-cart"></i><span class="menu-title text-truncate" data-i18n="eCommerce">eCommerce</span></a>
                     <ul class="menu-content">
                         <li><a class="d-flex align-items-center" href="app-ecommerce-shop.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Shop">Shop</span></a>

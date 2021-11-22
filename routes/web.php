@@ -48,7 +48,7 @@ Route::middleware(['auth',])->group(function () {
 /**/  Route::resource('tipoacademia',   'TipoAcademiaController');
 /**/  Route::resource('cargo',   'CargoController');
 /**/  Route::resource('tipodirectiva',   'TipoDirectivaController');
-
+/**/  Route::resource('directiva',   'DirectivaController');
 
 
 #############################################################################################

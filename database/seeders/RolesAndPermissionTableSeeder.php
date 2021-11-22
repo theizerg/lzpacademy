@@ -168,7 +168,7 @@ class RolesAndPermissionTableSeeder extends Seeder
         $role->givePermissionTo($this->permissions);
 
         // create the user role and set all user permissions
-        $role = Role::create(['name' => 'Profesor']);
+        $role = Role::create(['name' => 'Usuario']);
         $role->givePermissionTo($this->profesor_permissions);
 
     }

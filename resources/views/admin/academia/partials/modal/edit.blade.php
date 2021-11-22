@@ -9,7 +9,7 @@
       </div>
       <div class="modal-body">
        {!! Form::model($element, ['route' => ['academia.update',$element->id],'method' => 'PUT','enctype'=>'multipart/form-data']) !!}
-        @include('admin.academia.partials.input.edit')
+        @include('admin.academia.partials.input.form')
         <br><br>
         <button type="submit" class="btn blue darken-4 text-white form-control">Guardar cambios</button>
          {!! Form::close()!!}

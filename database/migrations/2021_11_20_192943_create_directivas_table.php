@@ -19,6 +19,8 @@ class CreateDirectivasTable extends Migration
             $table->smallInteger('status')->default(0);
             $table->integer('tipo_directiva_id')->unsigned()->default(189);
             $table->foreign('tipo_directiva_id')->references('id')->on('tipo_directivas');
+            $table->integer('cargo_id')->unsigned()->default(189);
+            $table->foreign('cargo_id')->references('id')->on('cargos');
             $table->timestamps();
         });
     }

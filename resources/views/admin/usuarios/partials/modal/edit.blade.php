@@ -8,8 +8,8 @@
         </button>
       </div>
       <div class="modal-body">
-       {!! Form::open(['route' => ['usuario.store'],'method' => 'POST']) !!}
-        @include('admin.usuarios.partials.input.edit')
+       {!! Form::model($element, ['route' => ['usuario.update',$element->id],'method' => 'PUT','enctype'=>'multipart/form-data']) !!}
+        @include('admin.usuarios.partials.input.form')
         <br><br>
         <button type="submit" class="btn blue darken-4 text-white form-control">Guardar cambios</button>
          {!! Form::close()!!}
