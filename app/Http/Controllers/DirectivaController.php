@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 
 class DirectivaController extends Controller
 {
+   
     /**
      * Display a listing of the resource.
      *
@@ -14,7 +15,8 @@ class DirectivaController extends Controller
      */
     public function index()
     {
-        //
+        $academias = Directiva::get();
+        return view('admin.directiva.index',compact('academias'));
     }
 
     /**
@@ -35,16 +37,24 @@ class DirectivaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $directiva =new Directiva();
+        $directiva->name = $request->name;
+        $directiva->tipo_directiva_id = $request->tipo_directiva_id;
+        $directiva->cargo_id = $request->cargo_id;
+        $directiva->documento = $request->documento;
+        $directiva->status = $request->status;
+        $directiva->save();
+
+        return \Redirect::back();
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Directiva  $directiva
+     * @param  \App\Models\Curso  $curso
      * @return \Illuminate\Http\Response
      */
-    public function show(Directiva $directiva)
+    public function show(Curso $curso)
     {
         //
     }
@@ -52,10 +62,10 @@ class DirectivaController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Directiva  $directiva
+     * @param  \App\Models\Curso  $curso
      * @return \Illuminate\Http\Response
      */
-    public function edit(Directiva $directiva)
+    public function edit(Curso $curso)
     {
         //
     }
@@ -64,21 +74,29 @@ class DirectivaController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Directiva  $directiva
+     * @param  \App\Models\Curso  $curso
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Directiva $directiva)
+    public function update(Request $request,$curso)
     {
-        //
+        $directiva = Directiva::find($curso);
+        $directiva->name = $request->name;
+        $directiva->tipo_directiva_id = $request->tipo_directiva_id;
+        $directiva->cargo_id = $request->cargo_id;
+        $directiva->documento = $request->documento;
+        $directiva->status = $request->status;
+        $directiva->save();
+
+        return \Redirect::back();
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Directiva  $directiva
+     * @param  \App\Models\Curso  $curso
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Directiva $directiva)
+    public function destroy(Curso $curso)
     {
         //
     }

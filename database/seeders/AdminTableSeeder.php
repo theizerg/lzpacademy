@@ -19,6 +19,7 @@ use App\Models\TipoClase;
 use App\Models\TipoAcademia;
 use App\Models\Cargo;
 use App\Models\TipoDirectiva;
+use App\Models\Directiva;
 
 class AdminTableSeeder extends Seeder
 {
@@ -1553,6 +1554,14 @@ class AdminTableSeeder extends Seeder
         $tipodirectiva->name = 'Otros';
         $tipodirectiva->status = 1;
         $tipodirectiva->save();
+
+        $directiva = new Directiva();
+        $directiva->name = 'Director';
+        $directiva->cargo_id = 1;
+        $directiva->tipo_directiva_id = 1;
+        $directiva->documento = '25212293';
+        $directiva->status = 1;
+        $directiva->save();
 
 
 

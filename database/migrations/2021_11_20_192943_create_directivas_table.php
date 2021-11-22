@@ -21,6 +21,8 @@ class CreateDirectivasTable extends Migration
             $table->foreign('tipo_directiva_id')->references('id')->on('tipo_directivas');
             $table->integer('cargo_id')->unsigned()->default(189);
             $table->foreign('cargo_id')->references('id')->on('cargos');
+            $table->string('documento');
+            
             $table->timestamps();
         });
     }
