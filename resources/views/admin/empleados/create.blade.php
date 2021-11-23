@@ -13,8 +13,12 @@
         @include('admin.empleados.partials.input.form')
 
         <br><br>
-        <button type="submit" class="btn blue darken-4 text-white form-control">Guardar cambios</button>
-         {!! Form::close()!!}
+       
+      
+      <div class="card-footer">
+         <button type="submit" class="btn blue darken-4 text-white form-control">Guardar cambios</button>
+            {!! Form::close()!!}
+      </div>
       </div>
     </div>
   </div>

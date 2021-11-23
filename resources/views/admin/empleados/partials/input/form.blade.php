@@ -120,15 +120,7 @@
   </div>
 
 
- <div class="col-12 text-center">
-    <label class="font-weight-bolder" for="status">Estado del empleado</label>
-    <div class="checkbox icheck">
-      <label class="font-weight-bolder">
-        <input type="radio" name="status" value="1" checked> Activo&nbsp;&nbsp;
-        <input type="radio" name="status" value="0"> Inactivo
-      </label>
-    </div>
-  </div>
+ 
 </div>
 
 @push('scripts')
