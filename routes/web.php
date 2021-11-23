@@ -49,7 +49,7 @@ Route::middleware(['auth',])->group(function () {
 /**/  Route::resource('cargo',   'CargoController');
 /**/  Route::resource('tipodirectiva',   'TipoDirectivaController');
 /**/  Route::resource('directiva',   'DirectivaController');
-
+/**/  Route::resource('empleado',   'EmpleadoController');
 
 #############################################################################################
 #############################################################################################

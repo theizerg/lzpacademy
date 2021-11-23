@@ -30,11 +30,6 @@ mix.styles([
     'node_modules/vuexy/app-assets/css/pages/dashboard-ecommerce.css',
     'node_modules/vuexy/app-assets/css/plugins/charts/chart-apex.css',
     'node_modules/vuexy/app-assets/css/plugins/extensions/ext-component-toastr.css',
-
-
-
-
- 
     //'node_modules/@mdi/font/css/materialdesignicons.css',
     'node_modules/otika/assets/bundles/datatables/datatables.min.css',
     'node_modules/otika/assets/bundles/datatables/DataTables-1.10.16/css/dataTables.bootstrap4.min.css',
@@ -50,7 +45,8 @@ mix.styles([
     'node_modules/vuexy/app-assets/vendors/css/pickers/flatpickr/flatpickr.min.css',
     'node_modules/vuexy/app-assets/css/pages/app-calendar.css',
     'node_modules/vuexy/app-assets/css/plugins/forms/form-validation.css',
-    'node_modules/admin-lte/plugins/daterangepicker/daterangepicker.css',
+    'node_modules/vuexy/app-assets/vendors/css/pickers/pickadate/pickadate.css',
+    'node_modules/vuexy/app-assets/css/plugins/forms/pickers/form-pickadate.css',
 
      'node_modules/vuexy/assets/css/style.css',
 
@@ -88,8 +84,10 @@ mix.scripts([
     'node_modules/vuexy/app-assets/vendors/js/forms/select/select2.full.min.js',
     'node_modules/vuexy/app-assets/vendors/js/forms/validation/jquery.validate.min.js',
     'node_modules/vuexy/app-assets/vendors/js/pickers/flatpickr/flatpickr.min.js',
-    'node_modules/admin-lte/plugins/moment/moment.min.js',
-    'node_modules/admin-lte/plugins/daterangepicker/daterangepicker.js',
+    'node_modules/vuexy/app-assets/vendors/js/pickers/pickadate/picker.js',
+    'node_modules/vuexy/app-assets/vendors/js/pickers/pickadate/picker.date.js',
+    'node_modules/vuexy/app-assets/vendors/js/pickers/pickadate/picker.time.js',
+    'node_modules/vuexy/app-assets/vendors/js/pickers/pickadate/legacy.js',
 
 
 
@@ -100,29 +98,6 @@ mix.scripts([
 ], 'public/js/app.js');
 
 
-mix.styles([
-
-    'node_modules/dashboardkit/bootstrap/default/assets/css/plugins/animate.min.css',
-    'node_modules/dashboardkit/bootstrap/default/assets/fonts/feather.css',
-    'node_modules/dashboardkit/bootstrap/default/assets/fonts/fontawesome.css',
-    'node_modules/dashboardkit/bootstrap/default/assets/fonts/material.css',
-    'node_modules/dashboardkit/bootstrap/default/assets/css/style.css',
-    'node_modules/dashboardkit/bootstrap/default/assets/css/customizer.css',
-    'node_modules/dashboardkit/bootstrap/default/assets/css/landing.css',
-
-
-], 'public/css/page.css');
-
-
-mix.scripts([
-    'node_modules/dashboardkit/bootstrap/default/assets/js/vendor-all.min.js',
-    'node_modules/dashboardkit/bootstrap/default/assets/js/plugins/bootstrap.min.js',
-    'node_modules/dashboardkit/bootstrap/default/assets/js/plugins/feather.min.js',
-    'node_modules/dashboardkit/bootstrap/default/assets/js/pcoded.min.js',
-    'node_modules/dashboardkit/bootstrap/default/assets/front/wow.min.js',
-    'node_modules/dashboardkit/bootstrap/default/assets/css/plugins/animate.min.css',
-
-], 'public/js/page.js');
 
 
 

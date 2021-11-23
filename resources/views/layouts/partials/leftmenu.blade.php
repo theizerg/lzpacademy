@@ -45,7 +45,7 @@
                             </li>
                         </ul>
                 </li>
-                <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">Configuración</span><i data-feather="more-horizontal"></i>
+                <li class=" navigation-header"><span data-i18n="Apps &amp; Pages"></span><i data-feather="more-horizontal"></i>
                 </li>
                 <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="file-text"></i><span class="menu-title text-truncate" data-i18n="Invoice">Administración</span></a>
                     <ul class="menu-content">
@@ -79,9 +79,11 @@
                             </li>
                              <li class="{{ Active::check('directiva') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('directiva') }}" data-toggle="dropdown" data-i18n="Colors"><i data-feather="droplet"></i><span data-i18n="Colors">Directiva</span></a>
                             </li>
+                             <li class="{{ Active::check('empleado') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('empleado') }}" data-toggle="dropdown" data-i18n="Colors"><i data-feather="droplet"></i><span data-i18n="Colors">Empleados</span></a>
+                            </li>
                     </ul>
                 </li>
-              
+              <li class=" navigation-header"><span data-i18n="Apps &amp; Pages"></span><i data-feather="more-horizontal"></i>
                 <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="shopping-cart"></i><span class="menu-title text-truncate" data-i18n="eCommerce">eCommerce</span></a>
                     <ul class="menu-content">
                         <li><a class="d-flex align-items-center" href="app-ecommerce-shop.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Shop">Shop</span></a>
