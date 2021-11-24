@@ -2,20 +2,20 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Cargo;
+use App\Models\Aula;
 use Illuminate\Http\Request;
 
-class CargoController extends Controller
-{   
-   /**
+class AulaController extends Controller
+{
+    /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
     public function index()
     {
-         $academias = Cargo::get();
-        return view('admin.cargo.index',compact('academias'));
+         $academias = Aula::get();
+        return view('admin.aulas.index',compact('academias'));
     }
 
     /**
@@ -36,9 +36,10 @@ class CargoController extends Controller
      */
     public function store(Request $request)
     {
-        $clase =new Cargo();
+        $clase =new Aula();
         $clase->name = $request->name;
         $clase->status = $request->status;
+        $clase->estructura_id = $request->estructura_id;
         $clase->save();
 
         return \Redirect::back();
@@ -75,9 +76,10 @@ class CargoController extends Controller
      */
     public function update(Request $request,  $estadocivil)
     {   //dd($request);
-        $clase = Cargo::find($estadocivil);
+        $clase = Aula::find($estadocivil);
         $clase->name = $request->name;
         $clase->status = $request->status;
+        $clase->estructura_id = $request->estructura_id;
         $clase->save();
 
         return \Redirect::back();

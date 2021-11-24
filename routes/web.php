@@ -51,6 +51,7 @@ Route::middleware(['auth',])->group(function () {
 /**/  Route::resource('directiva',   'DirectivaController');
 /**/  Route::resource('empleado',   'EmpleadoController');
 /**/  Route::resource('estructura',   'EstructuraController');
+/**/  Route::resource('aulas',   'AulaController');
 
 #############################################################################################
 #############################################################################################

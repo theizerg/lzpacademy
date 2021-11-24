@@ -21,6 +21,7 @@ use App\Models\Cargo;
 use App\Models\TipoDirectiva;
 use App\Models\Directiva;
 use App\Models\Estructura;
+use App\Models\Aula;
 
 class AdminTableSeeder extends Seeder
 {
@@ -1570,6 +1571,24 @@ class AdminTableSeeder extends Seeder
         $estructura->name = 'Colegio';
         $estructura->status = 1;
         $estructura->save();
+
+        $aula = new Aula();
+        $aula->name = 'Aula 1';
+        $aula->estructura_id = 1;
+        $aula->status = 1;
+        $aula->save();
+
+        $aula = new Aula();
+        $aula->name = 'Aula 2';
+        $aula->estructura_id = 1;
+        $aula->status = 1;
+        $aula->save();
+
+        $aula = new Aula();
+        $aula->name = 'Aula 3';
+        $aula->estructura_id = 1;
+        $aula->status = 1;
+        $aula->save();
 
 
 

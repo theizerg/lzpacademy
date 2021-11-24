@@ -81,6 +81,10 @@
                             </li>
                              <li class="{{ Active::check('empleado') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('empleado') }}" data-toggle="dropdown" data-i18n="Colors"><i data-feather="droplet"></i><span data-i18n="Colors">Empleados</span></a>
                             </li>
+                             <li class="{{ Active::check('estructura') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('estructura') }}" data-toggle="dropdown" data-i18n="Colors"><i data-feather="droplet"></i><span data-i18n="Colors">Estructura</span></a>
+                            </li>
+                            <li class="{{ Active::check('aulas') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('aulas') }}" data-toggle="dropdown" data-i18n="Colors"><i data-feather="droplet"></i><span data-i18n="Colors">Aula</span></a>
+                            </li>
                     </ul>
                 </li>
               <li class=" navigation-header"><span data-i18n="Apps &amp; Pages"></span><i data-feather="more-horizontal"></i>
