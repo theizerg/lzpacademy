@@ -22,6 +22,8 @@ use App\Models\TipoDirectiva;
 use App\Models\Directiva;
 use App\Models\Estructura;
 use App\Models\Aula;
+use App\Models\Calendario;
+use App\Models\Periodo;
 
 class AdminTableSeeder extends Seeder
 {
@@ -1589,6 +1591,64 @@ class AdminTableSeeder extends Seeder
         $aula->estructura_id = 1;
         $aula->status = 1;
         $aula->save();
+
+
+        $calendario = new Calendario();
+        $calendario->nb_calendario = 'Calendario 2021';
+        $calendario->aa_escolar = 2021;
+        $calendario->status = 1;
+        $calendario->fecha_inicio = '05/04/2021';
+        $calendario->fecha_fin    = '17/12/2021';
+        $calendario->save();
+
+
+        $calendario = new Calendario();
+        $calendario->nb_calendario = 'Calendario 2022';
+        $calendario->aa_escolar = '2022';
+        $calendario->status = 0;
+        $calendario->fecha_inicio = '28/03/2022';
+        $calendario->fecha_fin    = '23/12/2022';
+        $calendario->save();
+
+        $periodo = new Periodo();
+        $periodo->nb_periodo = 'Periodo 2021 I';
+        $periodo->nu_periodo = 1;
+        $periodo->status = 1;
+        $periodo->calendario_id = 1;
+        $periodo->fe_inicio = '11/03/2021';
+        $periodo->fe_fin    = '01/05/2021';
+        $periodo->save();
+
+
+        $periodo = new Periodo();
+        $periodo->nb_periodo = 'Periodo 2021 II';
+        $periodo->nu_periodo = 1;
+        $periodo->status = 0;
+        $periodo->calendario_id = 1;
+        $periodo->fe_inicio = '02/05/2021';
+        $periodo->fe_fin    = '01/07/2021';
+        $periodo->save();
+
+
+        $periodo = new Periodo();
+        $periodo->nb_periodo = 'Periodo 2021 IIi';
+        $periodo->nu_periodo = 1;
+        $periodo->status = 0;
+        $periodo->calendario_id = 1;
+        $periodo->fe_inicio = '02/07/2021';
+        $periodo->fe_fin    = '01/09/2021';
+        $periodo->save();
+
+
+
+        $periodo = new Periodo();
+        $periodo->nb_periodo = 'Periodo 2021 IV';
+        $periodo->nu_periodo = 1;
+        $periodo->status = 0;
+        $periodo->calendario_id = 1;
+        $periodo->fe_inicio = '02/09/2021';
+        $periodo->fe_fin    = '01/11/2021';
+        $periodo->save();
 
 
 

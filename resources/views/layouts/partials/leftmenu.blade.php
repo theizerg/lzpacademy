@@ -85,6 +85,8 @@
                             </li>
                             <li class="{{ Active::check('aulas') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('aulas') }}" data-toggle="dropdown" data-i18n="Colors"><i data-feather="droplet"></i><span data-i18n="Colors">Aula</span></a>
                             </li>
+                            <li class="{{ Active::check('calendario') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('calendario') }}" data-toggle="dropdown" data-i18n="Colors"><i data-feather="droplet"></i><span data-i18n="Colors">Calendario</span></a>
+                            </li>
                     </ul>
                 </li>
               <li class=" navigation-header"><span data-i18n="Apps &amp; Pages"></span><i data-feather="more-horizontal"></i>

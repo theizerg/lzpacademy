@@ -52,6 +52,7 @@ Route::middleware(['auth',])->group(function () {
 /**/  Route::resource('empleado',   'EmpleadoController');
 /**/  Route::resource('estructura',   'EstructuraController');
 /**/  Route::resource('aulas',   'AulaController');
+/**/  Route::resource('calendario',   'CalendarioController');
 
 #############################################################################################
 #############################################################################################
