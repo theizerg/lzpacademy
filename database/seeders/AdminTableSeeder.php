@@ -20,6 +20,7 @@ use App\Models\TipoAcademia;
 use App\Models\Cargo;
 use App\Models\TipoDirectiva;
 use App\Models\Directiva;
+use App\Models\Estructura;
 
 class AdminTableSeeder extends Seeder
 {
@@ -1562,6 +1563,13 @@ class AdminTableSeeder extends Seeder
         $directiva->documento = '25212293';
         $directiva->status = 1;
         $directiva->save();
+
+
+
+        $estructura = new Estructura();
+        $estructura->name = 'Colegio';
+        $estructura->status = 1;
+        $estructura->save();
 
 
 

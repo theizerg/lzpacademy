@@ -50,6 +50,7 @@ Route::middleware(['auth',])->group(function () {
 /**/  Route::resource('tipodirectiva',   'TipoDirectivaController');
 /**/  Route::resource('directiva',   'DirectivaController');
 /**/  Route::resource('empleado',   'EmpleadoController');
+/**/  Route::resource('estructura',   'EstructuraController');
 
 #############################################################################################
 #############################################################################################
