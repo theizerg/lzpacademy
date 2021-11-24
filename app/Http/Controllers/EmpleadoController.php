@@ -54,7 +54,7 @@ class EmpleadoController extends Controller
         $empleado = new Empleado();
         $empleado->name = $request->name;
         $empleado->lastname = $request->lastname;
-        $empleado->correo = $request->email;
+        $empleado->email = $request->email;
         $empleado->telefono = $request->telefono;
         $empleado->fecha_nacimiento = $request->fecha_nacimiento;
         $empleado->lugar_nacimiento = $request->lugar_nacimiento;
@@ -69,12 +69,9 @@ class EmpleadoController extends Controller
 
         $empleado->save();
 
-       return redirect()->back();
+       return redirect()->to('empleado');
 
-        
-
-
-        return redirect()->back();
+    
     }
 
     /**
@@ -96,7 +93,8 @@ class EmpleadoController extends Controller
      */
     public function edit($id)
     {
-        //
+        $empleado = Empleado::find($id);
+        return view('admin.empleados.edit', compact('empleado'));
     }
 
     /**
@@ -110,22 +108,25 @@ class EmpleadoController extends Controller
     {
        // dd($request);
 
-         $user = User::find(($id));
-         $user->lastname = $request->lastname;
-         $user->email = $request->email;
-         $user->username = $request->username;
-         $user->password = $request->password;
-         //$user->status = $request->status;
-         $user->name = $request->name;
+        $empleado = Empleado::find($id);
+        $empleado->name = $request->name;
+        $empleado->lastname = $request->lastname;
+        $empleado->email = $request->email;
+        $empleado->telefono = $request->telefono;
+        $empleado->fecha_nacimiento = $request->fecha_nacimiento;
+        $empleado->lugar_nacimiento = $request->lugar_nacimiento;
+        $empleado->direccion = $request->direccion;
+        $empleado->tipo_documento = $request->tipo_documento;
+        $empleado->documento = $request->documento;
+        $empleado->edad = $request->edad;
+        $empleado->status = $request->status;
+        $empleado->cargo_id = $request->cargo_id;
+        $empleado->genero_id = $request->genero_id;
+        $empleado->estado_civil_id = $request->estado_civil_id;
 
+        $empleado->save();
 
-          if ($request->has('role'))
-        {
-            $user->syncRoles($request->role);
-        }
-
-        $user->save();
-        return redirect()->back();
+       return redirect()->to('empleado');
     }
 
     /**

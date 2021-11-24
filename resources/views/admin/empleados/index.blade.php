@@ -46,15 +46,14 @@
                                       </td>
                                      
                                       <td>
-                                         @if(Auth::user()->hasrole('Super Administrador') && Auth::user()->id != $element->id)
-                                        <button type="button" class="btn btn-round green darken-3 text-white" data-toggle="modal" data-target="#EditarUsuario{{ $element->id }}">
-                                        <span class="btn-inner--icon"><i class="mdi mdi-pencil"  data-bs-toggle="tooltip" data-bs-placement="top" title="Editar Usuario" data-container="body" data-animation="true"></i></span>
-                                      </button>
-                                       @endif
+                                         
+                                         <a href="{{ url('empleado/'.$element->id,'edit') }}" class="btn btn-round blue darken-4 text-white btn-primary float-left btn-md">  <i class="mdi mdi-pencil"  data-bs-toggle="tooltip" data-bs-placement="top" title="Crear nuevo Usuario" data-container="body" data-animation="true"></i>
+                                                      Nuevo empleado
+                                              </a>
                                     </td>
                                      
                                     </tr>
-                                     @include('admin.usuarios.partials.modal.edit')
+                                    
                                   @endforeach
                                 </tbody>
                               </table>

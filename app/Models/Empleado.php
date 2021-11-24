@@ -50,6 +50,6 @@ class Empleado extends Model
 
       public function getDisplayStatusAttribute()
     {
-        return $this->status == 1 ? 'Activo' : 'Denegado';
+        return $this->status == 1 ? 'Activo' : 'Inactivo';
     }
 }

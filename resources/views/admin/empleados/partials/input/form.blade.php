@@ -5,7 +5,7 @@
         <div class="input-group-prepend">
             <span class="input-group-text" id="basic-addon-search2"><i data-feather="user"></i></span>
         </div>
-       {!! Form::text(' name',null,['class'=>'form-control', 'required' => 'required','autocomplete' =>'off','placeholder' =>'Nombres']) !!}
+       {!! Form::text('name',null,['class'=>'form-control', 'required' => 'required','autocomplete' =>'off','placeholder' =>'Nombres']) !!}
     </div>
   </div>
    <div class="col-4">
@@ -117,6 +117,17 @@
         </div>
         <small class="textarea-counter-value float-right"><span class="char-count">0</span> / 60 </small>
     </div>
+    <div class="col-md-12 text-center">  
+                                      
+          <div class="checkbox icheck">  <br>
+
+            <label>
+               <b for="textarea-counter">Estado del empleado</b><br>
+              <input type="radio" name="status" id="status" value="1" checked>  Activo&nbsp;&nbsp;
+              <input type="radio" name="status" id="status" value="0"> Inactivo&nbsp;&nbsp;
+            </label>
+          </div>
+      </div>
   </div>
 
 
