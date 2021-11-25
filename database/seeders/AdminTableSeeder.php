@@ -24,6 +24,7 @@ use App\Models\Estructura;
 use App\Models\Aula;
 use App\Models\Calendario;
 use App\Models\Periodo;
+use App\Models\Turno;
 
 class AdminTableSeeder extends Seeder
 {
@@ -1689,6 +1690,29 @@ class AdminTableSeeder extends Seeder
         $periodo->fe_inicio = '02/09/2022';
         $periodo->fe_fin    = '01/12/2022';
         $periodo->save();
+
+
+
+        $turno = new Turno();
+        $turno->name = 'Mañana';
+        $turno->status = 1;
+        $turno->save();
+
+        $turno = new Turno();
+        $turno->name = 'Tarde';
+        $turno->status = 1;
+        $turno->save();
+
+
+        $turno = new Turno();
+        $turno->name = 'Noche';
+        $turno->status = 1;
+        $turno->save();
+
+        $turno = new Turno();
+        $turno->name = 'Sabatino';
+        $turno->status = 1;
+        $turno->save();
 
 
 

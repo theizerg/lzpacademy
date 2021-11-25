@@ -92,6 +92,8 @@
                             </li>
                             <li class="{{ Active::check('periodo') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('periodo') }}" data-toggle="dropdown" data-i18n="Colors"><i data-feather="droplet"></i><span data-i18n="Colors">Periodo escolar</span></a>
                             </li>
+                             <li class="{{ Active::check('turno') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('turno') }}" data-toggle="dropdown" data-i18n="Colors"><i data-feather="droplet"></i><span data-i18n="Colors">Turnos</span></a>
+                            </li>
                     </ul>
                 </li>
 
