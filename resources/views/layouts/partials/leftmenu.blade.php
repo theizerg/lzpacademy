@@ -35,6 +35,8 @@
         <div class="shadow-bottom"></div>
         <div class="main-menu-content">
             <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+                <li class=" navigation-header"><span data-i18n="User Interface">DATOS DE SEGURIDAD</span><i data-feather="more-horizontal"></i>
+                </li>
                 <li class=" nav-item"><a class="d-flex align-items-center" href="index.html"><i data-feather="lock"></i><span class="menu-title text-truncate" data-i18n="Dashboards">Seguridad</span><span class="badge badge-light-warning badge-pill ml-auto mr-1">3</span></a>
                     <ul class="menu-content">
                             <li class="{{ Active::check('usuario') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('/usuario') }}" data-toggle="dropdown" data-i18n="Analytics"><i data-feather="user"></i><span data-i18n="Analytics">Usuarios</span></a>
@@ -45,7 +47,8 @@
                             </li>
                         </ul>
                 </li>
-                <li class=" navigation-header"><span data-i18n="Apps &amp; Pages"></span><i data-feather="more-horizontal"></i>
+                <li class=" navigation-header"><span data-i18n="User Interface">DATOS DE CONFIGURACIÓN</span><i data-feather="more-horizontal"></i>
+                </li>
                 </li>
                 <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="file-text"></i><span class="menu-title text-truncate" data-i18n="Invoice">Administración</span></a>
                     <ul class="menu-content">
@@ -87,9 +90,13 @@
                             </li>
                             <li class="{{ Active::check('calendario') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('calendario') }}" data-toggle="dropdown" data-i18n="Colors"><i data-feather="droplet"></i><span data-i18n="Colors">Calendario</span></a>
                             </li>
+                            <li class="{{ Active::check('periodo') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('periodo') }}" data-toggle="dropdown" data-i18n="Colors"><i data-feather="droplet"></i><span data-i18n="Colors">Periodo escolar</span></a>
+                            </li>
                     </ul>
                 </li>
-              <li class=" navigation-header"><span data-i18n="Apps &amp; Pages"></span><i data-feather="more-horizontal"></i>
+
+               <li class=" navigation-header"><span data-i18n="User Interface">DATOS DE CONFIGURACIÓN</span><i data-feather="more-horizontal"></i>
+                </li>
                 <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="shopping-cart"></i><span class="menu-title text-truncate" data-i18n="eCommerce">eCommerce</span></a>
                     <ul class="menu-content">
                         <li><a class="d-flex align-items-center" href="app-ecommerce-shop.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Shop">Shop</span></a>

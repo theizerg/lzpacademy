@@ -19,8 +19,8 @@ class CreatePeriodosTable extends Migration
             $table->integer('nu_periodo');
             $table->integer('calendario_id')->unsigned()->default(189);
             $table->foreign('calendario_id')->references('id')->on('calendarios');
-            $table->date('fe_inicio');
-            $table->date('fe_fin');
+            $table->string('fe_inicio');
+            $table->string('fe_fin');
             $table->smallInteger('status')->default(0);
             $table->timestamps();
         });

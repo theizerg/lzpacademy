@@ -14,7 +14,10 @@ class PeriodoController extends Controller
      */
     public function index()
     {
-        //
+         $periodos =  Periodo::with(['calendario:id,nb_calendario'])->get();
+
+        return view ('admin.periodo.index',compact('periodos'));
+
     }
 
     /**
@@ -35,7 +38,16 @@ class PeriodoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+       $periodo =new Periodo();
+       $periodo->nb_periodo = $request->nb_periodo;
+       $periodo->calendario_id = $request->calendario_id;
+       $periodo->fe_inicio = $request->fe_inicio;
+       $periodo->fe_fin = $request->fe_fin;
+       $periodo->status = $request->status;
+       $periodo->nu_periodo = $request->nu_periodo;
+       $periodo->save();
+
+       return redirect()->back();
     }
 
     /**
@@ -67,9 +79,20 @@ class PeriodoController extends Controller
      * @param  \App\Models\Periodo  $periodo
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Periodo $periodo)
+    public function update(Request $request,  $periodo)
     {
-        //
+
+
+       $periodo = Periodo::find($periodo);
+       $periodo->nb_periodo = $request->nb_periodo;
+       $periodo->calendario_id = $request->calendario_id;
+       $periodo->fe_inicio = $request->fe_inicio;
+       $periodo->fe_fin = $request->fe_fin;
+       $periodo->status = $request->status;
+       $periodo->nu_periodo = $request->nu_periodo;
+       $periodo->save();
+
+       return redirect()->back();
     }
 
     /**

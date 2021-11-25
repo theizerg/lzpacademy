@@ -1622,7 +1622,7 @@ class AdminTableSeeder extends Seeder
 
         $periodo = new Periodo();
         $periodo->nb_periodo = 'Periodo 2021 II';
-        $periodo->nu_periodo = 1;
+        $periodo->nu_periodo = 2;
         $periodo->status = 0;
         $periodo->calendario_id = 1;
         $periodo->fe_inicio = '02/05/2021';
@@ -1632,7 +1632,7 @@ class AdminTableSeeder extends Seeder
 
         $periodo = new Periodo();
         $periodo->nb_periodo = 'Periodo 2021 IIi';
-        $periodo->nu_periodo = 1;
+        $periodo->nu_periodo = 3;
         $periodo->status = 0;
         $periodo->calendario_id = 1;
         $periodo->fe_inicio = '02/07/2021';
@@ -1643,11 +1643,51 @@ class AdminTableSeeder extends Seeder
 
         $periodo = new Periodo();
         $periodo->nb_periodo = 'Periodo 2021 IV';
-        $periodo->nu_periodo = 1;
+        $periodo->nu_periodo = 4;
         $periodo->status = 0;
         $periodo->calendario_id = 1;
         $periodo->fe_inicio = '02/09/2021';
         $periodo->fe_fin    = '01/11/2021';
+        $periodo->save();
+
+        $periodo = new Periodo();
+        $periodo->nb_periodo = '2022 I';
+        $periodo->nu_periodo = 1;
+        $periodo->status = 0;
+        $periodo->calendario_id = 2;
+        $periodo->fe_inicio = '01/01/2022';
+        $periodo->fe_fin    = '01/03/2022';
+        $periodo->save();
+
+
+        $periodo = new Periodo();
+        $periodo->nb_periodo = '2022 II';
+        $periodo->nu_periodo = 2;
+        $periodo->status = 0;
+        $periodo->calendario_id = 2;
+        $periodo->fe_inicio = '02/03/2022';
+        $periodo->fe_fin    = '01/06/2022';
+        $periodo->save();
+
+
+
+        $periodo = new Periodo();
+        $periodo->nb_periodo = '2022 III';
+        $periodo->nu_periodo = 3;
+        $periodo->status = 0;
+        $periodo->calendario_id = 2;
+        $periodo->fe_inicio = '02/06/2022';
+        $periodo->fe_fin    = '01/09/2022';
+        $periodo->save();
+
+
+        $periodo = new Periodo();
+        $periodo->nb_periodo = '2022 IV';
+        $periodo->nu_periodo = 4;
+        $periodo->status = 0;
+        $periodo->calendario_id = 2;
+        $periodo->fe_inicio = '02/09/2022';
+        $periodo->fe_fin    = '01/12/2022';
         $periodo->save();
 
 
