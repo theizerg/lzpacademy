@@ -25,6 +25,8 @@ use App\Models\Aula;
 use App\Models\Calendario;
 use App\Models\Periodo;
 use App\Models\Turno;
+use App\Models\HoraAcademica;
+
 
 class AdminTableSeeder extends Seeder
 {
@@ -1714,6 +1716,29 @@ class AdminTableSeeder extends Seeder
         $turno->status = 1;
         $turno->save();
 
+        $periodo = new HoraAcademica();
+        $periodo->nb_hora_academica = 'Mañana';
+        $periodo->nivel_id = 1;
+        $periodo->status = 1;
+        $periodo->save();
+
+        $periodo = new HoraAcademica();
+        $periodo->nb_hora_academica = 'Tarde';
+        $periodo->nivel_id = 2;
+        $periodo->status = 1;
+        $periodo->save();
+
+        $periodo = new HoraAcademica();
+        $periodo->nb_hora_academica = 'Noche';
+        $periodo->nivel_id = 3;
+        $periodo->status = 1;
+        $periodo->save();
+
+        $periodo = new HoraAcademica();
+        $periodo->nb_hora_academica = 'sabatino';
+        $periodo->nivel_id = 2;
+        $periodo->status = 1;
+        $periodo->save();
 
 
 
