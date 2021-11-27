@@ -66,8 +66,7 @@
                             </li>
                             <li class="{{ Active::check('paises') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('paises') }}" data-toggle="dropdown" data-i18n="Calendar"><i data-feather="map"></i><span data-i18n="Calendar">Países</span></a>
                             </li>
-                             <li class="{{ Active::check('niveles') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('niveles') }}" data-toggle="dropdown" data-i18n="Calendar"><i class="fas fa-level-up-alt"></i><span data-i18n="Calendar">Niveles</span></a>
-                            </li>
+                          
                              <li class="{{ Active::check('estadocivil') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('estadocivil') }}" data-toggle="dropdown" data-i18n="Calendar"><i class="fas fa-user-tie"></i><span data-i18n="Calendar">Estado Civil</span></a>
                             </li>
                              <li class="{{ Active::check('gradoinstruccion') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('gradoinstruccion') }}" data-toggle="dropdown" data-i18n="Calendar"><i class="fas fa-user-tie"></i><span data-i18n="Calendar">Grado de instrucción</span></a>
@@ -90,21 +89,22 @@
                             </li>
                             <li class="{{ Active::check('calendario') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('calendario') }}" data-toggle="dropdown" data-i18n="Colors"><i data-feather="droplet"></i><span data-i18n="Colors">Calendario</span></a>
                             </li>
-                            <li class="{{ Active::check('periodo') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('periodo') }}" data-toggle="dropdown" data-i18n="Colors"><i data-feather="droplet"></i><span data-i18n="Colors">Periodo escolar</span></a>
-                            </li>
-                             <li class="{{ Active::check('turno') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('turno') }}" data-toggle="dropdown" data-i18n="Colors"><i data-feather="droplet"></i><span data-i18n="Colors">Turnos</span></a>
-                            </li>
+                           
                     </ul>
                 </li>
 
-               <li class=" navigation-header"><span data-i18n="User Interface">DATOS DE CONFIGURACIÓN</span><i data-feather="more-horizontal"></i>
+               <li class=" navigation-header"><span data-i18n="User Interface">CONTROL DE ESTUDIO</span><i data-feather="more-horizontal"></i>
                 </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="shopping-cart"></i><span class="menu-title text-truncate" data-i18n="eCommerce">eCommerce</span></a>
+                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="shopping-cart"></i><span class="menu-title text-truncate" data-i18n="CONTROL DE ESTUDIO">Administración</span></a>
                     <ul class="menu-content">
-                        <li><a class="d-flex align-items-center" href="app-ecommerce-shop.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Shop">Shop</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="app-ecommerce-details.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Details">Details</span></a>
-                        </li>
+                      <li class="{{ Active::check('niveles') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('niveles') }}" data-toggle="dropdown" data-i18n="Calendar"><i class="fas fa-level-up-alt"></i><span data-i18n="Calendar">Niveles</span></a>
+                     </li>
+                     <li class="{{ Active::check('periodo') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('periodo') }}" data-toggle="dropdown" data-i18n="Colors"><i data-feather="droplet"></i><span data-i18n="Colors">Periodo escolar</span></a>
+                     </li>
+                      <li class="{{ Active::check('turno') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('turno') }}" data-toggle="dropdown" data-i18n="Colors"><i data-feather="droplet"></i><span data-i18n="Colors">Turnos</span></a>
+                      </li>
+                        <li class="{{ Active::check('hora-academica') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('hora-academica') }}" data-toggle="dropdown" data-i18n="Colors"><i data-feather="droplet"></i><span data-i18n="Colors">Horas académicas</span></a>
+                      </li>
                         <li><a class="d-flex align-items-center" href="app-ecommerce-wishlist.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Wish List">Wish List</span></a>
                         </li>
                         <li><a class="d-flex align-items-center" href="app-ecommerce-checkout.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Checkout">Checkout</span></a>

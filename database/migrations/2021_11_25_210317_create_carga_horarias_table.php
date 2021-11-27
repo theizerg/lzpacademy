@@ -18,10 +18,11 @@ class CreateCargaHorariasTable extends Migration
             $table->string('nb_carga_horaria', 80);
             $table->integer('hora_academica_id');
             $table->integer('nu_orden');
-            $table->time('hh_inicio');
-            $table->time('hh_fin');
+            $table->string('hh_inicio');
+            $table->string('hh_fin');
             $table->integer('turno_id');
-            $table->boolean('bo_receso');
+            $table->integer('bo_receso');
+            $table->integer('status');
             $table->timestamps();
         });
     }

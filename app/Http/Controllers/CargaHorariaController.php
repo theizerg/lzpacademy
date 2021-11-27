@@ -12,9 +12,13 @@ class CargaHorariaController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($idHoraAcademica)
     {
-        //
+      $carhahoraria= CargaHoraria::with(['turno:id,name', 'horaAcademica:id,nb_hora_academica'])
+                            ->where('hora_academica_id', $idHoraAcademica)
+                            ->get();
+
+       return view('admin.cargahoraria.index',compact('carhahoraria','idHoraAcademica'));
     }
 
     /**
@@ -35,7 +39,21 @@ class CargaHorariaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //dd($request);
+
+        $carga = new CargaHoraria();
+        $carga->nb_carga_horaria = $request->nb_carga_horaria;
+        $carga->hora_academica_id = $request->hora_academica_id;
+        $carga->nu_orden = $request->nu_orden;
+        $carga->hh_inicio = $request->hh_inicio;
+        $carga->hh_fin = $request->hh_fin;
+        $carga->turno_id = $request->turno_id;
+        $carga->bo_receso = $request->bo_receso;
+        $carga->status = $request->status;
+
+        $carga->save();
+
+        return redirect()->to('hora-academica');
     }
 
     /**
@@ -67,9 +85,22 @@ class CargaHorariaController extends Controller
      * @param  \App\Models\CargaHoraria  $cargaHoraria
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, CargaHoraria $cargaHoraria)
+    public function update(Request $request, $cargaHoraria)
     {
-        //
+        //dd(substr($request->hh_inicio,15,13));
+        $carga = CargaHoraria::find($cargaHoraria);
+        $carga->nb_carga_horaria = $request->nb_carga_horaria;
+        $carga->hora_academica_id = $request->hora_academica_id;
+        $carga->nu_orden = $request->nu_orden;
+        $carga->hh_inicio = $request->hh_inicio;
+        $carga->hh_fin = $request->hh_fin;
+        $carga->turno_id = $request->turno_id;
+        $carga->bo_receso = $request->bo_receso;
+        $carga->status = $request->status;
+
+        $carga->save();
+
+        return redirect()->to('hora-academica');
     }
 
     /**

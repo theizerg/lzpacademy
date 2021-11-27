@@ -5,13 +5,13 @@
 
          
   <button type="button" class="btn blue darken-4 text-white btn-primary float-left btn-md"  data-toggle="modal" data-target="#CrearUsuario"><i class="fas fa-plus-square"  data-bs-toggle="tooltip" data-bs-placement="top" title="Crear nuevo Usuario" data-container="body" data-animation="true"></i>
-        Nuevo periodo escolar
+        Nuevo carga horaria de clases
   </button><br><br><br>
   <div class="row">
     <div class="col-lg-12">
       <div class="card card-line-primary">
             <div class="card-header">
-              <h4 class="card-title">Listado de horas académicas por nivel</h4>
+              <h4 class="card-title">Listado de horas académicas por turno</h4>
             </div>
             <div class="card-body">
               <div class="table-responsive">
@@ -19,33 +19,35 @@
                   <thead>
                     <tr>
                      <th>#</th>
-                      <th>Carga horario</th>
-                      <th>Periodo</th>
-                      <th>Nivel</th>
-                      <th>Creado</th>
+                      <th>Descripción</th>
+                      <th>Inicio</th>
+                      <th>Fin</th>
+                      <th>Turno</th>
+                      <th>Receso</th>
                       <th>Estado</th>
                       <th>Opciones</th>
                     </tr>
                   </thead>
                   <tbody>
-                    @foreach ($periodos as $element)
+                    @foreach ($carhahoraria as $element)
                       <tr>
                         <td>{{ $element->id }}</td>
-                        <td>
-                             <a href="{{ url('/carga/horaria/'.$element->id) }}" class="btn btn-round green darken-3 text-white">
-                          <span class="btn-inner--icon"><i class="mdi mdi-pencil"  data-bs-toggle="tooltip" data-bs-placement="top" title="Editar Usuario" data-container="body" data-animation="true"></i></span>
-                        </a>
-                        </td>
-                        <td>{{ $element->nb_hora_academica }}</td>
+                    
+                        <td>{{ $element->nb_carga_horaria }}</td>
+                        <td>{{ \Carbon\Carbon::parse($element->hh_inicio)->isoFormat('H:mm A') }}</td>
+                        <td>{{ \Carbon\Carbon::parse($element->hh_fin)->isoFormat('H:mm A') }}</td>
                        
                         <td>
-                         {{ $element->nivel->name }}
+                         {{ $element->turno->name }}
                         </td>
-                       
-                       
-                       <td>
-                          {{ $element->created_at->diffForHumans()  }} 
+                        @if ($element->bo_receso == 1)
+                          <td><i class="fas fa-bell green-text fa-2x"></i></td>
+                        @else
+                         <td>
+                          <i class="fas fa-bell-slash green-text fa-2x"></i>
                         </td>
+                        @endif
+                       
                        
                          @if ($element->status == 1)
                           <td>
@@ -63,7 +65,7 @@
                       </td>
                        
                       </tr>
-                       @include('admin.periodo.partials.modal.edit')
+                       @include('admin.cargahoraria.partials.modal.edit')
                     @endforeach
                   </tbody>
                 </table>
@@ -72,7 +74,7 @@
         </div>
       </div>
   </div>
-  @include('admin.periodo.partials.modal.create')
+  @include('admin.cargahoraria.partials.modal.create')
 
 @endsection
 
