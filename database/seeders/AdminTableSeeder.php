@@ -26,7 +26,8 @@ use App\Models\Calendario;
 use App\Models\Periodo;
 use App\Models\Turno;
 use App\Models\HoraAcademica;
-
+use App\Models\CargaHoraria;
+use App\Models\Materia;
 
 class AdminTableSeeder extends Seeder
 {
@@ -1420,20 +1421,37 @@ class AdminTableSeeder extends Seeder
         $estado->save();
 
         $nivel = new Nivel();
-        $nivel->name = 'Básico';
+        $nivel->name = 'General';
         $nivel->status = 1;
         $nivel->save();
 
         $nivel = new Nivel();
-        $nivel->name = 'Intermedio';
+        $nivel->name = 'Preescolar';
+        $nivel->status = 1;
+        $nivel->save();
+
+        $nivel = new Nivel();
+        $nivel->name = 'Primaria';
         $nivel->status = 1;
         $nivel->save();
 
 
         $nivel = new Nivel();
-        $nivel->name = 'Avanzado';
+        $nivel->name = 'Bachiller';
         $nivel->status = 1;
         $nivel->save();
+
+        $nivel = new Nivel();
+        $nivel->name = 'Educación Media';
+        $nivel->status = 1;
+        $nivel->save();
+
+
+        $nivel = new Nivel();
+        $nivel->name = 'Educación Superior';
+        $nivel->status = 1;
+        $nivel->save();
+
 
         $estado = new EstadoCivil();
         $estado->name = 'Soltero(a)';
@@ -1724,21 +1742,236 @@ class AdminTableSeeder extends Seeder
 
         $periodo = new HoraAcademica();
         $periodo->nb_hora_academica = 'Tarde';
-        $periodo->nivel_id = 2;
+        $periodo->nivel_id = 1;
         $periodo->status = 1;
         $periodo->save();
 
         $periodo = new HoraAcademica();
         $periodo->nb_hora_academica = 'Noche';
-        $periodo->nivel_id = 3;
+        $periodo->nivel_id = 1;
         $periodo->status = 1;
         $periodo->save();
 
         $periodo = new HoraAcademica();
         $periodo->nb_hora_academica = 'sabatino';
-        $periodo->nivel_id = 2;
+        $periodo->nivel_id = 1;
         $periodo->status = 1;
         $periodo->save();
+
+
+
+        $carga = new CargaHoraria();
+        $carga->nb_carga_horaria = 'DIR. GRUPO';
+        $carga->hora_academica_id = 1;
+        $carga->nu_orden = 1;
+        $carga->hh_inicio = '07:00:00';
+        $carga->hh_fin = '07:45:00';
+        $carga->turno_id = 1;
+        $carga->bo_receso = 1;
+        $carga->status = 1;
+        $carga->save();
+
+
+        $carga = new CargaHoraria();
+        $carga->nb_carga_horaria = 'Hora 1';
+        $carga->hora_academica_id = 1;
+        $carga->nu_orden = 1;
+        $carga->hh_inicio = '08:00:00';
+        $carga->hh_fin = '08:45:00';
+        $carga->turno_id = 1;
+        $carga->bo_receso = 0;
+        $carga->status = 1;
+        $carga->save();
+
+
+        $carga = new CargaHoraria();
+        $carga->nb_carga_horaria = 'Hora 2';
+        $carga->hora_academica_id = 1;
+        $carga->nu_orden = 1;
+        $carga->hh_inicio = '08:45:00';
+        $carga->hh_fin = '09:30:00';
+        $carga->turno_id = 1;
+        $carga->bo_receso = 0;
+        $carga->status = 1;
+        $carga->save();
+
+        $carga = new CargaHoraria();
+        $carga->nb_carga_horaria = 'DESCANSO';
+        $carga->hora_academica_id = 1;
+        $carga->nu_orden = 1;
+        $carga->hh_inicio = '09:30:00';
+        $carga->hh_fin = '10:15:00';
+        $carga->turno_id = 1;
+        $carga->bo_receso = 1;
+        $carga->status = 1;
+        $carga->save();
+
+
+        $carga = new CargaHoraria();
+        $carga->nb_carga_horaria = 'Hora 3';
+        $carga->hora_academica_id = 1;
+        $carga->nu_orden = 1;
+        $carga->hh_inicio = '10:15:00';
+        $carga->hh_fin = '11:00:00';
+        $carga->turno_id = 1;
+        $carga->bo_receso = 0;
+        $carga->status = 1;
+        $carga->save();
+
+
+        $carga = new CargaHoraria();
+        $carga->nb_carga_horaria = 'ALMUERZO';
+        $carga->hora_academica_id = 1;
+        $carga->nu_orden = 1;
+        $carga->hh_inicio = '11:00:00';
+        $carga->hh_fin = '11:45:00';
+        $carga->turno_id = 1;
+        $carga->bo_receso = 1;
+        $carga->status = 1;
+        $carga->save();
+
+
+
+        $carga = new CargaHoraria();
+        $carga->nb_carga_horaria = 'Hora 1';
+        $carga->hora_academica_id = 2;
+        $carga->nu_orden = 1;
+        $carga->hh_inicio = '13:00:00';
+        $carga->hh_fin = '14:00:00';
+        $carga->turno_id = 1;
+        $carga->bo_receso = 0;
+        $carga->status = 1;
+        $carga->save();
+
+
+        $carga = new CargaHoraria();
+        $carga->nb_carga_horaria = 'Hora 2';
+        $carga->hora_academica_id = 2;
+        $carga->nu_orden = 1;
+        $carga->hh_inicio = '14:00:00';
+        $carga->hh_fin = '15:00:00';
+        $carga->turno_id = 1;
+        $carga->bo_receso = 0;
+        $carga->status = 1;
+        $carga->save();
+
+
+        $carga = new CargaHoraria();
+        $carga->nb_carga_horaria = 'RECESO';
+        $carga->hora_academica_id = 2;
+        $carga->nu_orden = 1;
+        $carga->hh_inicio = '15:00:00';
+        $carga->hh_fin = '16:00:00';
+        $carga->turno_id = 2;
+        $carga->bo_receso = 1;
+        $carga->status = 1;
+        $carga->save();
+
+
+        $carga = new CargaHoraria();
+        $carga->nb_carga_horaria = 'Hora 3';
+        $carga->hora_academica_id = 2;
+        $carga->nu_orden = 1;
+        $carga->hh_inicio = '16:00:00';
+        $carga->hh_fin = '17:00:00';
+        $carga->turno_id = 2;
+        $carga->bo_receso = 0;
+        $carga->status = 1;
+        $carga->save();
+
+
+        $carga = new CargaHoraria();
+        $carga->nb_carga_horaria = 'Hora 1';
+        $carga->hora_academica_id = 3;
+        $carga->nu_orden = 1;
+        $carga->hh_inicio = '17:00:00';
+        $carga->hh_fin = '18:00:00';
+        $carga->turno_id = 3;
+        $carga->bo_receso = 0;
+        $carga->status = 1;
+        $carga->save();
+
+        $carga = new CargaHoraria();
+        $carga->nb_carga_horaria = 'Hora 2';
+        $carga->hora_academica_id = 3;
+        $carga->nu_orden = 1;
+        $carga->hh_inicio = '18:00:00';
+        $carga->hh_fin = '19:00:00';
+        $carga->turno_id = 3;
+        $carga->bo_receso = 0;
+        $carga->status = 1;
+        $carga->save();
+
+
+        $carga = new CargaHoraria();
+        $carga->nb_carga_horaria = 'Hora 1';
+        $carga->hora_academica_id =4;
+        $carga->nu_orden = 4;
+        $carga->hh_inicio = '08:00:00';
+        $carga->hh_fin = '09:00:00';
+        $carga->turno_id = 4;
+        $carga->bo_receso = 0;
+        $carga->status = 1;
+        $carga->save();
+
+
+
+        $carga = new CargaHoraria();
+        $carga->nb_carga_horaria = 'Hora 1';
+        $carga->hora_academica_id =4;
+        $carga->nu_orden = 4;
+        $carga->hh_inicio = '09:00:00';
+        $carga->hh_fin = '10:00:00';
+        $carga->turno_id = 4;
+        $carga->bo_receso = 1;
+        $carga->status = 1;
+        $carga->save();
+
+
+
+        $carga = new CargaHoraria();
+        $carga->nb_carga_horaria = 'Hora 2';
+        $carga->hora_academica_id = 4;
+        $carga->nu_orden = 1;
+        $carga->hh_inicio = '10:00:00';
+        $carga->hh_fin = '11:00:00';
+        $carga->turno_id = 4;
+        $carga->bo_receso = 0;
+        $carga->status = 1;
+        $carga->save();
+
+
+        $materia = new Materia();
+        $materia->nb_materia = 'Idiomas';
+        $materia->codigo = 1215632541;
+        $materia->status = 1;
+        $materia->save();
+
+        $materia = new Materia();
+        $materia->nb_materia = 'Matemáticas';
+        $materia->codigo = 1415633541;
+        $materia->status = 1;
+        $materia->save();
+
+        $materia = new Materia();
+        $materia->nb_materia = 'Ciencias sociales';
+        $materia->codigo = 1415623541;
+        $materia->status = 1;
+        $materia->save();
+
+        $materia = new Materia();
+        $materia->nb_materia = 'Química';
+        $materia->codigo = 1415633542;
+        $materia->status = 1;
+        $materia->save();
+
+        $materia = new Materia();
+        $materia->nb_materia = 'Física';
+        $materia->codigo = 1415633545;
+        $materia->status = 1;
+        $materia->save();
+
+
 
 
 

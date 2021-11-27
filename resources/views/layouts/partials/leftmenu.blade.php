@@ -52,65 +52,66 @@
                 </li>
                 <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="file-text"></i><span class="menu-title text-truncate" data-i18n="Invoice">Administración</span></a>
                     <ul class="menu-content">
-                         <li class="{{ Active::check('academia') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('/academia') }}" data-toggle="dropdown" data-i18n="Academia"><i class="fas fa-building"></i><span data-i18n="Academia">Academia</span></a>
-                            </li>
-                            <li class="{{ Active::check('formasdepago') }} "><a class="dropdown-item d-flex align-items-center" href="{{ ('formasdepago') }}" data-toggle="dropdown" data-i18n="Chat"><i class="fas fa-dollar-sign"></i><span data-i18n="Chat">Métodos de pago</span></a>
-                            </li>
-                            <li class="{{ Active::check('curso') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('curso') }}" data-toggle="dropdown" data-i18n="Cursos"><i class="fas fa-graduation-cap"></i><span data-i18n="Cursos"> Cursos</span></a>
-                            </li>
-                            <li class="{{ Active::check('nacionalidades') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('nacionalidades') }}" data-toggle="dropdown" data-i18n="Calendar"><i data-feather="calendar"></i><span data-i18n="Calendar">Nacionalidades</span></a>
-                            </li>
-                             <li class="{{ Active::check('tipodesangre') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('tipodesangre') }}" data-toggle="dropdown" data-i18n="Calendar"><i class="fas fa-hospital"></i><span data-i18n="Calendar">Tipo de sangre</span></a>
-                            </li>
-                              <li class="{{ Active::check('genero') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('genero') }}" data-toggle="dropdown" data-i18n="Calendar"><i data-feather="user"></i><span data-i18n="Calendar">Géneros</span></a>
-                            </li>
-                            <li class="{{ Active::check('paises') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('paises') }}" data-toggle="dropdown" data-i18n="Calendar"><i data-feather="map"></i><span data-i18n="Calendar">Países</span></a>
-                            </li>
-                          
-                             <li class="{{ Active::check('estadocivil') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('estadocivil') }}" data-toggle="dropdown" data-i18n="Calendar"><i class="fas fa-user-tie"></i><span data-i18n="Calendar">Estado Civil</span></a>
-                            </li>
-                             <li class="{{ Active::check('gradoinstruccion') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('gradoinstruccion') }}" data-toggle="dropdown" data-i18n="Calendar"><i class="fas fa-user-tie"></i><span data-i18n="Calendar">Grado de instrucción</span></a>
-                            </li>
-                              <li class="{{ Active::check('nivelacademico') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('nivelacademico') }}" data-toggle="dropdown" data-i18n="Calendar"><i class="fas fa-graduation-cap"></i><span data-i18n="Calendar">Nivel Académico</span></a>
-                            </li>
-                             <li class="{{ Active::check('tipoacademia') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('tipoacademia') }}" data-toggle="dropdown" data-i18n="Calendar"><i class="fas fa-store-alt"></i><span data-i18n="Calendar">Tipo de Academia</span></a>
-                            </li>
-                            <li class="{{ Active::check('cargo') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('cargo') }}" data-toggle="dropdown" data-i18n="Colors"><i data-feather="droplet"></i><span data-i18n="Colors">Cargos</span></a>
-                            </li>
-                            <li class="{{ Active::check('tipodirectiva') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('tipodirectiva') }}" data-toggle="dropdown" data-i18n="Colors"><i data-feather="droplet"></i><span data-i18n="Colors">Tipo de directiva</span></a>
-                            </li>
-                             <li class="{{ Active::check('directiva') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('directiva') }}" data-toggle="dropdown" data-i18n="Colors"><i data-feather="droplet"></i><span data-i18n="Colors">Directiva</span></a>
-                            </li>
-                             <li class="{{ Active::check('empleado') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('empleado') }}" data-toggle="dropdown" data-i18n="Colors"><i data-feather="droplet"></i><span data-i18n="Colors">Empleados</span></a>
-                            </li>
-                             <li class="{{ Active::check('estructura') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('estructura') }}" data-toggle="dropdown" data-i18n="Colors"><i data-feather="droplet"></i><span data-i18n="Colors">Estructura</span></a>
-                            </li>
-                            <li class="{{ Active::check('aulas') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('aulas') }}" data-toggle="dropdown" data-i18n="Colors"><i data-feather="droplet"></i><span data-i18n="Colors">Aula</span></a>
-                            </li>
-                            <li class="{{ Active::check('calendario') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('calendario') }}" data-toggle="dropdown" data-i18n="Colors"><i data-feather="droplet"></i><span data-i18n="Colors">Calendario</span></a>
-                            </li>
-                           
-                    </ul>
-                </li>
-
-               <li class=" navigation-header"><span data-i18n="User Interface">CONTROL DE ESTUDIO</span><i data-feather="more-horizontal"></i>
-                </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="shopping-cart"></i><span class="menu-title text-truncate" data-i18n="CONTROL DE ESTUDIO">Administración</span></a>
-                    <ul class="menu-content">
-                      <li class="{{ Active::check('niveles') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('niveles') }}" data-toggle="dropdown" data-i18n="Calendar"><i class="fas fa-level-up-alt"></i><span data-i18n="Calendar">Niveles</span></a>
-                     </li>
-                     <li class="{{ Active::check('periodo') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('periodo') }}" data-toggle="dropdown" data-i18n="Colors"><i data-feather="droplet"></i><span data-i18n="Colors">Periodo escolar</span></a>
-                     </li>
-                      <li class="{{ Active::check('turno') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('turno') }}" data-toggle="dropdown" data-i18n="Colors"><i data-feather="droplet"></i><span data-i18n="Colors">Turnos</span></a>
-                      </li>
+                     <li class="{{ Active::check('academia') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('/academia') }}" data-toggle="dropdown" data-i18n="Academia"><i class="fas fa-building"></i><span data-i18n="Academia">Academia</span></a>
+                        </li>
+                        <li class="{{ Active::check('formasdepago') }} "><a class="dropdown-item d-flex align-items-center" href="{{ ('formasdepago') }}" data-toggle="dropdown" data-i18n="Chat"><i class="fas fa-dollar-sign"></i><span data-i18n="Chat">Métodos de pago</span></a>
+                        </li>
+                        <li class="{{ Active::check('curso') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('curso') }}" data-toggle="dropdown" data-i18n="Cursos"><i class="fas fa-graduation-cap"></i><span data-i18n="Cursos"> Cursos</span></a>
+                        </li>
+                        <li class="{{ Active::check('nacionalidades') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('nacionalidades') }}" data-toggle="dropdown" data-i18n="Calendar"><i data-feather="calendar"></i><span data-i18n="Calendar">Nacionalidades</span></a>
+                        </li>
+                         <li class="{{ Active::check('tipodesangre') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('tipodesangre') }}" data-toggle="dropdown" data-i18n="Calendar"><i class="fas fa-hospital"></i><span data-i18n="Calendar">Tipo de sangre</span></a>
+                        </li>
+                          <li class="{{ Active::check('genero') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('genero') }}" data-toggle="dropdown" data-i18n="Calendar"><i data-feather="user"></i><span data-i18n="Calendar">Géneros</span></a>
+                        </li>
+                        <li class="{{ Active::check('paises') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('paises') }}" data-toggle="dropdown" data-i18n="Calendar"><i data-feather="map"></i><span data-i18n="Calendar">Países</span></a>
+                        </li>
+                      
+                         <li class="{{ Active::check('estadocivil') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('estadocivil') }}" data-toggle="dropdown" data-i18n="Calendar"><i class="fas fa-user-tie"></i><span data-i18n="Calendar">Estado Civil</span></a>
+                        </li>
+                         <li class="{{ Active::check('gradoinstruccion') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('gradoinstruccion') }}" data-toggle="dropdown" data-i18n="Calendar"><i class="fas fa-user-tie"></i><span data-i18n="Calendar">Grado de instrucción</span></a>
+                        </li>
+                          <li class="{{ Active::check('nivelacademico') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('nivelacademico') }}" data-toggle="dropdown" data-i18n="Calendar"><i class="fas fa-graduation-cap"></i><span data-i18n="Calendar">Nivel Académico</span></a>
+                        </li>
+                         <li class="{{ Active::check('tipoacademia') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('tipoacademia') }}" data-toggle="dropdown" data-i18n="Calendar"><i class="fas fa-store-alt"></i><span data-i18n="Calendar">Tipo de Academia</span></a>
+                        </li>
+                        <li class="{{ Active::check('cargo') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('cargo') }}" data-toggle="dropdown" data-i18n="Colors"><i data-feather="droplet"></i><span data-i18n="Colors">Cargos</span></a>
+                        </li>
+                        <li class="{{ Active::check('tipodirectiva') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('tipodirectiva') }}" data-toggle="dropdown" data-i18n="Colors"><i data-feather="droplet"></i><span data-i18n="Colors">Tipo de directiva</span></a>
+                        </li>
+                         <li class="{{ Active::check('directiva') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('directiva') }}" data-toggle="dropdown" data-i18n="Colors"><i data-feather="droplet"></i><span data-i18n="Colors">Directiva</span></a>
+                        </li>
+                         <li class="{{ Active::check('empleado') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('empleado') }}" data-toggle="dropdown" data-i18n="Colors"><i data-feather="droplet"></i><span data-i18n="Colors">Empleados</span></a>
+                        </li>
+                         <li class="{{ Active::check('estructura') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('estructura') }}" data-toggle="dropdown" data-i18n="Colors"><i data-feather="droplet"></i><span data-i18n="Colors">Estructura</span></a>
+                        </li>
+                        <li class="{{ Active::check('aulas') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('aulas') }}" data-toggle="dropdown" data-i18n="Colors"><i data-feather="droplet"></i><span data-i18n="Colors">Aula</span></a>
+                        </li>
+                        <li class="{{ Active::check('calendario') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('calendario') }}" data-toggle="dropdown" data-i18n="Colors"><i data-feather="droplet"></i><span data-i18n="Colors">Calendario</span></a>
+                        </li>
+                       
+                      </ul>
+                        <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i class="zmdi zmdi-book"></i><span class="menu-title text-truncate" data-i18n="CONTROL DE ESTUDIO">Control de estudio</span></a>
+                        <ul class="menu-content">
+                        <li class="{{ Active::check('niveles') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('niveles') }}" data-toggle="dropdown" data-i18n="Calendar"><i class="fas fa-level-up-alt"></i><span data-i18n="Calendar">Niveles</span></a>
+                        </li>
+                        <li class="{{ Active::check('periodo') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('periodo') }}" data-toggle="dropdown" data-i18n="Colors"><i data-feather="droplet"></i><span data-i18n="Colors">Periodo escolar</span></a>
+                        </li>
+                        <li class="{{ Active::check('turno') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('turno') }}" data-toggle="dropdown" data-i18n="Colors"><i data-feather="droplet"></i><span data-i18n="Colors">Turnos</span></a>
+                        </li>
                         <li class="{{ Active::check('hora-academica') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('hora-academica') }}" data-toggle="dropdown" data-i18n="Colors"><i data-feather="droplet"></i><span data-i18n="Colors">Horas académicas</span></a>
-                      </li>
-                        <li><a class="d-flex align-items-center" href="app-ecommerce-wishlist.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Wish List">Wish List</span></a>
+                        </li>
+                        <li class="{{ Active::check('materias') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('materias') }}" data-toggle="dropdown" data-i18n="Colors"><i class="fas fa-book-open"></i><span data-i18n="Colors">Materias</span></a>
                         </li>
                         <li><a class="d-flex align-items-center" href="app-ecommerce-checkout.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Checkout">Checkout</span></a>
                         </li>
                     </ul>
                 </li>
+                </li>
+
+               <li class=" navigation-header"><span data-i18n="User Interface">CONTROL DE ESTUDIO</span><i data-feather="more-horizontal"></i>
+                </li>
+               
                 <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="user"></i><span class="menu-title text-truncate" data-i18n="User">User</span></a>
                     <ul class="menu-content">
                         <li><a class="d-flex align-items-center" href="app-user-list.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="List">List</span></a>
