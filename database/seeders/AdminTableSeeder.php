@@ -8,7 +8,7 @@ use App\Models\Academia;
 use App\Models\FormaDePago;
 use App\Models\Curso;
 use App\Models\Nacionalidades;
-use App\Models\TipoDeSangre;
+use App\Models\TipoDeSangre; 
 use App\Models\Genero;
 use App\Models\Pais;
 use App\Models\Estado;
@@ -137,7 +137,7 @@ class AdminTableSeeder extends Seeder
         $genero->status     = 1;
         $genero->save();
 
-         $pais= new Pais();
+        $pais= new Pais();
         $pais->name ='Afganistán';
         $pais->status = 1;
         $pais->save();
