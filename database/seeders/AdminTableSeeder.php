@@ -28,6 +28,7 @@ use App\Models\Turno;
 use App\Models\HoraAcademica;
 use App\Models\CargaHoraria;
 use App\Models\Materia;
+use App\Models\TipoCondicion;
 
 class AdminTableSeeder extends Seeder
 {
@@ -109,6 +110,23 @@ class AdminTableSeeder extends Seeder
 
         $curso =new Curso();
         $curso->name       = 'Batería';
+        $curso->status     = 1;
+        $curso->save();
+
+
+        $curso =new TipoCondicion();
+        $curso->name       = 'Regular';
+        $curso->status     = 1;
+        $curso->save();
+
+        $curso =new TipoCondicion();
+        $curso->name       = 'Repitiente';
+        $curso->status     = 1;
+        $curso->save();
+
+
+        $curso =new TipoCondicion();
+        $curso->name       = 'No matriculado';
         $curso->status     = 1;
         $curso->save();
 
@@ -1421,36 +1439,20 @@ class AdminTableSeeder extends Seeder
         $estado->save();
 
         $nivel = new Nivel();
-        $nivel->name = 'General';
+        $nivel->name = 'Básico';
         $nivel->status = 1;
         $nivel->save();
 
         $nivel = new Nivel();
-        $nivel->name = 'Preescolar';
+        $nivel->name = 'Intermedio';
         $nivel->status = 1;
         $nivel->save();
 
         $nivel = new Nivel();
-        $nivel->name = 'Primaria';
+        $nivel->name = 'Avanzado';
         $nivel->status = 1;
         $nivel->save();
 
-
-        $nivel = new Nivel();
-        $nivel->name = 'Bachiller';
-        $nivel->status = 1;
-        $nivel->save();
-
-        $nivel = new Nivel();
-        $nivel->name = 'Educación Media';
-        $nivel->status = 1;
-        $nivel->save();
-
-
-        $nivel = new Nivel();
-        $nivel->name = 'Educación Superior';
-        $nivel->status = 1;
-        $nivel->save();
 
 
         $estado = new EstadoCivil();

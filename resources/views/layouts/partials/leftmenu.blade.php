@@ -89,6 +89,8 @@
                         </li>
                         <li class="{{ Active::check('calendario') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('calendario') }}" data-toggle="dropdown" data-i18n="Colors"><i data-feather="droplet"></i><span data-i18n="Colors">Calendario</span></a>
                         </li>
+                        <li class="{{ Active::check('condicion') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('condicion') }}" data-toggle="dropdown" data-i18n="Colors"><i data-feather="droplet"></i><span data-i18n="Colors">Tipo de condición</span></a>
+                        </li>
                        
                       </ul>
                         <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i class="zmdi zmdi-book"></i><span class="menu-title text-truncate" data-i18n="CONTROL DE ESTUDIO">Control de estudio</span></a>
@@ -103,7 +105,7 @@
                         </li>
                         <li class="{{ Active::check('materias') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('materias') }}" data-toggle="dropdown" data-i18n="Colors"><i class="fas fa-book-open"></i><span data-i18n="Colors">Materias</span></a>
                         </li>
-                        <li><a class="d-flex align-items-center" href="app-ecommerce-checkout.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Checkout">Checkout</span></a>
+                        <li class="{{ Active::check('estudiante') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('estudiante') }}" data-toggle="dropdown" data-i18n="Colors"><i class="fas fa-user-tie"></i><span data-i18n="Colors">Estudiantes</span></a>
                         </li>
                     </ul>
                 </li>

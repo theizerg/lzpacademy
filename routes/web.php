@@ -47,6 +47,7 @@ Route::middleware(['auth',])->group(function () {
 /**/  Route::resource('nivelacademico',   'TipoClaseController');
 /**/  Route::resource('tipoacademia',   'TipoAcademiaController');
 /**/  Route::resource('cargo',   'CargoController');
+/**/  Route::resource('condicion',   'TipoCondicionController');
 /**/  Route::resource('tipodirectiva',   'TipoDirectivaController');
 /**/  Route::resource('directiva',   'DirectivaController');
 /**/  Route::resource('empleado',   'EmpleadoController');
@@ -61,7 +62,7 @@ Route::middleware(['auth',])->group(function () {
 /**/  Route::post('cargahoraria/store','CargaHorariaController@store')->name('cargahoraria.store');
 /**/  Route::put('cargahoraria/update/{cargahoraria}','CargaHorariaController@update')->name('cargahoraria.update');
 /**/  Route::resource('materias',   'MateriaController');
-
+/**/  Route::post('estudiante/matricula',   'EstudianteController@matricula')->name('estudiante.matricula');
 #############################################################################################
 #############################################################################################
 #############################################################################################
