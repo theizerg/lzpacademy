@@ -53,6 +53,33 @@ class AdminTableSeeder extends Seeder
 
 
 
+        $user =new User();
+        $user->name = 'Ada';
+        $user->lastname = 'Tovar';
+        $user->username = 'atovar';
+        $user->email = 'atovar@mail.com';
+        $user->email_verified_at = now();
+        $user->password = bcrypt('admin123');
+        $user->status = 1;
+        $user->save();
+
+        $user->assignRole('Super Administrador');
+
+
+        $user =new User();
+        $user->name = 'Rosmery';
+        $user->lastname = 'Lugo';
+        $user->username = 'rlugo';
+        $user->email = 'rlugo@mail.com';
+        $user->email_verified_at = now();
+        $user->password = bcrypt('admin123');
+        $user->status = 1;
+        $user->save();
+
+        $user->assignRole('Super Administrador');
+
+
+
 
 
         $academia =new Academia();

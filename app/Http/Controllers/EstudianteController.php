@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Estudiante;
+use App\Models\Calendario;
 use App\Models\CursoEstudiante;
+use App\Models\EstudianteMateria;
 use Illuminate\Http\Request;
 
 class EstudianteController extends Controller
@@ -28,9 +30,15 @@ class EstudianteController extends Controller
      */
     public function matricula(Request $request)
     {   
-        //dd($request);
+       // dd();
+       $calendario = Calendario::where('status',1)->first();
 
-       $matricula = new  CursoEstudiante();
+        $estudiante = CursoEstudiante::where('alumno_id',$request->alumno_id)->first();
+       if ($estudiante) {
+          
+       $matricula = CursoEstudiante::where('alumno_id',$request->alumno_id)->first();
+       //dd($matricula);
+       $matricula->calendario_id = $calendario->id;
        $matricula->alumno_id = $request->alumno_id;
        $matricula->curso_alumno_id = $request->curso_alumno_id;
        $matricula->tipo_condicion_alumno_id = $request->tipo_condicion_alumno_id;
@@ -42,6 +50,73 @@ class EstudianteController extends Controller
        $matricula->save();
 
        return redirect()->back();
+       }
+       else
+       {
+
+       $matricula = new  CursoEstudiante();
+       $matricula->calendario_id = $calendario->id;
+       $matricula->alumno_id = $request->alumno_id;
+       $matricula->curso_alumno_id = $request->curso_alumno_id;
+       $matricula->tipo_condicion_alumno_id = $request->tipo_condicion_alumno_id;
+       $matricula->nivel_alumno_id = $request->nivel_alumno_id;
+       $matricula->fecha_matricula = $request->fecha_matricula;
+       $matricula->tx_observaciones = $request->tx_observaciones;
+       $matricula->status = $request->status;
+
+       $matricula->save();
+
+       return redirect()->back();
+       }
+
+
+
+    }
+
+
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function materia(Request $request)
+    {   
+        //dd($request);
+       $calendario = Calendario::where('status',1)->first();
+
+        $estudiante = EstudianteMateria::where('alumno_id',$request->alumno_id)->first();
+       if ($estudiante) {
+          
+       $matricula = CursoEstudiante::where('alumno_id',$request->alumno_id)->first();
+       //dd($matricula);
+       $matricula->calendario_id = $calendario->id;
+       $matricula->alumno_id = $request->alumno_id;
+       $matricula->materia_id = $request->materia_id;
+       $matricula->fecha_matricula = $request->fecha_matricula;
+       $matricula->tx_observaciones = $request->tx_observaciones;
+       $matricula->status = $request->status;
+
+       $matricula->save();
+
+       return redirect()->back();
+       }
+       else
+       {
+
+       $matricula = new  EstudianteMateria();
+       $matricula->calendario_id = $calendario->id;
+       $matricula->alumno_id = $request->alumno_id;
+       $matricula->materia_id = $request->materia_id;
+       $matricula->fecha_matricula = $request->fecha_matricula;
+       $matricula->tx_observaciones = $request->tx_observaciones;
+       $matricula->status = $request->status;
+
+       $matricula->save();
+
+       return redirect()->back();
+       }
+
 
 
     }

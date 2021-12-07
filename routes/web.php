@@ -63,6 +63,7 @@ Route::middleware(['auth',])->group(function () {
 /**/  Route::put('cargahoraria/update/{cargahoraria}','CargaHorariaController@update')->name('cargahoraria.update');
 /**/  Route::resource('materias',   'MateriaController');
 /**/  Route::post('estudiante/matricula',   'EstudianteController@matricula')->name('estudiante.matricula');
+/**/  Route::post('estudiante/materia',   'EstudianteController@materia')->name('estudiante.materia');
 #############################################################################################
 #############################################################################################
 #############################################################################################

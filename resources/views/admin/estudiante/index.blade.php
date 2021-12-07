@@ -50,11 +50,15 @@
                                           <button type="button" class="btn btn-round red darken-3 text-white" data-toggle="modal" data-target="#EditarMatricula{{ $element->id }}">
                                             <span class="btn-inner--icon"><i class="mdi mdi-home"   data-toggle="tooltip" data-placement="top" title="Registrar matrícula" data-container="body" data-animation="true"></i></span>
                                           </button>
+                                          <button type="button" class="btn btn-round red darken-3 text-white" data-toggle="modal" data-target="#EditarMateria{{ $element->id }}">
+                                            <span class="btn-inner--icon"><i class="mdi mdi-home"   data-toggle="tooltip" data-placement="top" title="Registrar matrícula" data-container="body" data-animation="true"></i></span>
+                                          </button>
                                         </td>
                                      
                                     </tr>
                                        @include('admin.estudiante.partials.modal.edit')
                                        @include('admin.estudiante.partials.modal.matricula')
+                                       @include('admin.estudiante.partials.modal.materia')
                                   @endforeach
                                 </tbody>
                               </table>

@@ -9,7 +9,7 @@
     <div class="col-lg-12">
       <div class="card card-line-primary">
             <div class="card-header">
-              <h4 class="card-title">Listado de las nacionalidades permitidas en el curso</h4>
+              <h4 class="card-title">Listado de las materias permitidas en el curso</h4>
             </div>
             <div class="card-body">
               <div class="table-responsive">
