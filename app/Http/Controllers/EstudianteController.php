@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Estudiante;
+use App\Models\CursoEstudiante;
 use Illuminate\Http\Request;
 
 class EstudianteController extends Controller
@@ -17,6 +18,31 @@ class EstudianteController extends Controller
         $users = Estudiante::get();
 
         return view('admin.estudiante.index', ['users' => $users]);
+
+    }
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function matricula(Request $request)
+    {   
+        //dd($request);
+
+       $matricula = new  CursoEstudiante();
+       $matricula->alumno_id = $request->alumno_id;
+       $matricula->curso_alumno_id = $request->curso_alumno_id;
+       $matricula->tipo_condicion_alumno_id = $request->tipo_condicion_alumno_id;
+       $matricula->nivel_alumno_id = $request->nivel_alumno_id;
+       $matricula->fecha_matricula = $request->fecha_matricula;
+       $matricula->tx_observaciones = $request->tx_observaciones;
+       $matricula->status = $request->status;
+
+       $matricula->save();
+
+       return redirect()->back();
+
 
     }
 

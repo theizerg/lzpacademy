@@ -23,6 +23,7 @@ class CreateCursoEstudiantesTable extends Migration
             $table->foreign('nivel_alumno_id')->references('id')->on('nivels');
             $table->integer('alumno_id')->unsigned()->default(189);
             $table->foreign('alumno_id')->references('id')->on('cursos');
+            $table->string('fecha_matricula', 100)->nullable();
             $table->string('tx_observaciones', 100)->nullable();
             $table->integer('status');
             $table->timestamps();

@@ -2,37 +2,55 @@
 @php
   $cursos =  App\Models\Curso::pluck('name','id');
   $niveles = App\Models\Nivel::pluck('name','id');
-  $estadocivil = App\Models\EstadoCivil::pluck('name','id')
+  $condicion = App\Models\TipoCondicion::pluck('name','id')
 @endphp
  <div class="col-6">
     <label>Curso: </label>
      <div class="input-group input-group-merge mb-2">
         
-      {!! Form::select('genero_id', $cursos, null, ['class' => 'form-control ']) !!}
+      {!! Form::select('curso_alumno_id', $cursos, null, ['class' => 'form-control ']) !!}
      </div>
  </div>
   <div class="col-6">
-    <label>Estado Civil: </label>
+    <label>Nievel del alumno: </label>
      <div class="input-group input-group-merge mb-2">
         
-      {!! Form::select('estado_civil_id', $niveles, null, ['class' => 'form-control ']) !!}
+      {!! Form::select('nivel_alumno_id', $niveles, null, ['class' => 'form-control ']) !!}
      </div>
  </div>
+ <input type="hidden" name="alumno_id" value="{{ $element->id }}">
+  <div class="col-6">
+    <label>Condición del alumno: </label>
+     <div class="input-group input-group-merge mb-2">
+        
+      {!! Form::select('tipo_condicion_alumno_id', $condicion, null, ['class' => 'form-control ']) !!}
+     </div>
+ </div>
+ <div class="col-6">
+    <label>Fecha de matrícula: </label>
+     <div class="input-group input-group-merge mb-2">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon-search2"><i class="fas fa-calendar"></i></span>
+        </div>
+       {!! Form::text('fecha_matricula',null,['class'=>'form-control flatpickr-basic', 'required' => 'required','autocomplete' =>'off','placeholder' =>'YYYY-MM-DD','id' => 'fp-default']) !!}
+       
+    </div>
+  </div>
   <div class="col-12">
-       <label for="textarea-counter">Dirección del empleado</label>
+       <label for="textarea-counter">Observación de la matrícula</label>
         <div class="form-label-group mb-0">
             
-             {!! Form::textarea('direccion',null,['class'=>'form-control char-textarea', 'required' => 'required','autocomplete' =>'off','id' =>'textarea-counter',' data-length' => '60','rows'=>'3']) !!}
+             {!! Form::textarea('tx_observaciones',null,['class'=>'form-control char-textarea', 'required' => 'required','autocomplete' =>'off','id' =>'textarea-counter',' data-length' => '60','rows'=>'3']) !!}
          
         </div>
         <small class="textarea-counter-value float-right"><span class="char-count">0</span> / 60 </small>
     </div>
     <div class="col-md-12 text-center">  
                                       
-          <div class="checkbox icheck">  <br>
+          <div class="">  <br>
 
             <label>
-               <b for="textarea-counter">Estado del empleado</b><br>
+               <b for="textarea-counter">Estado de la matrícula</b><br>
               <input type="radio" name="status" id="status" value="1" checked>  Activo&nbsp;&nbsp;
               <input type="radio" name="status" id="status" value="0"> Inactivo&nbsp;&nbsp;
             </label>
@@ -254,13 +272,5 @@
 })(window, document, jQuery);
 
     </script>
-     <script>
-      $(function () {
-        $('input').iCheck({
-          checkboxClass: 'icheckbox_square-blue',
-          radioClass: 'iradio_square-blue',
-          increaseArea: '20%' // optional
-        });
-      });
-    </script>
+    
 @endpush
