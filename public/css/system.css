@@ -1,7 +1,10 @@
 
 
  .card.card-line-primary{
-  border-top:2px solid #6777ef
+  border-top:2px solid #051CC6
+ }
+  .card.card-line-success{
+  border-top:2px solid #044117
  }
 
  .px-sm-6{

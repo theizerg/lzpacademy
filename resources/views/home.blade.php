@@ -1,110 +1,139 @@
 @extends('layouts.admin')
-@section('title','HOME')
+
 @section('content')
-@push('styles')
-@endpush
+
+ <div class="content-body">
+<!-- Dashboard Ecommerce Starts -->
+<section id="dashboard-ecommerce">
 <div class="row match-height">
-    <!-- Greetings Card starts -->
-    <div class="col-xl-6 col-md-6 col-12">
-        <div class="card card-congratulations">
-            <div class="card-body text-center">
-                <img src="{{ asset('images/elements/decore-left.png') }}" class="congratulations-img-left" alt="card-img-left" />
-                <img src="{{ asset('images/elements/decore-right.png') }}" class="congratulations-img-right" alt="card-img-right" />
-                <div class="avatar avatar-xl bg-primary shadow">
-                    <div class="avatar-content">
-                        <i data-feather="award" class="font-large-1"></i>
+    <!-- Medal Card -->
+    <div class="col-xl-4 col-md-6 col-12">
+        <div class="card card-congratulation-medal card-line-primary">
+            <div class="card-body">
+                <h5>¡Gracias! 🎉 {{ \Auth::user()->display_name }}!</h5>
+                <p class="card-text font-small-3">Trabajamos por lo mejor</p>
+                <h3 class="mb-75 mt-2 pt-50">
+                    <a href="javascript:void(0);">$48.9k</a>
+                </h3>
+                <button type="button" class="btn btn-primary">View Sales</button>
+                <img src="{{ asset('images/illustration/badge.svg') }}" class="congratulation-medal" alt="Medal Pic" />
+            </div>
+        </div>
+    </div>
+    <!--/ Medal Card -->
+
+    <!-- Statistics Card -->
+    <div class="col-xl-8 col-md-6 col-12">
+        <div class="card card-statistics card-line-primary">
+            <div class="card-header">
+                <h4 class="card-title">Estadísticas generales</h4>
+                <div class="d-flex align-items-center">
+                    <p class="card-text font-small-2 mr-25 mb-0">Updated 1 month ago</p>
+                </div>
+            </div>
+            <div class="card-body statistics-body">
+                <div class="row">
+                @if (Auth::user()->hasRole('Super Administrador'))
+                    
+                    <div class="col-xl-3 col-sm-6 col-12 mb-2 mb-xl-0">
+                        <div class="media">
+                            <div class="avatar white mr-2">
+                                <div class="avatar-content">
+                                    <i class="fas fa-user brown-text fa-3x" class="avatar-icon"></i>
+                                </div>
+                            </div>
+                            <div class="media-body my-auto">
+                                <h4 class="font-weight-bolder mb-0">{{ App\Models\User::count() }}</h4>
+                                <p class="card-text font-small-3 mb-0">Usuarios</p>
+                            </div>
+                        </div>
                     </div>
+                    <div class="col-xl-3 col-sm-6 col-12 mb-2 mb-xl-0">
+                        <div class="media">
+                            <div class="avatar white mr-2">
+                                <div class="avatar-content">
+                                    <i class="mdi mdi-lock-open black-text fa-3x" class="avatar-icon"></i>
+                                </div>
+                            </div>
+                            <div class="media-body my-auto">
+                                <h4 class="font-weight-bolder mb-0">{{ Spatie\Permission\Models\Role::count() }}</h4>
+                                <p class="card-text font-small-3 mb-0">Roles</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-6 col-12 mb-2 mb-sm-0">
+                        <div class="media">
+                            <div class="avatar white mr-2">
+                                <div class="avatar-content">
+                                    <i class="mdi mdi-lock-alert purple-text fa-3x" class="avatar-icon"></i>
+                                </div>
+                            </div>
+                            <div class="media-body my-auto">
+                                <h4 class="font-weight-bolder mb-0">{{ Spatie\Permission\Models\Permission::count() }}</h4>
+                                <p class="card-text font-small-3 mb-0">Permisos</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-6 col-12">
+                        <div class="media">
+                            <div class="avatar white mr-2">
+                                <div class="avatar-content">
+                                    <i class="mdi mdi-login-variant fa-3x red-text" class="avatar-icon"></i>
+                                </div>
+                            </div>
+                            <div class="media-body my-auto">
+                                <h4 class="font-weight-bolder mb-0">{{ App\Models\Login::count() }}</h4>
+                                <p class="card-text font-small-3 mb-0">Visitas</p>
+                            </div>
+                        </div>
+                    </div>
+                   
+                   
+                    @endif
+
                 </div>
-                <div class="text-center">
-                    <h2 class="mb-1 text-white">Felicidades {{ \Auth::user()->display_name }}</h2>
-                    <p class="card-text m-auto w-75">
-                       Gracias por <strong>preferirnos</strong> siempre estaremos dispuestos para ayudarte en todo lo que necesites.
-                    </p>
-                </div>
+                
             </div>
         </div>
     </div>
-    <div class="col-xl-6 col-md-6 col-12">
-      <div class="card card-statistics">
-        <div class="card-header">
-          <h4 class="card-title">Estadísticas</h4>
-          <div class="d-flex align-items-center">
-            <p class="card-text font-small-2 me-25 mb-0">{{ \Auth::user()->created_at->diffForHumans() }}</p>
-          </div>
+       <div class="col-xl-6 xl-100 box-col-12">
+               @php
+                   $date = \Carbon\Carbon::now();
+                    //dd();
+               @endphp
+                  <div class="cal-date-widget card-body">
+                    <div class="row">
+                      <div class="col-xl-6 col-xs-12 col-md-6 col-sm-6">
+                        <div class="cal-info text-center">
+                          <div>
+                            <h2>{{ date('d') }}</h2>
+                            <div class="d-inline-block"><span class="pe-3">{{ $date->formatLocalized('%B') }} - </span><span class="ps-3"> {{ date('Y') }}</span></div>
+                            <p class="f-16">There is no minimum donation, any sum is appreciated</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xl-6 col-xs-12 col-md-6 col-sm-6">
+                        <div class="cal-datepicker ">
+                          <div class="datepicker-here float-sm-end" data-language="en">           </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+               
+              </div>
+               <div class="col-xl-6 col-md-6 col-12">
+                <div class="card card-line-primary">
+                  <div class="card-header">
+                  <h5 class="h3 mb-0">Total de usuarios registrados durante los últimos 4 meses.</h5>
+                  </div>
+                   <div class="card-body">
+                  <div class="recent-report__chart">
+                  <div id="chart2"></div>
+                </div>
+               </div>
+             </div>
         </div>
-        <div class="card-body statistics-body">
-          <div class="row">
-            <div class="col-xl-3 col-sm-6 col-12 mb-2 mb-xl-0">
-              <div class="d-flex flex-row">
-                <div class="avatar bg-light-primary me-2">
-                  <div class="avatar-content">
-                    <i class="avatar-icon fas fa-lock fa-2x"></i>
-                  </div>
-                </div>
-                <div class="my-auto">
-                  <h4 class="fw-bolder mb-0 ml-1">{{ Spatie\Permission\Models\Role::count() }}</h4>
-                  <p class="card-text font-small-3 mb-0  ml-1">Roles</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-sm-6 col-12 mb-2 mb-xl-0">
-              <div class="d-flex flex-row">
-                <div class="avatar bg-light-info me-2">
-                  <div class="avatar-content">
-                    <i class="avatar-icon fas fa-user fa-2x"></i>
-                  </div>
-                </div>
-                <div class="my-auto">
-                  <h4 class="fw-bolder mb-0 ml-1">{{ App\Models\User::count() }}</h4>
-                  <p class="card-text font-small-3 mb-0 ml-1">Usuarios</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-sm-6 col-12 mb-2 mb-sm-0">
-              <div class="d-flex flex-row">
-                <div class="avatar bg-light-danger me-2">
-                  <div class="avatar-content">
-                    <i  class="avatar-icon fas fa-user-tie fa-2x "></i>
-                  </div>
-                </div>
-                <div class="my-auto">
-                  <h4 class="fw-bolder mb-0 ml-1">{{ Spatie\Permission\Models\Permission::count() }}</h4>
-                  <p class="card-text font-small-3 mb-0 ml-1">Permisos</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-sm-6 col-12">
-              <div class="d-flex flex-row">
-                <div class="avatar bg-light-success me-2">
-                  <div class="avatar-content">
-                    <i data-feather="dollar-sign" class="avatar-icon"></i>
-                  </div>
-                </div>
-                <div class="my-auto">
-                  <h4 class="fw-bolder mb-0">$9745</h4>
-                  <p class="card-text font-small-3 mb-0">Revenue</p>
-                </div>
-              </div>
-            </div>
-           
-            
-          </div>
-        </div>
-      </div>
-    </div>
-      <div class="col-xl-6 col-md-6 col-12">
-         <div class="card card-line-primary">
-           <div class="card-header">
-            <h5 class="h3 mb-0">Total de usuarios registrados durante los últimos 4 meses.</h5>
-         </div>
-        <div class="card-body">
-          <div class="recent-report__chart">
-              <div id="chart2"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  <div class="col-lg-6 col-12">
+        <div class="col-lg-6 col-12">
         <div class="card card-user-timeline card-line-primary">
             <div class="card-header">
                 <div class="d-flex align-items-center">
@@ -138,11 +167,14 @@
             </div>
         </div>
     </div>
-</div>
+    </div>
+</section>
 
+
+</div>
 @endsection
 @push('scripts')
-<script>
+   <script>
 'use strict';
    $(function () {
     chart2();
@@ -268,17 +300,4 @@ function chart2() {
 }
 
  </script>
-
-  
-
- <script>
-       $(function () {
-       
-        $('#calendar').datetimepicker({
-                 format: 'L',
-                 inline: true
-            });
-        });
-    </script>   
-
 @endpush
