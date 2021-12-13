@@ -1,6 +1,6 @@
 @extends('layouts.admin')
-@section('title','CURSOS')
-@section('breadcrumb','CURSOS')
+@section('title','MATRICULAS')
+@section('breadcrumb','MATRICULAS')
 @section('content')
 
   <br><br><br>
@@ -15,7 +15,7 @@
                 <table id="tableExport" class="display table table-striped table-hover" >
                   <thead>
                     <tr>
-                     
+                     <th>Periodo</th>
                       <th>Estudiante</th>
                       <th>Curso</th>
                       <th>Estado</th>
@@ -26,6 +26,7 @@
                   <tbody>
                     @foreach ($academias as $element)
                       <tr>
+                        <td>{{ $element->estudiante->periodoActivo->nb_periodo }}</td>
                         <td>{{ $element->estudiante->display_name }}</td>
                         <td>  
                              {{ $element->curso->name }}

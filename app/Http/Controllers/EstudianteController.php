@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Estudiante;
 use App\Models\Calendario;
+use App\Models\Periodo;
 use App\Models\CursoEstudiante;
 use App\Models\EstudianteMateria;
 use Illuminate\Http\Request;
@@ -30,7 +31,10 @@ class EstudianteController extends Controller
      */
     public function matricula(Request $request)
     {   
-       // dd();
+        
+        $periodo = Periodo::where('status',1)->first();
+
+
        $calendario = Calendario::where('status',1)->first();
 
         $estudiante = CursoEstudiante::where('alumno_id',$request->alumno_id)->first();
@@ -39,6 +43,7 @@ class EstudianteController extends Controller
        $matricula = CursoEstudiante::where('alumno_id',$request->alumno_id)->first();
        //dd($matricula);
        $matricula->calendario_id = $calendario->id;
+       $matricula->periodo_id = $periodo->id;
        $matricula->alumno_id = $request->alumno_id;
        $matricula->curso_alumno_id = $request->curso_alumno_id;
        $matricula->tipo_condicion_alumno_id = $request->tipo_condicion_alumno_id;
@@ -53,9 +58,11 @@ class EstudianteController extends Controller
        }
        else
        {
+       
 
        $matricula = new  CursoEstudiante();
        $matricula->calendario_id = $calendario->id;
+       $matricula->periodo_id = $periodo->id;
        $matricula->alumno_id = $request->alumno_id;
        $matricula->curso_alumno_id = $request->curso_alumno_id;
        $matricula->tipo_condicion_alumno_id = $request->tipo_condicion_alumno_id;
@@ -139,8 +146,13 @@ class EstudianteController extends Controller
      */
     public function store(Request $request)
     {
+
+
+        $periodo = Periodo::where('status',1)->first();
+
         $empleado = new Estudiante();
         $empleado->name = $request->name;
+        $empleado->periodo_id = $periodo->id;
         $empleado->lastname = $request->lastname;
         $empleado->email = $request->email;
         $empleado->telefono = $request->telefono;

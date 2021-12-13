@@ -34,6 +34,12 @@ class Estudiante extends Model
     }
 
 
+    public function periodoActivo()
+    {
+        return $this->hasOne('App\Models\Periodo', 'calendario_id')->where('status', 1);
+    }
+
+
 
 
 

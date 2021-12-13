@@ -24,6 +24,8 @@ class CreateEstudiantesTable extends Migration
             $table->string('direccion');
             $table->string('tipo_documento');
             $table->string('documento');
+            $table->integer('periodo_id')->unsigned()->default(189);
+            $table->foreign('periodo_id')->references('id')->on('periodos');
             $table->string('edad');
             $table->smallInteger('status')->default(0);
             $table->integer('genero_id')->unsigned()->default(189);

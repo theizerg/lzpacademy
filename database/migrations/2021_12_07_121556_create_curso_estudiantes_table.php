@@ -17,6 +17,8 @@ class CreateCursoEstudiantesTable extends Migration
             $table->increments('id');
             $table->integer('calendario_id')->unsigned()->default(189);
             $table->foreign('calendario_id')->references('id')->on('calendarios');
+            $table->integer('periodo_id')->unsigned()->default(189);
+            $table->foreign('periodo_id')->references('id')->on('periodos');
             $table->integer('curso_alumno_id')->unsigned()->default(189);
             $table->foreign('curso_alumno_id')->references('id')->on('cursos');
             $table->integer('tipo_condicion_alumno_id')->unsigned()->default(189);

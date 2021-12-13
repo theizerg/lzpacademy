@@ -20,4 +20,12 @@ class CursoEstudiante extends Model
     {
         return $this->belongsTo(Curso::class, 'curso_alumno_id');
     }
+
+
+    public function periodoActivo()
+    {
+        return $this->hasOne('App\Models\Periodo', 'calendario_id')->where('status', 1);
+    }
+
+    
 }
