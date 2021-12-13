@@ -57,6 +57,7 @@ Route::middleware(['auth',])->group(function () {
 /**/  Route::resource('calendario',   'CalendarioController');
 /**/  Route::resource('periodo',   'PeriodoController');
 /**/  Route::resource('turno',   'TurnoController');
+/**/  Route::resource('matricula',   'CursoEstudianteController');
 /**/  Route::resource('hora-academica',   'HoraAcademicaController');
 /**/  Route::get('carga/horaria/{hora_academica_id}','CargaHorariaController@index');
 /**/  Route::post('cargahoraria/store','CargaHorariaController@store')->name('cargahoraria.store');

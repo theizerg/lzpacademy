@@ -7,14 +7,15 @@ use Illuminate\Http\Request;
 
 class CursoEstudianteController extends Controller
 {
-    /**
+     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        //
+        $academias = CursoEstudiante::get();
+        return view('admin.matricula.index',compact('academias'));
     }
 
     /**
@@ -35,16 +36,21 @@ class CursoEstudianteController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $pago =new Curso();
+        $pago->name = $request->name;
+        $pago->status = $request->status;
+        $pago->save();
+
+        return \Redirect::back();
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\CursoEstudiante  $cursoEstudiante
+     * @param  \App\Models\Curso  $curso
      * @return \Illuminate\Http\Response
      */
-    public function show(CursoEstudiante $cursoEstudiante)
+    public function show(Curso $curso)
     {
         //
     }
@@ -52,10 +58,10 @@ class CursoEstudianteController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\CursoEstudiante  $cursoEstudiante
+     * @param  \App\Models\Curso  $curso
      * @return \Illuminate\Http\Response
      */
-    public function edit(CursoEstudiante $cursoEstudiante)
+    public function edit(Curso $curso)
     {
         //
     }
@@ -64,21 +70,26 @@ class CursoEstudianteController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\CursoEstudiante  $cursoEstudiante
+     * @param  \App\Models\Curso  $curso
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, CursoEstudiante $cursoEstudiante)
+    public function update(Request $request,$curso)
     {
-        //
+        $pago = curso::find($curso);
+        $pago->name = $request->name;
+        $pago->status = $request->status;
+        $pago->save();
+
+        return \Redirect::back();
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\CursoEstudiante  $cursoEstudiante
+     * @param  \App\Models\Curso  $curso
      * @return \Illuminate\Http\Response
      */
-    public function destroy(CursoEstudiante $cursoEstudiante)
+    public function destroy(Curso $curso)
     {
         //
     }
