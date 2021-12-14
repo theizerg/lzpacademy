@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Profesores;
 use App\Models\Periodo;
+use App\Models\CursoProfesor;
+use App\Models\Calendario;
 use Illuminate\Http\Request;
 
 class ProfesoresController extends Controller
@@ -19,33 +21,35 @@ class ProfesoresController extends Controller
 
         return view('admin.profesores.index', ['users' => $users]);
 
-    }
+    } 
 
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function matricula(Request $request)
+    public function curso(Request $request)
     {   
         
+
+       // dd($request);
         $periodo = Periodo::where('status',1)->first();
 
 
        $calendario = Calendario::where('status',1)->first();
 
-        $estudiante = CursoEstudiante::where('alumno_id',$request->alumno_id)->first();
-       if ($estudiante) {
+        $profesor = CursoProfesor::where('profesor_id',$request->profesor_id)->first();
+
+       if ($profesor) {
           
-       $matricula = CursoEstudiante::where('alumno_id',$request->alumno_id)->first();
-       //dd($matricula);
+       $matricula = CursoProfesor::where('profesor_id',$request->profesor_id)->first();
+       
        $matricula->calendario_id = $calendario->id;
        $matricula->periodo_id = $periodo->id;
-       $matricula->alumno_id = $request->alumno_id;
-       $matricula->curso_alumno_id = $request->curso_alumno_id;
-       $matricula->tipo_condicion_alumno_id = $request->tipo_condicion_alumno_id;
-       $matricula->nivel_alumno_id = $request->nivel_alumno_id;
-       $matricula->fecha_matricula = $request->fecha_matricula;
+       $matricula->profesor_id = $request->profesor_id;
+       $matricula->curso_id = $request->curso_alumno_id;
+       $matricula->nivel_id = $request->nivel_alumno_id;
+       $matricula->fecha_ingreso = $request->fecha_ingreso;
        $matricula->tx_observaciones = $request->tx_observaciones;
        $matricula->status = $request->status;
 
@@ -57,14 +61,13 @@ class ProfesoresController extends Controller
        {
        
 
-       $matricula = new  CursoEstudiante();
+       $matricula = new  CursoProfesor();
        $matricula->calendario_id = $calendario->id;
        $matricula->periodo_id = $periodo->id;
-       $matricula->alumno_id = $request->alumno_id;
-       $matricula->curso_alumno_id = $request->curso_alumno_id;
-       $matricula->tipo_condicion_alumno_id = $request->tipo_condicion_alumno_id;
-       $matricula->nivel_alumno_id = $request->nivel_alumno_id;
-       $matricula->fecha_matricula = $request->fecha_matricula;
+       $matricula->profesor_id = $request->profesor_id;
+       $matricula->curso_id = $request->curso_alumno_id;
+       $matricula->nivel_id = $request->nivel_alumno_id;
+       $matricula->fecha_ingreso = $request->fecha_ingreso;
        $matricula->tx_observaciones = $request->tx_observaciones;
        $matricula->status = $request->status;
 

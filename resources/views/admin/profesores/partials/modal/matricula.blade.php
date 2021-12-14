@@ -8,8 +8,8 @@
         </button>
       </div>
       <div class="modal-body">
-       {!! Form::model($element, ['route' => ['estudiante.matricula'],'method' => 'POST','enctype'=>'multipart/form-data']) !!}
-        @include('admin.estudiante.partials.input.matricula')
+       {!! Form::model($element, ['route' => ['profesores.curso'],'method' => 'POST','enctype'=>'multipart/form-data']) !!}
+        @include('admin.profesores.partials.input.matricula')
         <br><br>
         <button type="submit" class="btn blue darken-4 text-white form-control">Guardar cambios</button>
          {!! Form::close()!!}

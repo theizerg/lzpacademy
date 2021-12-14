@@ -12,32 +12,26 @@
      </div>
  </div>
   <div class="col-6">
-    <label>Nievel del alumno: </label>
+    <label>Nievel que estará trabajando el profesor: </label>
      <div class="input-group input-group-merge mb-2">
         
       {!! Form::select('nivel_alumno_id', $niveles, null, ['class' => 'form-control ']) !!}
      </div>
  </div>
- <input type="hidden" name="alumno_id" value="{{ $element->id }}">
-  <div class="col-6">
-    <label>Condición del alumno: </label>
-     <div class="input-group input-group-merge mb-2">
-        
-      {!! Form::select('tipo_condicion_alumno_id', $condicion, null, ['class' => 'form-control ']) !!}
-     </div>
- </div>
- <div class="col-6">
-    <label>Fecha de matrícula: </label>
+ <input type="hidden" name="profesor_id" value="{{ $element->id }}">
+  
+ <div class="col-12">
+    <label>Fecha de ingreso: </label>
      <div class="input-group input-group-merge mb-2">
         <div class="input-group-prepend">
             <span class="input-group-text" id="basic-addon-search2"><i class="fas fa-calendar"></i></span>
         </div>
-       {!! Form::text('fecha_matricula',null,['class'=>'form-control flatpickr-basic', 'required' => 'required','autocomplete' =>'off','placeholder' =>'YYYY-MM-DD','id' => 'fp-default']) !!}
+       {!! Form::text('fecha_ingreso',null,['class'=>'form-control flatpickr-basic', 'required' => 'required','autocomplete' =>'off','placeholder' =>'YYYY-MM-DD','id' => 'fp-default']) !!}
        
     </div>
   </div>
   <div class="col-12">
-       <label for="textarea-counter">Observación de la matrícula</label>
+       <label for="textarea-counter">Observación de la asignación</label>
         <div class="form-label-group mb-0">
             
              {!! Form::textarea('tx_observaciones',null,['class'=>'form-control char-textarea', 'required' => 'required','autocomplete' =>'off','id' =>'textarea-counter',' data-length' => '60','rows'=>'3']) !!}
@@ -50,7 +44,7 @@
           <div class="">  <br>
 
             <label>
-               <b for="textarea-counter">Estado de la matrícula</b><br>
+               <b for="textarea-counter">Estado de la asignación</b><br>
               <input type="radio" name="status" id="status" value="1" checked>  Activo&nbsp;&nbsp;
               <input type="radio" name="status" id="status" value="0"> Inactivo&nbsp;&nbsp;
             </label>
