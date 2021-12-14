@@ -107,7 +107,9 @@
                         </li>
                         <li class="{{ Active::check('estudiante') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('estudiante') }}" data-toggle="dropdown" data-i18n="Colors"><i class="fas fa-user-tie"></i><span data-i18n="Colors">Estudiantes</span></a>
                         </li>
-                         <li class="{{ Active::check('matricula') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('matricula') }}" data-toggle="dropdown" data-i18n="Colors"><i class="fas fa-book-open"></i><span data-i18n="Colors">Matrícula</span></a>
+                        <li class="{{ Active::check('matricula') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('matricula') }}" data-toggle="dropdown" data-i18n="Colors"><i class="fas fa-book-open"></i><span data-i18n="Colors">Matrícula</span></a>
+                        </li>
+                         <li class="{{ Active::check('profesores') }} "><a class="dropdown-item d-flex align-items-center" href="{{ url('profesores') }}" data-toggle="dropdown" data-i18n="Colors"><i class="fas fa-user-tie"></i><span data-i18n="Colors">Profesores</span></a>
                         </li>
                     </ul>
                 </li>

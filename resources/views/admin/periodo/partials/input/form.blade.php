@@ -34,7 +34,7 @@
         <div class="input-group-prepend">
             <span class="input-group-text" id="basic-addon-search2"><i class="fas fa-calendar"></i></span>
         </div>
-       {!! Form::date('fe_inicio',null,['class'=>'form-control', 'required' => 'required','autocomplete' =>'off','placeholder' =>'Nombre del aula']) !!}
+       {!! Form::text('fe_inicio',null,['class'=>'form-control', 'required' => 'required','autocomplete' =>'off','placeholder' =>'Nombre del aula']) !!}
     </div>
   </div>
   <div class="col-6">
@@ -43,7 +43,7 @@
         <div class="input-group-prepend">
             <span class="input-group-text" id="basic-addon-search2"><i class="fas fa-calendar"></i></span>
         </div>
-       {!! Form::date('fe_fin',null,['class'=>'form-control', 'required' => 'required','autocomplete' =>'off','placeholder' =>'Nombre del aula']) !!}
+       {!! Form::text('fe_fin',null,['class'=>'form-control', 'required' => 'required','autocomplete' =>'off','placeholder' =>'Nombre del aula']) !!}
     </div>
   </div>
  
