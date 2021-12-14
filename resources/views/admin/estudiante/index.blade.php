@@ -2,7 +2,9 @@
 @section('title','MATRICULAS')
 @section('breadcrumb','MATRICULAS')
 @section('content')
-
+<a href="{{ route('estudiante.create') }}" class="btn blue darken-4 text-white btn-primary float-left btn-md"  ><i class="fas fa-plus-square"  data-bs-toggle="tooltip" data-bs-placement="top" title="Crear nuevo Usuario" data-container="body" data-animation="true"></i>
+        Nuevo método de pago
+  </a>
   <br><br><br>
   <div class="row">
     <div class="col-lg-12">
