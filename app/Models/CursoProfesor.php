@@ -20,4 +20,17 @@ class CursoProfesor extends Model
     {
         return $this->BelongsTo('App\Models\Nivel', 'nivel_id');
     }
+
+    public function profesor()
+    {
+        return $this->BelongsTo('App\Models\Profesores', 'profesor_id');
+    }
+
+
+     public function calendario()
+    {
+        return $this->BelongsTo('App\Models\Calendario', 'calendario_id');
+    }
+
 }
+

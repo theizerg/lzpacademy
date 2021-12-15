@@ -23,7 +23,7 @@
                       <th>Documento</th>
                       <th>Estado</th>
                       <th>Periodo</th>
-                      <th>Curso asignado</th>
+                     
                       <th>Creado</th>
                       <th>Opciones</th>
                     </tr>
@@ -44,11 +44,7 @@
                         <td>
                           <a href="{{ url('periodo') }}"  data-toggle="tooltip" data-placement="top" title="Ver periodos activos" data-container="body" data-animation="true">{{ $element->periodoActivo->nb_periodo  }} </a>
                         </td>
-                        <td>
-                           <button type="button" class="btn btn-round green darken-3 text-white" data-toggle="modal" data-target="#VerGrupoDesignado{{ $element->id }}">
-                              <span class="btn-inner--icon"><i class="fas fa-user-tie"   data-toggle="tooltip" data-placement="top" title="Ver curso asignado" data-container="body" data-animation="true"></i></span>
-                            </button>
-                        </td>
+                       
                         <td>
                           {{ $element->created_at->diffForHumans()  }} 
                         </td>
@@ -60,6 +56,11 @@
                             <button type="button" class="btn btn-round red darken-3 text-white" data-toggle="modal" data-target="#EditarMatricula{{ $element->id }}">
                               <span class="btn-inner--icon"><i class="fas fa-graduation-cap"   data-toggle="tooltip" data-placement="top" title="Asignar curso" data-container="body" data-animation="true"></i></span>
                             </button>
+
+                            <a href="{{ ('profesores/horarios/'.$element->id) }}" class="btn btn-round orange darken-4 text-white">
+                              <span class="btn-inner--icon"><i class="mdi mdi-calendar"   data-toggle="tooltip" data-placement="top" title="Registrar horario del profesor" data-container="body" data-animation="true"></i></span>
+                            </a>
+
                            
                           </td>
                        

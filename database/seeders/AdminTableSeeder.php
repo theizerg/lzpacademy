@@ -29,6 +29,7 @@ use App\Models\HoraAcademica;
 use App\Models\CargaHoraria;
 use App\Models\Materia;
 use App\Models\TipoCondicion;
+use App\Models\DiaSemana;
 
 class AdminTableSeeder extends Seeder
 {
@@ -1867,7 +1868,7 @@ class AdminTableSeeder extends Seeder
         $carga->nu_orden = 1;
         $carga->hh_inicio = '13:00:00';
         $carga->hh_fin = '14:00:00';
-        $carga->turno_id = 1;
+        $carga->turno_id = 2;
         $carga->bo_receso = 0;
         $carga->status = 1;
         $carga->save();
@@ -1879,7 +1880,7 @@ class AdminTableSeeder extends Seeder
         $carga->nu_orden = 1;
         $carga->hh_inicio = '14:00:00';
         $carga->hh_fin = '15:00:00';
-        $carga->turno_id = 1;
+        $carga->turno_id = 2;
         $carga->bo_receso = 0;
         $carga->status = 1;
         $carga->save();
@@ -1999,6 +2000,53 @@ class AdminTableSeeder extends Seeder
         $materia->codigo = 1415633545;
         $materia->status = 1;
         $materia->save();
+
+
+        $dia = new DiaSemana();
+        $dia->name = 'Lunes';
+        $dia->status = 1;
+        $dia->save();
+
+        $dia = new DiaSemana();
+        $dia->name = 'Martes';
+        $dia->status = 1;
+        $dia->save();
+
+
+        $dia = new DiaSemana();
+        $dia->name = 'Miércoles';
+        $dia->status = 1;
+        $dia->save();
+
+
+        $dia = new DiaSemana();
+        $dia->name = 'Jueves';
+        $dia->status = 1;
+        $dia->save();
+
+
+        $dia = new DiaSemana();
+        $dia->name = 'Viernes';
+        $dia->status = 1;
+        $dia->save();
+
+
+         $dia = new DiaSemana();
+        $dia->name = 'Sábado';
+        $dia->status = 1;
+        $dia->save();
+
+
+         $dia = new DiaSemana();
+        $dia->name = 'Domingo';
+        $dia->status = 1;
+        $dia->save();
+
+
+
+
+
+
 
 
 

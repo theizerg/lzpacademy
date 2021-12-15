@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Profesores;
 use App\Models\Periodo;
 use App\Models\CursoProfesor;
+use App\Models\CargaHoraria;
 use App\Models\Calendario;
 use Illuminate\Http\Request;
 
@@ -87,46 +88,35 @@ class ProfesoresController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function materia(Request $request)
+    public function horario($profesor_id)
     {   
-        //dd($request);
-       $calendario = Calendario::where('status',1)->first();
+        
+        $profesor = CursoProfesor::where('profesor_id',$profesor_id)->first();
+        //dd($profesor->periodoActivo);
 
-        $estudiante = EstudianteMateria::where('alumno_id',$request->alumno_id)->first();
-       if ($estudiante) {
-          
-       $matricula = CursoEstudiante::where('alumno_id',$request->alumno_id)->first();
-       //dd($matricula);
-       $matricula->calendario_id = $calendario->id;
-       $matricula->alumno_id = $request->alumno_id;
-       $matricula->materia_id = $request->materia_id;
-       $matricula->fecha_matricula = $request->fecha_matricula;
-       $matricula->tx_observaciones = $request->tx_observaciones;
-       $matricula->status = $request->status;
+        return view('admin.profesores.horario',compact('profesor'));
 
-       $matricula->save();
+     }
 
-       return redirect()->to('profesores');
-       }
-       else
-       {
 
-       $matricula = new  EstudianteMateria();
-       $matricula->calendario_id = $calendario->id;
-       $matricula->alumno_id = $request->alumno_id;
-       $matricula->materia_id = $request->materia_id;
-       $matricula->fecha_matricula = $request->fecha_matricula;
-       $matricula->tx_observaciones = $request->tx_observaciones;
-       $matricula->status = $request->status;
+     public function cargahoraria($turno_id)
+    {   
+        
+        $cargahoraria = CargaHoraria::where('turno_id',$turno_id)
+        ->where('nb_carga_horaria','<>','RECESO')
+        ->where('nb_carga_horaria','<>','DESCANSO')
+        ->where('nb_carga_horaria','<>','DIR. GRUPO')
+        ->where('nb_carga_horaria','<>','ALMUERZO')
+        ->get();
+        //dd($profesor->periodoActivo);
 
-       $matricula->save();
+        return $cargahoraria;
 
-       return redirect()->to('profesores');
-       }
+     }
 
 
 
-    }
+
 
     /**
      * Show the form for creating a new resource.

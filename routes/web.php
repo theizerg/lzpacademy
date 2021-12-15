@@ -59,8 +59,9 @@ Route::middleware(['auth',])->group(function () {
 /**/  Route::resource('turno',   'TurnoController');
 /**/  Route::resource('matricula',   'CursoEstudianteController');
 /**/  Route::resource('profesores',   'ProfesoresController');
-
-
+/**/  Route::get('profesores/horarios/{profesor}','ProfesoresController@horario');
+/**/  Route::post('profesores/horarios','ProfesoresController@guardarhorario')->name('profesores.horario');
+/**/  Route::get('turno/{turno_id}/cargahoraria','ProfesoresController@cargahoraria');
 
 /**/  Route::resource('hora-academica',   'HoraAcademicaController');
 /**/  Route::get('carga/horaria/{hora_academica_id}','CargaHorariaController@index');
