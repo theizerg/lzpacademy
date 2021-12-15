@@ -15,7 +15,6 @@ class CreateProfesorHorariosTable extends Migration
     {
         Schema::create('profesor_horarios', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('dia_semana');
             $table->integer('carga_horaria_id')->unsigned()->default(189);
             $table->foreign('carga_horaria_id')->references('id')->on('carga_horarias');
             $table->integer('calendario_id')->unsigned()->default(189);

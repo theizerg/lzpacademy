@@ -7,6 +7,7 @@ use App\Models\Periodo;
 use App\Models\CursoProfesor;
 use App\Models\CargaHoraria;
 use App\Models\Calendario;
+use App\Models\ProfesorHorario;
 use Illuminate\Http\Request;
 
 class ProfesoresController extends Controller
@@ -115,7 +116,58 @@ class ProfesoresController extends Controller
      }
 
 
+    public function guardarhorario(Request $request)
+    {   
+        //dd($request);
 
+        $horario = ProfesorHorario::where('profesor_id',$request->profesor_id)
+        ->where('turno_id',$request->turno_id)
+        ->where('carga_horaria_id',$request->carga_horaria_id)
+        ->first();
+        //dd($profesor);
+
+        if ($profesor) {
+            $horario = ProfesorHorario::find($horario->id);
+
+            $horario->carga_horaria_id = $request->carga_horaria_id;
+            $horario->calendario_id = $request->calendario_id;
+            $horario->periodo_id = $request->periodo_id;
+            $horario->profesor_id = $request->profesor_id;
+            $horario->curso_id = $request->curso_id;
+            $horario->nivel_id = $request->nivel_id;
+            $horario->turno_id = $request->turno_id;
+            $horario->dia_semana_id = $request->dia_semana_id;
+            $horario->fecha_ingreso = date('d/m/Y');
+            $horario->tx_observaciones = $request->tx_observaciones;
+            $horario->status = $request->status;
+            $horario->save();
+            
+            return \Redirect::to('profesores');
+        }else
+        {
+            $horario = new ProfesorHorario();
+
+            $horario->carga_horaria_id = $request->carga_horaria_id;
+            $horario->calendario_id = $request->calendario_id;
+            $horario->periodo_id = $request->periodo_id;
+            $horario->profesor_id = $request->profesor_id;
+            $horario->curso_id = $request->curso_id;
+            $horario->nivel_id = $request->nivel_id;
+            $horario->turno_id = $request->turno_id;
+            $horario->dia_semana_id = $request->dia_semana_id;
+            $horario->fecha_ingreso = date('d/m/Y');
+            $horario->tx_observaciones = $request->tx_observaciones;
+            $horario->status = $request->status;
+            $horario->save();
+
+            return \Redirect::to('profesores');
+        }
+
+        
+        
+        
+
+     }
 
 
     /**
