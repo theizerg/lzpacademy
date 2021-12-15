@@ -42,7 +42,7 @@
                           <span class="badge text-white {{ $element->status ? 'green' : 'red' }}">{{ $element->display_status }}</span>
                         </td>
                         <td>
-                          <a href="{{ url('periodo') }}"  data-toggle="tooltip" data-placement="top" title="Ver periodos activos" data-container="body" data-animation="true">{{ $element->periodoActivo->nb_periodo  }} </a>
+                          <a href="{{ url('periodo') }}"  data-toggle="tooltip" data-placement="top" title="Ver periodos activos" data-container="body" data-animation="true">{{ $element->periodo->nb_periodo  }} </a>
                         </td>
                        
                         <td>

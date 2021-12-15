@@ -51,6 +51,7 @@ class EstudianteController extends Controller
        $matricula->fecha_matricula = $request->fecha_matricula;
        $matricula->tx_observaciones = $request->tx_observaciones;
        $matricula->status = $request->status;
+       $matricula->turno_id = $request->turno_id;
 
        $matricula->save();
 
@@ -70,6 +71,7 @@ class EstudianteController extends Controller
        $matricula->fecha_matricula = $request->fecha_matricula;
        $matricula->tx_observaciones = $request->tx_observaciones;
        $matricula->status = $request->status;
+       $matricula->turno_id = $request->turno_id;
 
        $matricula->save();
 

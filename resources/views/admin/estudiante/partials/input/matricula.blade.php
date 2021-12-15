@@ -2,8 +2,18 @@
 @php
   $cursos =  App\Models\Curso::pluck('name','id');
   $niveles = App\Models\Nivel::pluck('name','id');
-  $condicion = App\Models\TipoCondicion::pluck('name','id')
+  $condicion = App\Models\TipoCondicion::pluck('name','id');
+  $turno = App\Models\Turno::pluck('name','id')
 @endphp
+
+<div class="col-6">
+    <label>Turno: </label>
+     <div class="input-group input-group-merge mb-2">
+        
+      {!! Form::select('turno_id', $turno, null, ['class' => 'form-control ']) !!}
+     </div>
+ </div>
+
  <div class="col-6">
     <label>Curso: </label>
      <div class="input-group input-group-merge mb-2">
@@ -26,7 +36,7 @@
       {!! Form::select('tipo_condicion_alumno_id', $condicion, null, ['class' => 'form-control ']) !!}
      </div>
  </div>
- <div class="col-6">
+ <div class="col-12">
     <label>Fecha de matrícula: </label>
      <div class="input-group input-group-merge mb-2">
         <div class="input-group-prepend">

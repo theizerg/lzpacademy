@@ -126,7 +126,7 @@ class ProfesoresController extends Controller
         ->first();
         //dd($profesor);
 
-        if ($profesor) {
+        if ($horario) {
             $horario = ProfesorHorario::find($horario->id);
 
             $horario->carga_horaria_id = $request->carga_horaria_id;

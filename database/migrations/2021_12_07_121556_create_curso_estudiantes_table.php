@@ -15,6 +15,8 @@ class CreateCursoEstudiantesTable extends Migration
     {
         Schema::create('curso_estudiantes', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('turno_id')->unsigned()->default(189);
+            $table->foreign('turno_id')->references('id')->on('turnos');
             $table->integer('calendario_id')->unsigned()->default(189);
             $table->foreign('calendario_id')->references('id')->on('calendarios');
             $table->integer('periodo_id')->unsigned()->default(189);

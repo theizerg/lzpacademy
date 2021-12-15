@@ -35,9 +35,9 @@ class Profesores extends Model
     
 
 
-    public function periodoActivo()
+    public function periodo()
     {
-        return $this->hasOne('App\Models\Periodo', 'calendario_id')->where('status', 1);
+        return $this->BelongsTo('App\Models\Periodo', 'periodo_id');
     }
 
 

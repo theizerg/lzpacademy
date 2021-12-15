@@ -47,8 +47,8 @@
         <div class="input-group-prepend">
             <span class="input-group-text" id="basic-addon-search2"><i class="fas fa-user-tie"></i></span>
         </div>
-         <input type="hidden" name="periodo_id" value="{{ $profesor->profesor->periodoActivo->id }}">
-        <input type="text" value="{{ $profesor->profesor->periodoActivo->nb_periodo }}" class="form-control" disabled>
+         <input type="hidden" name="periodo_id" value="{{ $profesor->profesor->periodo->id }}">
+        <input type="text" value="{{ $profesor->profesor->periodo->nb_periodo }}" class="form-control" disabled>
        </div>
     </div>
     @php
